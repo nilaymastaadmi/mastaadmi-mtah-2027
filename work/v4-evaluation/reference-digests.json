@@ -1,0 +1,25 @@
+{
+ "platform": "Linux-6.18.44-fc-v230-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "digests": {
+  "dfl/J03WMX/natural": "0d679d5239d96a886fca6821e9fd41782571607a6b3d970e29b8ade6a0b090d4",
+  "dfl/J03WMX/contested": "7b99f9f44b4b6bb929f92afd68a03a3f10a421c3b61f76223b3f21bd342d4d74",
+  "dfl/J03WN1/natural": "c96f1a043b7bb4dd1ee715c25f58d6f29d85735960d0906820bfbca01f84d4b3",
+  "dfl/J03WN1/contested": "ceda8547dca0a78fff6a5c6fe17a9a23c45c6e820b72c7ed55d1c25bc86b29b2",
+  "dfl/J03WOH/natural": "5de2fccf45c85c4eaac8ae4dd966996cb99cf5c544cb1db89fb1a2bd6d6c9099",
+  "dfl/J03WOH/contested": "683b5f617dddd8131253d747e56b40a8a8e9f8e151eb1ff7e3733c6180bfe4df",
+  "dfl/J03WOY/natural": "27b9bb8b3742141ac5f96abe890a8f749d9496e9c33b89ede2f5a20da7db4467",
+  "dfl/J03WOY/contested": "82918a7eb7cafa32f70ebdcdd3675a139471f4d5e1a3a8de2ed121aaa5333b44",
+  "dfl/J03WPY/natural": "11d632376e5702cfc3592a221b1046d1e72a1f3852dcbc9ede40b0ffdce55120",
+  "dfl/J03WPY/contested": "2e1ee7c156ef9d5905744c1c60ec985c0ca9dd86936a3ec8139a2f3f32c1623e",
+  "dfl/J03WQQ/natural": "393c61c488abf7830ea4958e48c6da15443c0b52da419c8fdde07a7389fea953",
+  "dfl/J03WQQ/contested": "b5f6757d101fce1752ba7024ceae3bdca361e66d0d2dd5d2349f96edc0b11bc9",
+  "dfl/J03WR9/natural": "721c88de58c0484e3c4172959b051e8f45c1d7c3425aa5690bcc6cc6d7784b96",
+  "dfl/J03WR9/contested": "0009a8ca720a8ccf06c4b4b18683e836cb4124c70d9425c67913567905dd1d15",
+  "sc/1874553": "275f4ed4c7fb9c7a7b621971ac358568fe96e54034e8e8f90ce50313bdef9524",
+  "sc/1886347": "3abaee6c794f314ef5d5a1cf2278c8bc9296815f57c994ad587d19b262f43e71",
+  "sc/1899585": "737b4695f0c9fa9b2ffb84ae00627a7e33f53da9f8d39c2f0595159c5e27760e",
+  "sc/1925299": "df1e91d5e28c54367a65d198703efb541e3bf57d0ee22d7436defc75c6a31b46",
+  "sc/1927964": "99dddba24b2a68839cf80a675120de955f95c2f54665f1b4d6fd6f251268dcca"
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "variant": "B",
+ "best": {
+  "A": {
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "contested_mean": 0.2972624257220259
+  },
+  "B": {
+   "setting": [
+    0.75,
+    0.25
+   ],
+   "contested_mean": 0.335300394019642
+  },
+  "C": {
+   "setting": [
+    0.75,
+    0.25
+   ],
+   "contested_mean": 0.3379319982153913
+  },
+  "D": {
+   "setting": [
+    0.75,
+    0.25,
+    0.25
+   ],
+   "contested_mean": 0.3379319982153913
+  }
+ },
+ "model_sha256": "3e45643e5abcf2265788030dead0974bdf8fce2fceebd5dc6421e46ba497bcf4",
+ "source_hashes": {
+  "v3/features.py": "3b7fdad6f068480db8e7c12bfdad517eccccdedd15eb936d8cf9ce7847427971",
+  "v3/decode.py": "ed920384ca35852a51089bd165265dc478abb99ecc9cec4f2c390fb6578f35e6",
+  "v3/develop.py": "df201de31cbe7ae3a31dc2c3ea3b15a7ab77adb00b3973cfc212d4e8ede91ebb"
+ }
+}

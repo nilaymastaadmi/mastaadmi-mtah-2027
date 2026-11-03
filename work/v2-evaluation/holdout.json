@@ -1,0 +1,1417 @@
+{
+ "stage": "one-time holdout",
+ "matches": [
+  "J03WMX",
+  "J03WN1",
+  "J03WQQ",
+  "J03WR9"
+ ],
+ "mapping_check": {
+  "J03WMX": 0.779205566423409,
+  "J03WN1": 0.7496087865802828,
+  "J03WQQ": 0.7744688922610015,
+  "J03WR9": 0.8075273102348914
+ },
+ "selected": {
+  "majority": 50,
+  "hold_majority": 50,
+  "hmm_hand": 1.0,
+  "blend_learned": [
+   0.75,
+   0.5
+  ],
+  "blend_uniform": [
+   0.25,
+   1.0
+  ],
+  "blend_misaligned": [
+   0.25,
+   1.0
+  ]
+ },
+ "candidate": "blend_learned",
+ "rows": [
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.30723306544202067,
+   "macroF1": 0.41504988329662873,
+   "gt_spells": 511,
+   "pred_spells": 360
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.3108518086347724,
+   "macroF1": 0.41513816266246656,
+   "gt_spells": 511,
+   "pred_spells": 346
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.30723306544202067,
+   "macroF1": 0.41504988329662873,
+   "gt_spells": 511,
+   "pred_spells": 360
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.40137931034482754,
+   "macroF1": 0.7890856801157441,
+   "gt_spells": 511,
+   "pred_spells": 359
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.0,
+   "spellF1": 0.4094881398252185,
+   "macroF1": 0.879477546143546,
+   "gt_spells": 511,
+   "pred_spells": 290
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.48134777376654636,
+   "macroF1": 0.8984439821875255,
+   "gt_spells": 511,
+   "pred_spells": 320
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.31137162954279013,
+   "macroF1": 0.4152888445742069,
+   "gt_spells": 511,
+   "pred_spells": 342
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "natural",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.30830409356725147,
+   "macroF1": 0.41497294266253704,
+   "gt_spells": 511,
+   "pred_spells": 344
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.15366336633663363,
+   "macroF1": 0.42991219600125524,
+   "gt_spells": 511,
+   "pred_spells": 499
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.1664887940234792,
+   "macroF1": 0.430422163626436,
+   "gt_spells": 511,
+   "pred_spells": 426
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.15366336633663363,
+   "macroF1": 0.42991219600125524,
+   "gt_spells": 511,
+   "pred_spells": 499
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.19895287958115188,
+   "macroF1": 0.6399432152602474,
+   "gt_spells": 511,
+   "pred_spells": 444
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.19401820546163845,
+   "macroF1": 0.6587431396140169,
+   "gt_spells": 511,
+   "pred_spells": 258
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.2451003541912633,
+   "macroF1": 0.6780959207492879,
+   "gt_spells": 511,
+   "pred_spells": 336
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.1689084895259096,
+   "macroF1": 0.4306762087730916,
+   "gt_spells": 511,
+   "pred_spells": 396
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "gaps",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4136003343221413,
+   "spellF1": 0.16968375136314068,
+   "macroF1": 0.43004371623034277,
+   "gt_spells": 511,
+   "pred_spells": 406
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.17960042060988432,
+   "macroF1": 0.4774772568951619,
+   "gt_spells": 511,
+   "pred_spells": 440
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.18690744920993227,
+   "macroF1": 0.4779963817356219,
+   "gt_spells": 511,
+   "pred_spells": 375
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.17960042060988432,
+   "macroF1": 0.4774772568951619,
+   "gt_spells": 511,
+   "pred_spells": 440
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.2023479188900747,
+   "macroF1": 0.5887418906100023,
+   "gt_spells": 511,
+   "pred_spells": 426
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.1849246231155779,
+   "macroF1": 0.632311916895287,
+   "gt_spells": 511,
+   "pred_spells": 285
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.25607701564380264,
+   "macroF1": 0.6909416876287349,
+   "gt_spells": 511,
+   "pred_spells": 320
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.19107981220657277,
+   "macroF1": 0.47814078166057056,
+   "gt_spells": 511,
+   "pred_spells": 341
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WMX",
+   "condition": "contested",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.41203833743243334,
+   "spellF1": 0.18949824970828472,
+   "macroF1": 0.4773977019627522,
+   "gt_spells": 511,
+   "pred_spells": 346
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.28376068376068375,
+   "macroF1": 0.3488337121573147,
+   "gt_spells": 500,
+   "pred_spells": 436
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.2890350877192983,
+   "macroF1": 0.34833818709990677,
+   "gt_spells": 500,
+   "pred_spells": 412
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.28376068376068375,
+   "macroF1": 0.3488337121573147,
+   "gt_spells": 500,
+   "pred_spells": 436
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.35978378378378384,
+   "macroF1": 0.6969740526986324,
+   "gt_spells": 500,
+   "pred_spells": 425
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.0,
+   "spellF1": 0.3696139476961395,
+   "macroF1": 0.8370435269465567,
+   "gt_spells": 500,
+   "pred_spells": 303
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.47368421052631576,
+   "macroF1": 0.8678833516834666,
+   "gt_spells": 500,
+   "pred_spells": 336
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.28794642857142855,
+   "macroF1": 0.34862337878947586,
+   "gt_spells": 500,
+   "pred_spells": 396
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "natural",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.28954895489548954,
+   "macroF1": 0.3487674052546184,
+   "gt_spells": 500,
+   "pred_spells": 409
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.16101159114857744,
+   "macroF1": 0.4285977552233599,
+   "gt_spells": 500,
+   "pred_spells": 449
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.16715083798882685,
+   "macroF1": 0.429048496081188,
+   "gt_spells": 500,
+   "pred_spells": 395
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.16101159114857744,
+   "macroF1": 0.4285977552233599,
+   "gt_spells": 500,
+   "pred_spells": 449
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.2,
+   "macroF1": 0.5464072790857548,
+   "gt_spells": 500,
+   "pred_spells": 412
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.15441370223978917,
+   "macroF1": 0.572917627688556,
+   "gt_spells": 500,
+   "pred_spells": 259
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.26972010178117045,
+   "macroF1": 0.6513757326646398,
+   "gt_spells": 500,
+   "pred_spells": 286
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.17700348432055749,
+   "macroF1": 0.4293854982991708,
+   "gt_spells": 500,
+   "pred_spells": 361
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "gaps",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4204689144609038,
+   "spellF1": 0.17439446366782008,
+   "macroF1": 0.42912072005508667,
+   "gt_spells": 500,
+   "pred_spells": 367
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.176734693877551,
+   "macroF1": 0.39434542194786126,
+   "gt_spells": 500,
+   "pred_spells": 480
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.18803046789989122,
+   "macroF1": 0.39465913072429454,
+   "gt_spells": 500,
+   "pred_spells": 419
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.176734693877551,
+   "macroF1": 0.39434542194786126,
+   "gt_spells": 500,
+   "pred_spells": 480
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.21763440860215053,
+   "macroF1": 0.5604229871907555,
+   "gt_spells": 500,
+   "pred_spells": 430
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.17416020671834626,
+   "macroF1": 0.5648253511758703,
+   "gt_spells": 500,
+   "pred_spells": 274
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.28238153098420415,
+   "macroF1": 0.6520548486278038,
+   "gt_spells": 500,
+   "pred_spells": 323
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.1941176470588235,
+   "macroF1": 0.39558254095587614,
+   "gt_spells": 500,
+   "pred_spells": 384
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WN1",
+   "condition": "contested",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4109677100331306,
+   "spellF1": 0.18744394618834076,
+   "macroF1": 0.39433272948387305,
+   "gt_spells": 500,
+   "pred_spells": 392
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.3608426270136307,
+   "macroF1": 0.41623786329977674,
+   "gt_spells": 401,
+   "pred_spells": 406
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.36738853503184704,
+   "macroF1": 0.41653485804752527,
+   "gt_spells": 401,
+   "pred_spells": 384
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.3608426270136307,
+   "macroF1": 0.41623786329977674,
+   "gt_spells": 401,
+   "pred_spells": 406
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.4014814814814815,
+   "macroF1": 0.6037770789286531,
+   "gt_spells": 401,
+   "pred_spells": 409
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.0,
+   "spellF1": 0.4552486187845304,
+   "macroF1": 0.8699005396167374,
+   "gt_spells": 401,
+   "pred_spells": 323
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.5409214092140922,
+   "macroF1": 0.894793341115174,
+   "gt_spells": 401,
+   "pred_spells": 337
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.3702182284980745,
+   "macroF1": 0.41665336858884466,
+   "gt_spells": 401,
+   "pred_spells": 378
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "natural",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.36923076923076914,
+   "macroF1": 0.4170351881594474,
+   "gt_spells": 401,
+   "pred_spells": 366
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.1866359447004608,
+   "macroF1": 0.43540611038622684,
+   "gt_spells": 401,
+   "pred_spells": 467
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.20024479804161568,
+   "macroF1": 0.43566274455819576,
+   "gt_spells": 401,
+   "pred_spells": 416
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.1866359447004608,
+   "macroF1": 0.43540611038622684,
+   "gt_spells": 401,
+   "pred_spells": 467
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.2152744630071599,
+   "macroF1": 0.5123959552650567,
+   "gt_spells": 401,
+   "pred_spells": 437
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.2125,
+   "macroF1": 0.5583129227279647,
+   "gt_spells": 401,
+   "pred_spells": 303
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.29540078843626805,
+   "macroF1": 0.6471880029192524,
+   "gt_spells": 401,
+   "pred_spells": 360
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.20969387755102042,
+   "macroF1": 0.43601607653449315,
+   "gt_spells": 401,
+   "pred_spells": 383
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "gaps",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.41226597351505145,
+   "spellF1": 0.20767263427109978,
+   "macroF1": 0.43613896441663,
+   "gt_spells": 401,
+   "pred_spells": 381
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.20135746606334842,
+   "macroF1": 0.44727061206122426,
+   "gt_spells": 401,
+   "pred_spells": 483
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.21584158415841587,
+   "macroF1": 0.44711185687784205,
+   "gt_spells": 401,
+   "pred_spells": 407
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.20135746606334842,
+   "macroF1": 0.44727061206122426,
+   "gt_spells": 401,
+   "pred_spells": 483
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.22738780207134637,
+   "macroF1": 0.4946146824816213,
+   "gt_spells": 401,
+   "pred_spells": 468
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.18457142857142855,
+   "macroF1": 0.5442528205795109,
+   "gt_spells": 401,
+   "pred_spells": 299
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.3079365079365079,
+   "macroF1": 0.6523221409539124,
+   "gt_spells": 401,
+   "pred_spells": 355
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.221882951653944,
+   "macroF1": 0.4470243109564766,
+   "gt_spells": 401,
+   "pred_spells": 385
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WQQ",
+   "condition": "contested",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4197829217745618,
+   "spellF1": 0.22199488491048594,
+   "macroF1": 0.4472118535119483,
+   "gt_spells": 401,
+   "pred_spells": 381
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.3152046783625731,
+   "macroF1": 0.4095041914288962,
+   "gt_spells": 370,
+   "pred_spells": 314
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.3131736526946108,
+   "macroF1": 0.4096535133876588,
+   "gt_spells": 370,
+   "pred_spells": 298
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.3152046783625731,
+   "macroF1": 0.4095041914288962,
+   "gt_spells": 370,
+   "pred_spells": 314
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.0,
+   "spellF1": 0.40177514792899416,
+   "macroF1": 0.7470256296195538,
+   "gt_spells": 370,
+   "pred_spells": 306
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.0,
+   "spellF1": 0.436248012718601,
+   "macroF1": 0.8837282171778336,
+   "gt_spells": 370,
+   "pred_spells": 259
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.4976525821596244,
+   "macroF1": 0.8954755947778087,
+   "gt_spells": 370,
+   "pred_spells": 269
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.30792682926829273,
+   "macroF1": 0.4100881208973468,
+   "gt_spells": 370,
+   "pred_spells": 286
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "natural",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.0,
+   "spellF1": 0.3191489361702128,
+   "macroF1": 0.4099271652674094,
+   "gt_spells": 370,
+   "pred_spells": 288
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.15832305795314427,
+   "macroF1": 0.4311193992984684,
+   "gt_spells": 370,
+   "pred_spells": 441
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.16822916666666668,
+   "macroF1": 0.43136321389336896,
+   "gt_spells": 370,
+   "pred_spells": 398
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.15832305795314427,
+   "macroF1": 0.4311193992984684,
+   "gt_spells": 370,
+   "pred_spells": 441
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.24357239512855214,
+   "macroF1": 0.6080868493623057,
+   "gt_spells": 370,
+   "pred_spells": 369
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.20930979133226324,
+   "macroF1": 0.6259238285794159,
+   "gt_spells": 370,
+   "pred_spells": 253
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.24843982169390794,
+   "macroF1": 0.6428817634311818,
+   "gt_spells": 370,
+   "pred_spells": 303
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.18016528925619837,
+   "macroF1": 0.4323351431608072,
+   "gt_spells": 370,
+   "pred_spells": 356
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "gaps",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.41120495879027313,
+   "spellF1": 0.17875862068965517,
+   "macroF1": 0.4313092662954221,
+   "gt_spells": 370,
+   "pred_spells": 355
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "baseline50",
+   "setting": 50,
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.16747759282970553,
+   "macroF1": 0.46316282924200464,
+   "gt_spells": 370,
+   "pred_spells": 411
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "v1_frozen",
+   "setting": [
+    0.25,
+    0.5
+   ],
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.18166666666666667,
+   "macroF1": 0.46317734752978285,
+   "gt_spells": 370,
+   "pred_spells": 350
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "majority",
+   "setting": 50,
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.16747759282970553,
+   "macroF1": 0.46316282924200464,
+   "gt_spells": 370,
+   "pred_spells": 411
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "hold_majority",
+   "setting": 50,
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.21808510638297873,
+   "macroF1": 0.600991404261642,
+   "gt_spells": 370,
+   "pred_spells": 382
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "hmm_hand",
+   "setting": 1.0,
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.19836333878887072,
+   "macroF1": 0.6574771158670057,
+   "gt_spells": 370,
+   "pred_spells": 241
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "blend_learned",
+   "setting": [
+    0.75,
+    0.5
+   ],
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.2887537993920973,
+   "macroF1": 0.6872262711923813,
+   "gt_spells": 370,
+   "pred_spells": 288
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "blend_uniform",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.18861313868613136,
+   "macroF1": 0.4636561259076033,
+   "gt_spells": 370,
+   "pred_spells": 315
+  },
+  {
+   "stage": "holdout",
+   "match": "J03WR9",
+   "condition": "contested",
+   "method": "blend_misaligned",
+   "setting": [
+    0.25,
+    1.0
+   ],
+   "missing_ball": 0.4123901641577549,
+   "spellF1": 0.18686131386861313,
+   "macroF1": 0.4623625690788445,
+   "gt_spells": 370,
+   "pred_spells": 315
+  }
+ ],
+ "promotion_gate": {
+  "deltas_vs_v1": {
+   "natural": [
+    0.17049596513177395,
+    0.18464912280701745,
+    0.1735328741822451,
+    0.1844789294650136
+   ],
+   "gaps": [
+    0.07861156016778412,
+    0.1025692637923436,
+    0.09515599039465236,
+    0.08021065502724126
+   ],
+   "contested": [
+    0.06916956643387037,
+    0.09435106308431293,
+    0.09209492377809203,
+    0.1070871327254306
+   ]
+  },
+  "contested_macro_deltas": [
+   0.21294530589311295,
+   0.2573957179035093,
+   0.20521028407607034,
+   0.2240489236625985
+  ],
+  "checks": {
+   "contested_mean_ge_.02": true,
+   "contested_wins_ge_3of4": true,
+   "gaps_mean_ge_0": true,
+   "natural_mean_ge_-.02": true,
+   "contested_macro_mean_ge_-.03": true
+  },
+  "passed": true
+ },
+ "learned_edge_gate": {
+  "controls": {
+   "blend_uniform": {
+    "deltas": [
+     0.06499720343722987,
+     0.08826388392538065,
+     0.08605355628256389,
+     0.10014066070596592
+    ],
+    "mean_ge_.02": true,
+    "wins_ge_3of4": true
+   },
+   "blend_misaligned": {
+    "deltas": [
+     0.06657876593551793,
+     0.0949375847958634,
+     0.08594162302602196,
+     0.10189248552348415
+    ],
+    "mean_ge_.02": true,
+    "wins_ge_3of4": true
+   },
+   "hold_majority": {
+    "deltas": [
+     0.053729096753727945,
+     0.06474712238205363,
+     0.08054870586516152,
+     0.07066869300911854
+    ],
+    "mean_ge_.02": true,
+    "wins_ge_3of4": true
+   }
+  },
+  "passed": true
+ },
+ "source_hashes": {
+  "v2/idsse.py": "3c0f8ae410a16bc348a8ddb074277aa857af02ea262be46044651aae0b3a99c2",
+  "v2/degrade.py": "efd0a513a9e6ffb4a79689396d85d510a0ce951c5750d32e004f70ddad969e58",
+  "v2/methods.py": "88c09b511274e1b679d76706079fcec812dfdbf43b6422eca8979fb1e3b1e274",
+  "v2/experiment.py": "89e372f617b6800a3449af8dcd4b93114d39e9d6e3e13070815bf7032f187516",
+  "work/EXPERIMENT-04.md": "2a83a51ddecb1df50f9c76ab49c9e7364e38ea2bbc919df0868c37256d1dbdc5",
+  "possession.py": "83c9c26e8ba35c7788094fb84febb3666f785d169a5715b7dd53abd2fb2306b8",
+  "learned_possession.py": "3c9343e18202a2350a332f20ae3b7445d64c8556aa43102030adf9cd2246a4ae",
+  "hybrid_possession.py": "8ccb9533dc7facb53cdfae8218526ee3f587369eccf9c60f358258ff5fb69637",
+  "external_validation.py": "e34d77ef5e9ee456e8369262c9bd9ff29cbe6d38bf1a3c478443e5410850a31f",
+  "first_assessment.py": "d0a571977eaf8eed699b6c30d29177553b861e1a5c8272ecb11eecc26d18f166",
+  "starter-repo/starter/baseline.py": "84d8a414fb1bdf8c7e1fbe4a8789fe6f9cc0c2cccec4685201285b75dbc0cfe6",
+  "starter-repo/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+ },
+ "model_sha256": "a98dc1f156ff568de4c8e7687c2757a0f78bb45e7d4af62a81fe7246add456fb"
+}

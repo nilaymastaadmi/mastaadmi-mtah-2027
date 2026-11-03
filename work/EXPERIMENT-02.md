@@ -1,0 +1,11 @@
+# Experiment 02: learned state evidence, registered before outcomes
+
+28 October. Experiment 01 and its neutral-missing amendment both failed on development; do not run either on holdout or promote them. Retain all results. New family: learn emission probabilities from external-game event proxy labels, rather than hand-designed live/dead costs. No rule or label from the competition match enters learning.
+
+Split: external Metrica Sample Game 1 first half training; second half development; Sample Game 2 one-time held-out match. Two stress versions of the same half are correlated augmentation, not independent matches. Train on both clean and deterministic 41%/50-frame-block masked ball observations, equal weighting, same mask function as experiment 01. Game 2 remains untouched until selection freeze. External labels and metrics use experiment 01's fixed event-to-proxy mapping.
+
+Model: HistGradientBoostingClassifier, max_iter=100, max_leaf_nodes=15, min_samples_leaf=50, learning_rate=.08, l2_regularization=1, early_stopping=False, random_state=20261028. Features: nearest home/away ball distances, ball speed, stationary run length, entire missing-ball-run duration (offline), outside-pitch flag, ball visibility, mean player speed. No absolute frame/time, team club names, player identities or event inputs in inference. Clamp distances and durations to physical ranges. Model sees both relative team distance signals, not permanent match-specific IDs.
+
+Decoder penalties: {0,.1,.5,1.5}. Decode negative log probability divided by fps with identical state transition penalties, reset at each half. Select best development mean spellF1 across clean and masked; ties within .005 choose smaller penalty. Development gate: both spellF1 scores must exceed baseline50, and clean macroF1 no more than .03 below it. If failed, stop family without spending Game 2. If passed, freeze model and parameters; evaluate both Game 2 conditions once, same gate. No retuning after holdout.
+
+Report all development results and both failed experiment 01 variants. Any deltas are proxy results on one external held-out match, not competition scores or expected ranks. Keep initial training data/labels out of the public package; provide source download and deterministic generation instructions instead. No publication authorised.

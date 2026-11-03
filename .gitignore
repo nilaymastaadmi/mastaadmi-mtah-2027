@@ -1,0 +1,6 @@
+data/
+external/
+.venv/
+__pycache__/
+*.csv
+work/candidates/

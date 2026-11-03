@@ -1,0 +1,159 @@
+{
+  "stage": "dev",
+  "rows": [
+    {
+      "condition": "clean",
+      "method": "baseline50",
+      "graded_frames": 72872,
+      "spellF1": 0.5341107871720115,
+      "macroF1": 0.8728823507514177
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.1_0",
+      "graded_frames": 72872,
+      "spellF1": 0.5341107871720115,
+      "macroF1": 0.8728823507514177
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.1_0.1",
+      "graded_frames": 72872,
+      "spellF1": 0.5372434017595309,
+      "macroF1": 0.8728809003119323
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.1_0.5",
+      "graded_frames": 72872,
+      "spellF1": 0.5597523219814242,
+      "macroF1": 0.872895297357737
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.25_0",
+      "graded_frames": 72872,
+      "spellF1": 0.5341107871720115,
+      "macroF1": 0.8728823507514177
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.25_0.1",
+      "graded_frames": 72872,
+      "spellF1": 0.5372434017595309,
+      "macroF1": 0.8728809003119323
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.25_0.5",
+      "graded_frames": 72872,
+      "spellF1": 0.5807692307692308,
+      "macroF1": 0.8733896351608501
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.5_0",
+      "graded_frames": 72872,
+      "spellF1": 0.4066666666666666,
+      "macroF1": 0.8020205809876476
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.5_0.1",
+      "graded_frames": 72872,
+      "spellF1": 0.5738019169329074,
+      "macroF1": 0.8013509744750443
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.5_0.5",
+      "graded_frames": 72872,
+      "spellF1": 0.6143344709897611,
+      "macroF1": 0.8024623810205811
+    },
+    {
+      "condition": "masked",
+      "method": "baseline50",
+      "graded_frames": 72872,
+      "spellF1": 0.3282296650717703,
+      "macroF1": 0.8093817114928087
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.1_0",
+      "graded_frames": 72872,
+      "spellF1": 0.3282296650717703,
+      "macroF1": 0.8093817114928087
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.1_0.1",
+      "graded_frames": 72872,
+      "spellF1": 0.33463414634146343,
+      "macroF1": 0.8093817114928087
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.1_0.5",
+      "graded_frames": 72872,
+      "spellF1": 0.36648648648648646,
+      "macroF1": 0.8093242377436342
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.25_0",
+      "graded_frames": 72872,
+      "spellF1": 0.3282296650717703,
+      "macroF1": 0.8093817114928087
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.25_0.1",
+      "graded_frames": 72872,
+      "spellF1": 0.3379310344827586,
+      "macroF1": 0.8093959794260934
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.25_0.5",
+      "graded_frames": 72872,
+      "spellF1": 0.393103448275862,
+      "macroF1": 0.8096073026058809
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.5_0",
+      "graded_frames": 72872,
+      "spellF1": 0.27404580152671754,
+      "macroF1": 0.7205941396447378
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.5_0.1",
+      "graded_frames": 72872,
+      "spellF1": 0.3574468085106383,
+      "macroF1": 0.7199246482729554
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.5_0.5",
+      "graded_frames": 72872,
+      "spellF1": 0.42727272727272736,
+      "macroF1": 0.7223863550952201
+    }
+  ],
+  "selected": [
+    0.25,
+    0.5
+  ],
+  "source_hashes": {
+    "possession.py": "83c9c26e8ba35c7788094fb84febb3666f785d169a5715b7dd53abd2fb2306b8",
+    "external_validation.py": "e34d77ef5e9ee456e8369262c9bd9ff29cbe6d38bf1a3c478443e5410850a31f",
+    "learned_possession.py": "3c9343e18202a2350a332f20ae3b7445d64c8556aa43102030adf9cd2246a4ae",
+    "hybrid_possession.py": "8ccb9533dc7facb53cdfae8218526ee3f587369eccf9c60f358258ff5fb69637",
+    "starter-repo/starter/baseline.py": "84d8a414fb1bdf8c7e1fbe4a8789fe6f9cc0c2cccec4685201285b75dbc0cfe6",
+    "starter-repo/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+    "starter-repo/games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce"
+  },
+  "model_sha256": "00047fa829abc8c5e38b68724efc7b80229babd6c0a9bf4a84f619066e3c48ff"
+}

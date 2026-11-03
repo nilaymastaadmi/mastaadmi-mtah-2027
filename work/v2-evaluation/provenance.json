@@ -1,0 +1,42 @@
+{
+  "experiment": "work/EXPERIMENT-04.md",
+  "runtime": {
+    "python": "3.13.18",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39"
+  },
+  "dataset": {
+    "name": "IDSSE/DFL integrated dataset",
+    "doi": "10.6084/m9.figshare.28196177.v1",
+    "licence": "CC BY 4.0",
+    "retrieved": "2026-11-02",
+    "md5": {
+      "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml": "bc5d5b21dbcf36aa30f4cd0428309f6b",
+      "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml": "37b0f85588c0acfb995fe633c7ac2e0d",
+      "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml": "b9710781d400dd812f62b0a6e3d7bce8",
+      "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml": "7b021e577fca917a63111d55cc29ae5b",
+      "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml": "65a4568e4f374af94d3c1015cbc7c4f5",
+      "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml": "5979209af316a914ce57347d0633df6c",
+      "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml": "5e2d580d3d8ed97e32959de90d04992b",
+      "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml": "e4273a2adf5dbd9d4ec42def2f01905c",
+      "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml": "bacb2f609c1d1b0bfc906f6b9d4109f2",
+      "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml": "3efff25a86a61768e7d253b4bba137a3",
+      "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml": "4e1063e0a0ae499920cf68ac1aa3ab4e",
+      "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml": "e56ff1336a334f8da51110fbe7cab764",
+      "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml": "9105bad987191d3c3c362c1fce9a4fcd",
+      "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml": "e060bb7d7a5a3bfbd15bbf9bc631024d"
+    }
+  },
+  "model": {
+    "sha256": "a98dc1f156ff568de4c8e7687c2757a0f78bb45e7d4af62a81fe7246add456fb",
+    "trained_on": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "note": "Training labels are DFL tracking BallStatus/BallPossession of development matches only."
+  }
+}

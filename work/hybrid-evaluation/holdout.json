@@ -1,0 +1,55 @@
+{
+  "stage": "holdout",
+  "rows": [
+    {
+      "condition": "clean",
+      "method": "baseline50",
+      "graded_frames": 141056,
+      "spellF1": 0.43988843515627085,
+      "macroF1": 0.8071215230610858
+    },
+    {
+      "condition": "clean",
+      "method": "hybrid0.25_0.5",
+      "graded_frames": 141056,
+      "spellF1": 0.49685534591194974,
+      "macroF1": 0.8078972233380985
+    },
+    {
+      "condition": "masked",
+      "method": "baseline50",
+      "graded_frames": 141056,
+      "spellF1": 0.31596309076813156,
+      "macroF1": 0.7668234798395483
+    },
+    {
+      "condition": "masked",
+      "method": "hybrid0.25_0.5",
+      "graded_frames": 141056,
+      "spellF1": 0.38034769463340895,
+      "macroF1": 0.7678866128543453
+    }
+  ],
+  "selected": [
+    0.25,
+    0.5
+  ],
+  "source_hashes": {
+    "possession.py": "83c9c26e8ba35c7788094fb84febb3666f785d169a5715b7dd53abd2fb2306b8",
+    "external_validation.py": "e34d77ef5e9ee456e8369262c9bd9ff29cbe6d38bf1a3c478443e5410850a31f",
+    "learned_possession.py": "3c9343e18202a2350a332f20ae3b7445d64c8556aa43102030adf9cd2246a4ae",
+    "hybrid_possession.py": "8ccb9533dc7facb53cdfae8218526ee3f587369eccf9c60f358258ff5fb69637",
+    "starter-repo/starter/baseline.py": "84d8a414fb1bdf8c7e1fbe4a8789fe6f9cc0c2cccec4685201285b75dbc0cfe6",
+    "starter-repo/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+    "starter-repo/games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce"
+  },
+  "model_sha256": "00047fa829abc8c5e38b68724efc7b80229babd6c0a9bf4a84f619066e3c48ff",
+  "gate": {
+    "spellF1_deltas": {
+      "clean": 0.05696691075567889,
+      "masked": 0.06438460386527739
+    },
+    "clean_macroF1_delta": 0.0007757002770127919,
+    "provisional_gate_passed": true
+  }
+}

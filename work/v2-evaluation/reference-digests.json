@@ -1,0 +1,20 @@
+{
+ "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "digests": {
+  "J03WOH/natural": "efcd331ffd96afd0d8668aab879cb220835b183e39dd2a1a7fda2f477e8da4b9",
+  "J03WOH/contested": "0f40174b6ff644b4683459e9449b57967d7a1af77f3d6d76223ae33d71fd5eda",
+  "J03WOY/natural": "ac7e38d0e2c6993d3fb92aa90755c289be96848e4352ec9e019274c33679176a",
+  "J03WOY/contested": "74ffcf88d3fbf493a4d4c56cfd3d7a53f4778c84e9bcd3c740b86cfdf23b4a35",
+  "J03WPY/natural": "a31fd864fed6b0e8d0d62bc7c587ebcda854972b051aa11f29073d2ea24f42a4",
+  "J03WPY/contested": "95ca1d21a09e1bf1f187877fe27dbb83bec0fcd180fab74c4f03379bd8abfe9b",
+  "J03WMX/natural": "d6a779fdede4aa55111a438abae40f855950a377d58827d9fd1cf3ea8a3bd278",
+  "J03WMX/contested": "7de80479624b595c06c958f15cdeb2bab065c54dbbcb746167c4643b02aecf2f",
+  "J03WN1/natural": "e61d7acd669d61690b9ff1e2b3262fa8a7db503b662481325ed9adbd8ff96574",
+  "J03WN1/contested": "1dc2a5e1e34dd92d65d63f366633e8db93370d92ededbfef9b26d00bc5e2fc93",
+  "J03WQQ/natural": "1c2f9a669ba19df2a82ee16e4f7d75a31f1ea34aa843381586e46d15cba3073a",
+  "J03WQQ/contested": "f65ae54d396ada0122076425a0fa9d05fe0adc860dbeda7a72ed424da74fbc9d",
+  "J03WR9/natural": "391de1c72f40002fc6b48acde09c7656214323c34ad6a7515cb331bc9df02041",
+  "J03WR9/contested": "923709e708eaac53384c3e0d8b0c6a49b679a192bee0e7c433d457489efe9120"
+ }
+}
