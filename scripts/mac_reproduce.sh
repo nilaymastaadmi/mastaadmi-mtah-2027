@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Local-machine reproduction of the frozen v4 submission candidate (v2 fallback). Run on Nilay's Mac only.
+# Local-machine reproduction of the frozen v6 submission candidate (v4, v2 fallbacks). Run on Nilay's Mac only.
 #
 #   bash scripts/mac_reproduce.sh [DATA_DIR]      # DATA_DIR contains tactical/ (default: data)
 #
@@ -31,12 +31,12 @@ EOF
 
 step "2/6 Snapshot and synthetic tests"
 "$PY" scripts/check_snapshot.py
-"$PY" -m unittest -q test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4
+"$PY" -m unittest -q test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6
 
 step "3/6 Cross-machine check on public DFL data (optional)"
 if ls external/idsse/DFL_04_03_positions_raw_observed_*.xml >/dev/null 2>&1; then
   "$PY" -m v2.stability_check --compare
-  if ls external/skillcorner-lfs/*.jsonl >/dev/null 2>&1; then "$PY" -m v4.stability_check --compare; fi
+  if ls external/skillcorner-lfs/*.jsonl >/dev/null 2>&1; then "$PY" -m v4.stability_check --compare; "$PY" -m v6.stability_check --compare; fi
 else
   echo "Skipped: external/idsse not present (see HANDOFF.md to fetch the 14 public DFL files)."
 fi
@@ -47,7 +47,7 @@ for f in "$DATA_DIR/tactical/BAR-ATH_tactical_atd.txt" "$DATA_DIR/tactical/BAR-A
 done
 echo "ok"
 
-step "5/6 Generate twice and compare (v4 candidate, v2 fallback)"
+step "5/6 Generate twice and compare (v6 candidate; v4, v2 fallbacks)"
 stamp=$(date +%Y%m%d-%H%M%S)
 mkdir -p work/candidates
 twice() {  # $1 module, $2 tag
@@ -59,13 +59,16 @@ twice() {  # $1 module, $2 tag
   echo "$2 identical: $a"
   eval "${2}_file=$r1; ${2}_sha=$a"
 }
+twice v6.infer v6
 twice v4.infer v4
 twice v2.verified_inference v2
 
 step "6/6 Perturbation checks on competition inputs (counts only)"
+"$PY" -m v6.stability_check --data-dir "$DATA_DIR"
 "$PY" -m v4.stability_check --data-dir "$DATA_DIR"
 "$PY" -m v2.stability_check --data-dir "$DATA_DIR"
 
-printf '\nCandidate (v4): %s\nSHA-256:        %s\n' "$v4_file" "$v4_sha"
+printf '\nCandidate (v6): %s\nSHA-256:        %s\n' "$v6_file" "$v6_sha"
+printf 'Fallback  (v4): %s\nSHA-256:        %s\n' "$v4_file" "$v4_sha"
 printf 'Fallback  (v2): %s\nSHA-256:        %s\n' "$v2_file" "$v2_sha"
-echo "Next: cp \"$v4_file\" Mastaadmi.csv && $PY starter-repo/evaluation/validate_submission.py Mastaadmi.csv"
+echo "Next: cp \"$v6_file\" Mastaadmi.csv && $PY starter-repo/evaluation/validate_submission.py Mastaadmi.csv"

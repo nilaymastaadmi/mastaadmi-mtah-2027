@@ -6,12 +6,13 @@ More Than A Hack 2027 Phase 1 submission. Team: **Mastaadmi**. Possession file: 
 
 The submission labels each of the 199,319 tactical-video frames as H, A, D or X with one fixed pipeline. Every step is an algorithm. No frame of the provided match was labelled or corrected, and no rule or constant is tied to specific frames. The only use of the provided tracking beyond inference was aggregate ball-visibility statistics, used to design a robustness simulation.
 
-1. **Per-frame observations from the provided tracking (60 features).** None uses identities, clock time or club information.
+1. **Per-frame observations from the provided tracking (72 features).** None uses identities, clock time or club information.
    - **Ball-centric (8):** nearest home and away player distance, ball speed, stationary-ball flag, current missing-gap duration, outside-pitch flag, visibility, and mean player speed.
    - **Temporal context (29):** home-minus-away nearest-distance difference, distance to the nearest line, per-team counts within 5 m and per-team speeds, time since and until the ball is visible, and last/next-visible ball context. It also includes rolling means over ±0.5 s, 2 s and 5 s.
    - **Team shape (23).** For each team, in its own attacking frame: centroid depth, spread, length, width, back-line depth, player count and advance per second, plus home-minus-away differences. Attack direction per half is inferred from median team centroids.
 
      The team with the ball spreads out and pushes up, while the defending team compacts in front of its goal. This signal stays available while the ball is missing, which is 41% of graded frames.
+   - **Ball control (12).** A frame counts as controlled when the ball is visible, within 1.5 m of the nearest player, and moving within 2.5 m/s of that player's velocity (5-frame centred differences). From that: rolling control shares per team over ±0.5 s, 2 s and 6 s, time since and until each team's last and next control, and the last and next controlling team. This follows the competition's definition of possession as *control*, not proximity.
 2. **Learned state evidence.** A histogram gradient-boosting classifier (scikit-learn; 100 iterations, 15 leaves, fixed seed) estimates P(H, A, D | features). It was trained only on other matches (Section 3).
 3. **Temporal decoding.** A three-state Viterbi decoder runs per half on −log P/25 with a uniform switch penalty of 0.5, returning the single most coherent H/A/D sequence. Frames outside the two halves are X.
 
@@ -48,11 +49,16 @@ Every experiment was registered (data, split, candidates, selection rule, pass/f
 
 | Cross-validated spellF1 | 20 real broadcast matches | 7 DFL matches, contested gaps | 7 DFL matches, clean |
 |---|---:|---:|---:|
-| **Submitted method** | **0.444** | **0.414** | 0.494 |
-| Previous version (v2) | 0.311 | 0.298 | 0.507 |
+| **Submitted method (v6)** | **0.512**\* | **0.424**\* | **0.541**\* |
+| Previous version (v4) | 0.497\* | 0.414 | 0.494 |
+| Earlier version (v2) | 0.311 | 0.298 | 0.507 |
 | Organisers' baseline ±50 | 0.249 | 0.177 | 0.308 |
 
-It beat v2 on 20 of 20 real broadcast matches (minimum +0.09) and 7 of 7 degraded DFL matches. On clean optical tracking it was 0.013 lower, inside the registered tolerance. Real-tracking macroF1 was 0.85.
+\* Averaged over four label conventions (provider labels, and the competition's controlled-possession rule at 1, 2 and 3 s), because the provider labels count deflections that the competition does not. Under provider labels alone v4 scores 0.444 on real tracking.
+
+v4 beat v2 on 20 of 20 real broadcast matches and 7 of 7 degraded DFL matches. v6 (adding ball control) beat v4 on 16 of 20 real matches (+0.015), 5 of 7 contested (+0.010) and 7 of 7 clean (+0.047), with macroF1 unchanged. Real-tracking macroF1 is 0.85.
+
+**Label-free check on the competition match.** Metrica's automatic Smart Tagging phases carry a team tag. Agreement of our labels with the tagged possession team over BUILD UP, PROGRESSION, ATTACKING TRANSITION and LONG BALL frames was 0.69 for v2, 0.79 for v4 and 0.78 for v6. No ground truth was read; this is a noisy, independent proxy.
 
 **Earlier evidence.** The previous version v2 was tested one-shot on 4 untouched DFL matches and then on 19 untouched real broadcast matches. It beat the baseline and the best tuned non-learning method on every match, which established that the learned approach transfers. A ball-only temporal-context variant trained only on simulated noise did not transfer to real tracking (+0.003) and was rejected; trained together with real noise and team shape, the same features help.
 
@@ -60,7 +66,7 @@ It beat v2 on 20 of 20 real broadcast matches (minimum +0.09) and 7 of 7 degrade
 
 ## 5. Possession rules as implemented
 
-- **Who has the ball:** learned from ball proximity, temporal context and team shape; there is no explicit touch or pass detector. A switch needs sustained evidence (penalty 0.5), so touches, deflections and short aerial contests usually do not flip the label, approximating "controlled possession".
+- **Who has the ball:** learned from ball proximity, explicit control (ball moving with a player), temporal context and team shape. A switch needs sustained evidence (penalty 0.5), so touches, deflections and short aerial contests usually do not flip the label, approximating "controlled possession".
 - **Loose balls and missing ball:** the decoder keeps the current team unless evidence (including team shape) pays for a switch, matching "contested balls stay with the last team".
 - **Dead ball:** learned from provider ball-status labels. Cues include a stationary ball, a ball near or outside lines, and play-wide low speed. A missing ball alone is not treated as dead.
 - **Restarts:** handled implicitly as D-to-team transitions.
@@ -79,14 +85,16 @@ Python 3.13 with the pinned `requirements.txt` (numpy 2.5.4, pandas 3.1.0, sciki
 
 ```sh
 python3.13 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
-OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4
-OMP_NUM_THREADS=2 .venv/bin/python -m v4.infer --data-dir data --out Mastaadmi.csv
+OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6
+OMP_NUM_THREADS=2 .venv/bin/python -m v6.infer --data-dir data --out Mastaadmi.csv
 ```
 
-`v4.infer` refuses to run unless the adoption gate passed and the model, settings, every bound source file and the package versions match the freeze. It then validates the CSV with the official validator and prints its SHA-256.
+`v6.infer` refuses to run unless the adoption gate passed and the model, settings, every bound source file and the package versions match the freeze. It then validates the CSV with the official validator and prints its SHA-256.
 
-`python -m v4.stability_check --compare` shows that perturbations far larger than cross-platform floating-point differences change no decoded frame, and that outputs on public reference views match the stored digests.
+`python -m v6.stability_check --compare` shows that perturbations far larger than cross-platform floating-point differences change no decoded frame, and that outputs on public reference views match the stored digests.
 
-Final file SHA-256: `fd8d9430baa68e7d84cb42ef17bdd4cb58b99cca771454151156433c84518837` (v4; generated twice on macOS arm64, Python 3.13.16, with identical digests; official validator passed; zero perturbation flips on the competition inputs).
+Final file SHA-256: `98d5f2b29d1f1707656da82f3f214ac7e01a99f2714c22f2fbe02c051160ed91` (v6; generated twice on macOS arm64, Python 3.13.16, with identical digests; official validator passed; zero perturbation flips on the competition inputs).
+
+Fallback v4 reproduced locally with SHA-256 `fd8d9430baa68e7d84cb42ef17bdd4cb58b99cca771454151156433c84518837`.
 
 Fallback v2 (`v2.verified_inference`) reproduced locally with SHA-256 `c69eeb177b2d13c35b3235d4226aa1e0827e339c517a9bd4629e53b11535d481`.

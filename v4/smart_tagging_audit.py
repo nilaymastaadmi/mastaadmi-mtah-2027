@@ -124,9 +124,17 @@ if __name__ == '__main__':
     # Barcelona is ATD team 0 (H), established in the first audit run.
     club_side = {'Barcelona': 'H', 'Atletic Club': 'A'}
     g2, g4 = phase_agreement(tags, pred, periods, club_side), phase_agreement(tags, pred4, periods, club_side)
+    from v6.infer import load_frozen as load6, competition_inputs as inputs6, predict as predict6
+    pred6 = predict6(load6(), *inputs6(args.data_dir))
+    g6 = phase_agreement(tags, pred6, periods, club_side)
+    _, report6 = audit(tags, obs['owner'], obs['visible'], pred6, periods)
     verdict = None if g2 is None or g4 is None else ('corroborated' if g4 >= g2 - .02 else 'RED FLAG')
     print(json.dumps({'tag_clubs_sorted': clubs, 'atd_team_order_names': team_names,
                       'experiment07_phase_agreement': {'v2': g2, 'v4': g4, 'verdict': verdict},
+                      'experiment10_v6_phase_agreement': {'v6': g6, 'v4': g4,
+                                                          'verdict': 'ok' if g6 >= g4 - .02 else 'RED FLAG'},
+                      'per_code_v6_dead_share': {k: v['v2_dead_share'] for k, v in report6.items()},
+                      'restarts_v6': restart_alignment(tags, pred6, periods),
                       'per_code_v4_agree_correct_mapping': {k: v['v2_agree_mapping1'] for k, v in report4.items()},
                       'per_code_v2_agree_correct_mapping': {k: v['v2_agree_mapping1'] for k, v in report.items()},
                       'per_code_v4_dead_share': {k: v['v2_dead_share'] for k, v in report4.items()},

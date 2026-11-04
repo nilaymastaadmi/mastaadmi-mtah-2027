@@ -1,0 +1,41 @@
+{
+ "variant": "D",
+ "setting": [
+  1.0,
+  0.5
+ ],
+ "model_sha256": "2e669ecd0aca8d3ac186133d24aa06b8265ecbdc4f6485d75a4d845b6d425add",
+ "training_frames": 4762447,
+ "source_hashes": {
+  "v6/control.py": "afa381e5b0e720d86fe44c44e6034a2e08e79354bb05517c692eea5ea59e9db5",
+  "v6/develop.py": "d7407d31ec1847e87260c5e8db0db7f28b387c505df73251657163f13b0bd99a",
+  "v6/freeze.py": "8b71e38d4eaf0103763cb17f1ba1ba69ef76e5f0692324f8701b0fc95985643f",
+  "v6/infer.py": "7c3f0c6fe03f9a4c9c1d5103564493945543388f0f5838294c744f8565f20a51",
+  "v4/shape.py": "42a18a69b83e6272f340707d79d167577a717c25272eb05acb236b1e964024af",
+  "v4/develop.py": "145c74eed71d0a0148b84b4acb0f60176647d1aa8c04a133c19495dd98f5226f",
+  "v3/features.py": "3b7fdad6f068480db8e7c12bfdad517eccccdedd15eb936d8cf9ce7847427971",
+  "v3/skillcorner.py": "8d6e4267abfab45bdff30eed0032d7815792380a70496b432137f811007d173a",
+  "work/EXPERIMENT-10.md": "687a3c318932324a54abc78497086b5002432d09094094b7564f3ac7e09f12b4",
+  "work/v6-development/selection.json": "ab92e8b15ca76b5c2b1fded565ffecdff1695881586a531eb4f21c7a1403854d",
+  "v2/idsse.py": "3c0f8ae410a16bc348a8ddb074277aa857af02ea262be46044651aae0b3a99c2",
+  "v2/degrade.py": "efd0a513a9e6ffb4a79689396d85d510a0ce951c5750d32e004f70ddad969e58",
+  "v2/methods.py": "88c09b511274e1b679d76706079fcec812dfdbf43b6422eca8979fb1e3b1e274",
+  "v2/experiment.py": "89e372f617b6800a3449af8dcd4b93114d39e9d6e3e13070815bf7032f187516",
+  "work/EXPERIMENT-04.md": "2a83a51ddecb1df50f9c76ab49c9e7364e38ea2bbc919df0868c37256d1dbdc5",
+  "possession.py": "83c9c26e8ba35c7788094fb84febb3666f785d169a5715b7dd53abd2fb2306b8",
+  "learned_possession.py": "3c9343e18202a2350a332f20ae3b7445d64c8556aa43102030adf9cd2246a4ae",
+  "hybrid_possession.py": "8ccb9533dc7facb53cdfae8218526ee3f587369eccf9c60f358258ff5fb69637",
+  "external_validation.py": "e34d77ef5e9ee456e8369262c9bd9ff29cbe6d38bf1a3c478443e5410850a31f",
+  "first_assessment.py": "d0a571977eaf8eed699b6c30d29177553b861e1a5c8272ecb11eecc26d18f166",
+  "starter-repo/starter/baseline.py": "84d8a414fb1bdf8c7e1fbe4a8789fe6f9cc0c2cccec4685201285b75dbc0cfe6",
+  "starter-repo/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+ },
+ "runtime": {
+  "python": "3.13.18",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "sklearn": "1.9.1",
+  "platform": "Linux-6.18.44-fc-v230-x86_64-with-glibc2.39"
+ },
+ "registration": "work/EXPERIMENT-10.md"
+}
