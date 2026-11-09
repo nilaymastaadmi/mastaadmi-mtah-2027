@@ -7,6 +7,8 @@ This repository regenerates our possession file for the More Than A Hack 2027 Ph
 ```
 data/tactical/BAR-ATH_tactical_atd.txt
 data/tactical/BAR-ATH_tactical_atd.xml
+data/broadcast/BAR-ATH_broadcast_atd.txt
+data/broadcast/BAR-ATH_broadcast_atd.xml
 ```
 
 ## Regenerate the submission
@@ -16,11 +18,11 @@ Requires Python 3.13. The model was frozen with numpy 2.5.4, pandas 3.1.0 and sc
 ```sh
 python3.13 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4
-OMP_NUM_THREADS=2 .venv/bin/python -m v4.infer --data-dir data --out submission.csv
+OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6 v8.test_v8
+OMP_NUM_THREADS=1 .venv/bin/python -m v8.infer --data-dir data --out Mastaadmi.csv
 ```
 
-`v4.infer` checks the frozen model, settings, every bound source file and the package versions against the pre-registered freeze. It then writes the CSV, validates it with the organisers' validator, and prints its SHA-256. It never reads ground truth.
+`v8.infer` checks the pre-registered gate, the frozen v6 model, its settings, every bound source file and the package versions against the freeze. It aligns the broadcast feed, fills missing ball positions, decodes, writes the CSV, validates it with the organisers' validator, and prints its SHA-256. It never reads ground truth. The expected digest is in the technical note.
 
 ## Verify the model from public data (optional)
 
@@ -41,8 +43,10 @@ The full pre-registered experiment is in `work/EXPERIMENT-04.md` and `v2/experim
 
 | Path | Contents |
 |---|---|
-| `v4/` | Submitted method: team-shape and context features, frozen model, verified inference, stability checks |
-| `v2/` | Previous method and fallback: loader, degradation, comparators, experiment runner, verified inference, reproducibility checks, tests |
+| `v8/` | Submitted pipeline: alignment of the broadcast tracking feed and ball fusion, then the frozen v6 model; also the simulated-view experiments, stability checks, tests |
+| `v6/` | Frozen model inside v8 (adds ball-control features); first fallback |
+| `v4/` | Earlier method and fallback: team-shape and context features, frozen model, verified inference, stability checks |
+| `v2/` | Earlier method and fallback: loader, degradation, comparators, experiment runner, verified inference, reproducibility checks, tests |
 | `possession.py`, `learned_possession.py` | Shared feature extraction and decoder, from version 1; frozen |
 | `hybrid_possession.py`, `verified_inference.py`, `external_validation.py`, `first_assessment.py` | Version 1 (fallback) and its earlier external evaluation; frozen |
 | `work/` | Experiment registrations, frozen models, aggregate results |
@@ -51,6 +55,7 @@ The full pre-registered experiment is in `work/EXPERIMENT-04.md` and `v2/experim
 ## Attribution
 
 - IDSSE/DFL data: Bassek, M., Rein, R., Weber, H. & Memmert, D. (2025). An integrated dataset of spatiotemporal and event data in elite soccer. *Scientific Data* 12:195. doi 10.6084/m9.figshare.28196177.v1, CC BY 4.0.
+- SkillCorner open data: https://github.com/SkillCorner/opendata (MIT).
 - Metrica Sports sample data: https://github.com/metrica-sports/sample-data.
 - Organiser starter code: https://github.com/metrica-sports/more-than-a-hack-2027 (MIT).
 - See `THIRD_PARTY.md`.

@@ -103,6 +103,7 @@ def phase_agreement(tags, pred, periods, club_side):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data-dir', type=Path, required=True)
+    parser.add_argument('--candidate', type=Path, help='optional frame,label CSV (e.g. a v8 run) to compare with v6')
     args = parser.parse_args()
     from games import asset_paths
     from possession import load_atd
@@ -129,7 +130,19 @@ if __name__ == '__main__':
     g6 = phase_agreement(tags, pred6, periods, club_side)
     _, report6 = audit(tags, obs['owner'], obs['visible'], pred6, periods)
     verdict = None if g2 is None or g4 is None else ('corroborated' if g4 >= g2 - .02 else 'RED FLAG')
-    print(json.dumps({'tag_clubs_sorted': clubs, 'atd_team_order_names': team_names,
+    extra = {}
+    if args.candidate:
+        import numpy as np
+        rows = args.candidate.read_text().splitlines()[1:]
+        cand = np.array([r.split(',')[1] for r in rows])
+        assert len(cand) == len(periods), 'candidate length differs from the tactical frame count'
+        gc = phase_agreement(tags, cand, periods, club_side)
+        _, reportc = audit(tags, obs['owner'], obs['visible'], cand, periods)
+        extra = {'candidate_phase_agreement': {'candidate': gc, 'v6': g6, 'file': args.candidate.name,
+                                               'verdict': 'ok' if gc >= g6 - .02 else 'RED FLAG'},
+                 'per_code_candidate_dead_share': {k: v['v2_dead_share'] for k, v in reportc.items()},
+                 'restarts_candidate': restart_alignment(tags, cand, periods)}
+    print(json.dumps({**extra, 'tag_clubs_sorted': clubs, 'atd_team_order_names': team_names,
                       'experiment07_phase_agreement': {'v2': g2, 'v4': g4, 'verdict': verdict},
                       'experiment10_v6_phase_agreement': {'v6': g6, 'v4': g4,
                                                           'verdict': 'ok' if g6 >= g4 - .02 else 'RED FLAG'},

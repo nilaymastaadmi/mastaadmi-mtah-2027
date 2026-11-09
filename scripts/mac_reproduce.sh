@@ -31,12 +31,14 @@ EOF
 
 step "2/6 Snapshot and synthetic tests"
 "$PY" scripts/check_snapshot.py
-"$PY" -m unittest -q test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6
+"$PY" -m unittest -q test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6 v8.test_v8
 
 step "3/6 Cross-machine check on public DFL data (optional)"
 if ls external/idsse/DFL_04_03_positions_raw_observed_*.xml >/dev/null 2>&1; then
   "$PY" -m v2.stability_check --compare
   if ls external/skillcorner-lfs/*.jsonl >/dev/null 2>&1; then "$PY" -m v4.stability_check --compare; "$PY" -m v6.stability_check --compare; fi
+  # v8: aligns a simulated second view on two DFL matches with all cores; expect tens of minutes. Resumable per match.
+  if [ -f work/v8-evaluation/reference-digests.json ]; then OMP_NUM_THREADS=1 "$PY" -m v8.stability_check --compare; fi
 else
   echo "Skipped: external/idsse not present (see HANDOFF.md to fetch the 14 public DFL files)."
 fi
@@ -59,16 +61,23 @@ twice() {  # $1 module, $2 tag
   echo "$2 identical: $a"
   eval "${2}_file=$r1; ${2}_sha=$a"
 }
+if [ -f "$DATA_DIR/broadcast/BAR-ATH_broadcast_atd.txt" ] && [ -f work/v8-evaluation/freeze.json ]; then
+  OMP_NUM_THREADS=1 twice v8.infer v8   # broadcast-fused candidate (EXPERIMENT-13); alignment uses all cores
+else
+  echo "v8 skipped: broadcast assets or freeze.json missing"; v8_file=none; v8_sha=none
+fi
 twice v6.infer v6
 twice v4.infer v4
 twice v2.verified_inference v2
 
 step "6/6 Perturbation checks on competition inputs (counts only)"
+[ "$v8_file" = none ] || OMP_NUM_THREADS=1 "$PY" -m v8.stability_check --data-dir "$DATA_DIR"
 "$PY" -m v6.stability_check --data-dir "$DATA_DIR"
 "$PY" -m v4.stability_check --data-dir "$DATA_DIR"
 "$PY" -m v2.stability_check --data-dir "$DATA_DIR"
 
-printf '\nCandidate (v6): %s\nSHA-256:        %s\n' "$v6_file" "$v6_sha"
+printf '\nFused     (v8): %s\nSHA-256:        %s  (candidate only if the instrument checks and tag audit pass)\n' "$v8_file" "$v8_sha"
+printf 'Candidate (v6): %s\nSHA-256:        %s\n' "$v6_file" "$v6_sha"
 printf 'Fallback  (v4): %s\nSHA-256:        %s\n' "$v4_file" "$v4_sha"
 printf 'Fallback  (v2): %s\nSHA-256:        %s\n' "$v2_file" "$v2_sha"
 echo "Next: cp \"$v6_file\" Mastaadmi.csv && $PY starter-repo/evaluation/validate_submission.py Mastaadmi.csv"

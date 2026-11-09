@@ -1,0 +1,15 @@
+{
+ "frozen": "2026-11-05",
+ "model": "v6 frozen model, unchanged (see v6 freeze)",
+ "analogue_selection": {
+  "contested_mean_ge_.02": true,
+  "wins_ge_6of7": true,
+  "macro_ge_0": true
+ },
+ "source_hashes": {
+  "v8/align.py": "fa29111d36f7f8b3a57530167537210b1c0ee68aeb48d6de7f28c8ac04bf3a54",
+  "v8/infer.py": "15df7caf66640657c80dd0cd09ccc1695a2ebb98fff2ba667eb83a4441cf6920",
+  "v8/broadcast_audit.py": "5a6929e34d237ddc8b8e2413fde815adc11b857b7ace210148a52212321ac960",
+  "work/EXPERIMENT-13.md": "5cf5c2ad93149b099c74ee7f7e927becf2c0994e8c889cdfc7671b0c1b89bfda"
+ }
+}
