@@ -1,0 +1,5799 @@
+{
+ "arm": "A",
+ "chosen_per_fold": {
+  "0": [
+   1.0,
+   0.0
+  ],
+  "1": [
+   1.0,
+   0.0
+  ],
+  "2": [
+   1.0,
+   0.0
+  ],
+  "3": [
+   1.0,
+   0.0
+  ],
+  "4": [
+   1.0,
+   0.0
+  ]
+ },
+ "views": {
+  "sc-1874553-real-eval": {
+   "view": "sc-1874553-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5163375224416518,
+     "macroF1": 0.875941287696658,
+     "n_true": 343,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 182,
+      "merged": 43,
+      "other": 5,
+      "predicted_dead": 31,
+      "split": 1,
+      "wrong_team_absorbed": 73,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 13,
+      "matched": 182,
+      "other": 1,
+      "over_other_team": 15,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 117,
+       "matched": 21
+      },
+      "3-6 s": {
+       "true": 59,
+       "matched": 25
+      },
+      "6-12 s": {
+       "true": 75,
+       "matched": 50
+      },
+      ">= 12 s": {
+       "true": 92,
+       "matched": 86
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.562763915547025,
+     "macroF1": 0.8775902206400329,
+     "n_true": 307,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 181,
+      "merged": 28,
+      "other": 3,
+      "predicted_dead": 31,
+      "split": 1,
+      "wrong_team_absorbed": 55,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 13,
+      "matched": 181,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 15,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 92,
+       "matched": 21
+      },
+      "3-6 s": {
+       "true": 47,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 74,
+       "matched": 51
+      },
+      ">= 12 s": {
+       "true": 94,
+       "matched": 88
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5866125760649087,
+     "macroF1": 0.8799855364794587,
+     "n_true": 279,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 177,
+      "merged": 19,
+      "other": 2,
+      "predicted_dead": 29,
+      "split": 1,
+      "wrong_team_absorbed": 44,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 177,
+      "over_other_team": 17,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 68,
+       "matched": 18
+      },
+      "3-6 s": {
+       "true": 44,
+       "matched": 20
+      },
+      "6-12 s": {
+       "true": 72,
+       "matched": 50
+      },
+      ">= 12 s": {
+       "true": 95,
+       "matched": 89
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5987473903966597,
+     "macroF1": 0.8825412525470705,
+     "n_true": 265,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 175,
+      "merged": 15,
+      "other": 2,
+      "predicted_dead": 28,
+      "split": 1,
+      "wrong_team_absorbed": 37,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 18,
+      "matched": 175,
+      "over_other_team": 18,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 61,
+       "matched": 17
+      },
+      "3-6 s": {
+       "true": 44,
+       "matched": 20
+      },
+      "6-12 s": {
+       "true": 66,
+       "matched": 47
+      },
+      ">= 12 s": {
+       "true": 94,
+       "matched": 91
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1874553",
+   "setting_name": "real"
+  },
+  "sc-1886347-real-eval": {
+   "view": "sc-1886347-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4825622775800711,
+     "macroF1": 0.8716631656859911,
+     "n_true": 346,
+     "n_pred": 216,
+     "true_fates": {
+      "matched": 175,
+      "merged": 49,
+      "other": 6,
+      "predicted_dead": 27,
+      "split": 1,
+      "wrong_team_absorbed": 78,
+      "wrong_team_swapped": 10
+     },
+     "pred_fates": {
+      "fragment_of_true": 14,
+      "matched": 175,
+      "other": 1,
+      "over_other_team": 19,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 122,
+       "matched": 26
+      },
+      "3-6 s": {
+       "true": 66,
+       "matched": 29
+      },
+      "6-12 s": {
+       "true": 70,
+       "matched": 45
+      },
+      ">= 12 s": {
+       "true": 88,
+       "matched": 75
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5463035019455252,
+     "macroF1": 0.8742034696354454,
+     "n_true": 298,
+     "n_pred": 216,
+     "true_fates": {
+      "matched": 176,
+      "merged": 27,
+      "other": 4,
+      "predicted_dead": 27,
+      "wrong_team_absorbed": 55,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 14,
+      "matched": 176,
+      "over_other_team": 19,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 90,
+       "matched": 25
+      },
+      "3-6 s": {
+       "true": 57,
+       "matched": 28
+      },
+      "6-12 s": {
+       "true": 59,
+       "matched": 43
+      },
+      ">= 12 s": {
+       "true": 92,
+       "matched": 80
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5577235772357724,
+     "macroF1": 0.8746450959496174,
+     "n_true": 276,
+     "n_pred": 216,
+     "true_fates": {
+      "matched": 171,
+      "merged": 19,
+      "other": 5,
+      "predicted_dead": 27,
+      "wrong_team_absorbed": 47,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 171,
+      "over_other_team": 21,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 75,
+       "matched": 23
+      },
+      "3-6 s": {
+       "true": 55,
+       "matched": 28
+      },
+      "6-12 s": {
+       "true": 54,
+       "matched": 39
+      },
+      ">= 12 s": {
+       "true": 92,
+       "matched": 81
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5713080168776371,
+     "macroF1": 0.877334109663826,
+     "n_true": 258,
+     "n_pred": 216,
+     "true_fates": {
+      "matched": 167,
+      "merged": 14,
+      "other": 4,
+      "predicted_dead": 27,
+      "wrong_team_absorbed": 39,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 167,
+      "over_other_team": 23,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 65,
+       "matched": 20
+      },
+      "3-6 s": {
+       "true": 53,
+       "matched": 27
+      },
+      "6-12 s": {
+       "true": 48,
+       "matched": 37
+      },
+      ">= 12 s": {
+       "true": 92,
+       "matched": 83
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1886347",
+   "setting_name": "real"
+  },
+  "sc-1899585-real-eval": {
+   "view": "sc-1899585-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5025089605734767,
+     "macroF1": 0.8637935106355771,
+     "n_true": 327,
+     "n_pred": 231,
+     "true_fates": {
+      "matched": 178,
+      "merged": 44,
+      "other": 8,
+      "predicted_dead": 34,
+      "split": 1,
+      "wrong_team_absorbed": 51,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 178,
+      "other": 2,
+      "over_other_team": 36,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 96,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 75,
+       "matched": 36
+      },
+      "6-12 s": {
+       "true": 74,
+       "matched": 58
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 75
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5308550185873606,
+     "macroF1": 0.8646755062248767,
+     "n_true": 307,
+     "n_pred": 231,
+     "true_fates": {
+      "matched": 179,
+      "merged": 32,
+      "other": 9,
+      "predicted_dead": 34,
+      "split": 1,
+      "wrong_team_absorbed": 43,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 179,
+      "other": 2,
+      "over_other_team": 35,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 82,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 71,
+       "matched": 35
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 58
+      },
+      ">= 12 s": {
+       "true": 83,
+       "matched": 77
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5498039215686273,
+     "macroF1": 0.8644409209254339,
+     "n_true": 279,
+     "n_pred": 231,
+     "true_fates": {
+      "matched": 173,
+      "merged": 22,
+      "other": 7,
+      "predicted_dead": 31,
+      "split": 1,
+      "wrong_team_absorbed": 36,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 173,
+      "other": 2,
+      "over_other_team": 37,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 62,
+       "matched": 5
+      },
+      "3-6 s": {
+       "true": 65,
+       "matched": 34
+      },
+      "6-12 s": {
+       "true": 67,
+       "matched": 56
+      },
+      ">= 12 s": {
+       "true": 85,
+       "matched": 78
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5651821862348179,
+     "macroF1": 0.866328140427015,
+     "n_true": 263,
+     "n_pred": 231,
+     "true_fates": {
+      "matched": 171,
+      "merged": 18,
+      "other": 5,
+      "predicted_dead": 30,
+      "split": 1,
+      "wrong_team_absorbed": 30,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 171,
+      "other": 2,
+      "over_other_team": 38,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 53,
+       "matched": 4
+      },
+      "3-6 s": {
+       "true": 63,
+       "matched": 34
+      },
+      "6-12 s": {
+       "true": 64,
+       "matched": 54
+      },
+      ">= 12 s": {
+       "true": 83,
+       "matched": 79
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1899585",
+   "setting_name": "real"
+  },
+  "sc-1925299-real-eval": {
+   "view": "sc-1925299-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.47851851851851845,
+     "macroF1": 0.8735823843577745,
+     "n_true": 335,
+     "n_pred": 205,
+     "true_fates": {
+      "matched": 159,
+      "merged": 52,
+      "other": 9,
+      "predicted_dead": 24,
+      "split": 3,
+      "wrong_team_absorbed": 76,
+      "wrong_team_swapped": 12
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 159,
+      "other": 1,
+      "over_other_team": 25,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 116,
+       "matched": 13
+      },
+      "3-6 s": {
+       "true": 61,
+       "matched": 22
+      },
+      "6-12 s": {
+       "true": 54,
+       "matched": 33
+      },
+      ">= 12 s": {
+       "true": 104,
+       "matched": 91
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.495686274509804,
+     "macroF1": 0.8745346911683822,
+     "n_true": 305,
+     "n_pred": 205,
+     "true_fates": {
+      "matched": 154,
+      "merged": 39,
+      "other": 9,
+      "predicted_dead": 24,
+      "split": 4,
+      "wrong_team_absorbed": 63,
+      "wrong_team_swapped": 12
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 154,
+      "other": 1,
+      "over_other_team": 26,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 100,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 55,
+       "matched": 22
+      },
+      "6-12 s": {
+       "true": 51,
+       "matched": 31
+      },
+      ">= 12 s": {
+       "true": 99,
+       "matched": 89
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5412765957446808,
+     "macroF1": 0.8770921743388108,
+     "n_true": 265,
+     "n_pred": 205,
+     "true_fates": {
+      "matched": 153,
+      "merged": 22,
+      "other": 8,
+      "predicted_dead": 24,
+      "split": 3,
+      "wrong_team_absorbed": 43,
+      "wrong_team_swapped": 12
+     },
+     "pred_fates": {
+      "fragment_of_true": 21,
+      "matched": 153,
+      "over_other_team": 26,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 73,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 48,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 45,
+       "matched": 30
+      },
+      ">= 12 s": {
+       "true": 99,
+       "matched": 91
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5704035874439461,
+     "macroF1": 0.8802626151956653,
+     "n_true": 241,
+     "n_pred": 205,
+     "true_fates": {
+      "matched": 151,
+      "merged": 14,
+      "other": 6,
+      "predicted_dead": 23,
+      "split": 3,
+      "wrong_team_absorbed": 32,
+      "wrong_team_swapped": 12
+     },
+     "pred_fates": {
+      "fragment_of_true": 22,
+      "matched": 151,
+      "over_other_team": 27,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 56,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 42,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 43,
+       "matched": 29
+      },
+      ">= 12 s": {
+       "true": 100,
+       "matched": 92
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1925299",
+   "setting_name": "real"
+  },
+  "sc-1927964-real-eval": {
+   "view": "sc-1927964-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5481798715203425,
+     "macroF1": 0.9044892173294303,
+     "n_true": 290,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 147,
+      "merged": 48,
+      "other": 4,
+      "predicted_dead": 27,
+      "wrong_team_absorbed": 60,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 147,
+      "merge_container": 3,
+      "over_other_team": 15,
+      "over_true_dead": 1
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 90,
+       "matched": 15
+      },
+      "3-6 s": {
+       "true": 51,
+       "matched": 15
+      },
+      "6-12 s": {
+       "true": 46,
+       "matched": 30
+      },
+      ">= 12 s": {
+       "true": 103,
+       "matched": 87
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5755011135857461,
+     "macroF1": 0.9053769262026853,
+     "n_true": 272,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 149,
+      "merged": 38,
+      "other": 4,
+      "predicted_dead": 25,
+      "wrong_team_absorbed": 52,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 149,
+      "merge_container": 1,
+      "over_other_team": 15,
+      "over_true_dead": 1
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 77,
+       "matched": 14
+      },
+      "3-6 s": {
+       "true": 50,
+       "matched": 16
+      },
+      "6-12 s": {
+       "true": 43,
+       "matched": 30
+      },
+      ">= 12 s": {
+       "true": 102,
+       "matched": 89
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.6319410319410319,
+     "macroF1": 0.9087146830214832,
+     "n_true": 230,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 146,
+      "merged": 21,
+      "other": 2,
+      "predicted_dead": 25,
+      "wrong_team_absorbed": 32,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 14,
+      "matched": 146,
+      "merge_container": 1,
+      "over_other_team": 15,
+      "over_true_dead": 1
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 52,
+       "matched": 14
+      },
+      "3-6 s": {
+       "true": 42,
+       "matched": 15
+      },
+      "6-12 s": {
+       "true": 39,
+       "matched": 28
+      },
+      ">= 12 s": {
+       "true": 97,
+       "matched": 89
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6381679389312976,
+     "macroF1": 0.9094390203396698,
+     "n_true": 216,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 142,
+      "merged": 16,
+      "other": 2,
+      "predicted_dead": 25,
+      "wrong_team_absorbed": 27,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 142,
+      "merge_container": 1,
+      "over_other_team": 17,
+      "over_true_dead": 1
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 43,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 41,
+       "matched": 15
+      },
+      "6-12 s": {
+       "true": 34,
+       "matched": 25
+      },
+      ">= 12 s": {
+       "true": 98,
+       "matched": 91
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1927964",
+   "setting_name": "real"
+  },
+  "sc-1953632-real-eval": {
+   "view": "sc-1953632-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4566735112936344,
+     "macroF1": 0.8683256373617491,
+     "n_true": 310,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 141,
+      "merged": 49,
+      "other": 6,
+      "predicted_dead": 30,
+      "split": 3,
+      "wrong_team_absorbed": 74,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 141,
+      "over_other_team": 18,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 100,
+       "matched": 10
+      },
+      "3-6 s": {
+       "true": 51,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 60,
+       "matched": 36
+      },
+      ">= 12 s": {
+       "true": 99,
+       "matched": 74
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.48503253796095447,
+     "macroF1": 0.869413191210532,
+     "n_true": 284,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 140,
+      "merged": 37,
+      "other": 5,
+      "predicted_dead": 30,
+      "split": 3,
+      "wrong_team_absorbed": 62,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 140,
+      "over_other_team": 18,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 85,
+       "matched": 10
+      },
+      "3-6 s": {
+       "true": 47,
+       "matched": 20
+      },
+      "6-12 s": {
+       "true": 56,
+       "matched": 35
+      },
+      ">= 12 s": {
+       "true": 96,
+       "matched": 75
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5200923787528868,
+     "macroF1": 0.8721192756914723,
+     "n_true": 256,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 138,
+      "merged": 25,
+      "other": 5,
+      "predicted_dead": 30,
+      "split": 3,
+      "wrong_team_absorbed": 48,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 138,
+      "over_other_team": 19,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 68,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 44,
+       "matched": 20
+      },
+      "6-12 s": {
+       "true": 48,
+       "matched": 32
+      },
+      ">= 12 s": {
+       "true": 96,
+       "matched": 77
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5609876543209876,
+     "macroF1": 0.8767045234954954,
+     "n_true": 228,
+     "n_pred": 177,
+     "true_fates": {
+      "matched": 134,
+      "merged": 14,
+      "other": 3,
+      "predicted_dead": 30,
+      "split": 4,
+      "wrong_team_absorbed": 37,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 134,
+      "over_other_team": 20,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 52,
+       "matched": 8
+      },
+      "3-6 s": {
+       "true": 40,
+       "matched": 19
+      },
+      "6-12 s": {
+       "true": 45,
+       "matched": 31
+      },
+      ">= 12 s": {
+       "true": 91,
+       "matched": 76
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1953632",
+   "setting_name": "real"
+  },
+  "sc-1959846-real-eval": {
+   "view": "sc-1959846-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4903225806451613,
+     "macroF1": 0.8758756757587527,
+     "n_true": 323,
+     "n_pred": 204,
+     "true_fates": {
+      "matched": 164,
+      "merged": 52,
+      "other": 6,
+      "predicted_dead": 21,
+      "split": 1,
+      "wrong_team_absorbed": 66,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 10,
+      "matched": 164,
+      "over_other_team": 25,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 95,
+       "matched": 10
+      },
+      "3-6 s": {
+       "true": 59,
+       "matched": 23
+      },
+      "6-12 s": {
+       "true": 89,
+       "matched": 61
+      },
+      ">= 12 s": {
+       "true": 80,
+       "matched": 70
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5248508946322068,
+     "macroF1": 0.8765459181433196,
+     "n_true": 299,
+     "n_pred": 204,
+     "true_fates": {
+      "matched": 164,
+      "merged": 39,
+      "other": 7,
+      "predicted_dead": 20,
+      "split": 1,
+      "wrong_team_absorbed": 56,
+      "wrong_team_swapped": 12
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 164,
+      "over_other_team": 24,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 75,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 58,
+       "matched": 24
+      },
+      "6-12 s": {
+       "true": 82,
+       "matched": 58
+      },
+      ">= 12 s": {
+       "true": 84,
+       "matched": 73
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5626834381551363,
+     "macroF1": 0.8786754511715976,
+     "n_true": 273,
+     "n_pred": 204,
+     "true_fates": {
+      "matched": 164,
+      "merged": 28,
+      "other": 5,
+      "predicted_dead": 20,
+      "split": 1,
+      "wrong_team_absorbed": 45,
+      "wrong_team_swapped": 10
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 164,
+      "over_other_team": 24,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 57,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 52,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 76,
+       "matched": 57
+      },
+      ">= 12 s": {
+       "true": 88,
+       "matched": 77
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6013186813186813,
+     "macroF1": 0.8832389035192344,
+     "n_true": 251,
+     "n_pred": 204,
+     "true_fates": {
+      "matched": 164,
+      "merged": 17,
+      "other": 5,
+      "predicted_dead": 20,
+      "split": 1,
+      "wrong_team_absorbed": 34,
+      "wrong_team_swapped": 10
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 164,
+      "over_other_team": 24,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 44,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 48,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 70,
+       "matched": 55
+      },
+      ">= 12 s": {
+       "true": 89,
+       "matched": 79
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1959846",
+   "setting_name": "real"
+  },
+  "sc-1986691-real-eval": {
+   "view": "sc-1986691-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5108986615678777,
+     "macroF1": 0.8647118310521206,
+     "n_true": 311,
+     "n_pred": 212,
+     "true_fates": {
+      "matched": 167,
+      "merged": 43,
+      "other": 5,
+      "predicted_dead": 24,
+      "split": 1,
+      "wrong_team_absorbed": 62,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 167,
+      "merge_container": 2,
+      "over_other_team": 21,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 100,
+       "matched": 16
+      },
+      "3-6 s": {
+       "true": 56,
+       "matched": 29
+      },
+      "6-12 s": {
+       "true": 66,
+       "matched": 45
+      },
+      ">= 12 s": {
+       "true": 89,
+       "matched": 77
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5472837022132797,
+     "macroF1": 0.8656548612082652,
+     "n_true": 285,
+     "n_pred": 212,
+     "true_fates": {
+      "matched": 168,
+      "merged": 29,
+      "other": 5,
+      "predicted_dead": 24,
+      "split": 1,
+      "wrong_team_absorbed": 51,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 168,
+      "merge_container": 1,
+      "over_other_team": 21,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 82,
+       "matched": 16
+      },
+      "3-6 s": {
+       "true": 54,
+       "matched": 29
+      },
+      "6-12 s": {
+       "true": 61,
+       "matched": 45
+      },
+      ">= 12 s": {
+       "true": 88,
+       "matched": 78
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5882863340563992,
+     "macroF1": 0.8680422155330115,
+     "n_true": 249,
+     "n_pred": 212,
+     "true_fates": {
+      "matched": 163,
+      "merged": 12,
+      "other": 6,
+      "predicted_dead": 24,
+      "split": 1,
+      "wrong_team_absorbed": 34,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 23,
+      "matched": 163,
+      "over_other_team": 23,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 59,
+       "matched": 15
+      },
+      "3-6 s": {
+       "true": 45,
+       "matched": 26
+      },
+      "6-12 s": {
+       "true": 56,
+       "matched": 43
+      },
+      ">= 12 s": {
+       "true": 89,
+       "matched": 79
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6004474272930649,
+     "macroF1": 0.8689256596328386,
+     "n_true": 235,
+     "n_pred": 212,
+     "true_fates": {
+      "matched": 160,
+      "merged": 10,
+      "other": 4,
+      "predicted_dead": 24,
+      "wrong_team_absorbed": 30,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 24,
+      "matched": 160,
+      "over_other_team": 25,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 52,
+       "matched": 13
+      },
+      "3-6 s": {
+       "true": 41,
+       "matched": 25
+      },
+      "6-12 s": {
+       "true": 52,
+       "matched": 42
+      },
+      ">= 12 s": {
+       "true": 90,
+       "matched": 80
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1986691",
+   "setting_name": "real"
+  },
+  "sc-1996435-real-eval": {
+   "view": "sc-1996435-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.465979381443299,
+     "macroF1": 0.8650376043749003,
+     "n_true": 367,
+     "n_pred": 215,
+     "true_fates": {
+      "matched": 169,
+      "merged": 67,
+      "other": 6,
+      "predicted_dead": 22,
+      "wrong_team_absorbed": 95,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 169,
+      "merge_container": 3,
+      "other": 1,
+      "over_other_team": 17,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 129,
+       "matched": 15
+      },
+      "3-6 s": {
+       "true": 68,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 49
+      },
+      ">= 12 s": {
+       "true": 99,
+       "matched": 84
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5330827067669173,
+     "macroF1": 0.8678605465141734,
+     "n_true": 317,
+     "n_pred": 215,
+     "true_fates": {
+      "matched": 170,
+      "merged": 41,
+      "other": 6,
+      "predicted_dead": 22,
+      "wrong_team_absorbed": 70,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 170,
+      "merge_container": 2,
+      "other": 1,
+      "over_other_team": 17,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 94,
+       "matched": 15
+      },
+      "3-6 s": {
+       "true": 60,
+       "matched": 21
+      },
+      "6-12 s": {
+       "true": 64,
+       "matched": 45
+      },
+      ">= 12 s": {
+       "true": 99,
+       "matched": 89
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5757085020242915,
+     "macroF1": 0.8711763316213196,
+     "n_true": 279,
+     "n_pred": 215,
+     "true_fates": {
+      "matched": 170,
+      "merged": 26,
+      "other": 3,
+      "predicted_dead": 21,
+      "wrong_team_absorbed": 54,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 170,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 17,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 65,
+       "matched": 14
+      },
+      "3-6 s": {
+       "true": 53,
+       "matched": 19
+      },
+      "6-12 s": {
+       "true": 62,
+       "matched": 47
+      },
+      ">= 12 s": {
+       "true": 99,
+       "matched": 90
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5915254237288136,
+     "macroF1": 0.8724416244229424,
+     "n_true": 257,
+     "n_pred": 215,
+     "true_fates": {
+      "matched": 167,
+      "merged": 18,
+      "other": 3,
+      "predicted_dead": 19,
+      "wrong_team_absorbed": 45,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 167,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 19,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 51,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 46,
+       "matched": 16
+      },
+      "6-12 s": {
+       "true": 62,
+       "matched": 47
+      },
+      ">= 12 s": {
+       "true": 98,
+       "matched": 92
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1996435",
+   "setting_name": "real"
+  },
+  "sc-1996436-real-eval": {
+   "view": "sc-1996436-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4783427495291902,
+     "macroF1": 0.8521015813013779,
+     "n_true": 317,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 162,
+      "merged": 46,
+      "other": 9,
+      "predicted_dead": 17,
+      "split": 2,
+      "wrong_team_absorbed": 63,
+      "wrong_team_swapped": 18
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 162,
+      "merge_container": 2,
+      "other": 1,
+      "over_other_team": 27,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 89,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 88,
+       "matched": 40
+      },
+      "6-12 s": {
+       "true": 75,
+       "matched": 54
+      },
+      ">= 12 s": {
+       "true": 65,
+       "matched": 57
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5113320079522864,
+     "macroF1": 0.8527359734522237,
+     "n_true": 289,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 162,
+      "merged": 34,
+      "other": 8,
+      "predicted_dead": 16,
+      "split": 2,
+      "wrong_team_absorbed": 51,
+      "wrong_team_swapped": 16
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 162,
+      "merge_container": 2,
+      "other": 1,
+      "over_other_team": 27,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 70,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 78,
+       "matched": 38
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 53
+      },
+      ">= 12 s": {
+       "true": 70,
+       "matched": 60
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5402061855670103,
+     "macroF1": 0.8552643685229904,
+     "n_true": 271,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 162,
+      "merged": 25,
+      "other": 9,
+      "predicted_dead": 16,
+      "split": 2,
+      "wrong_team_absorbed": 41,
+      "wrong_team_swapped": 16
+     },
+     "pred_fates": {
+      "fragment_of_true": 18,
+      "matched": 162,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 27,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 57,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 74,
+       "matched": 36
+      },
+      "6-12 s": {
+       "true": 70,
+       "matched": 54
+      },
+      ">= 12 s": {
+       "true": 70,
+       "matched": 61
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5569296375266525,
+     "macroF1": 0.8564765629069102,
+     "n_true": 255,
+     "n_pred": 214,
+     "true_fates": {
+      "matched": 159,
+      "merged": 20,
+      "other": 8,
+      "predicted_dead": 16,
+      "split": 2,
+      "wrong_team_absorbed": 37,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 159,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 29,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 45,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 72,
+       "matched": 36
+      },
+      "6-12 s": {
+       "true": 63,
+       "matched": 49
+      },
+      ">= 12 s": {
+       "true": 75,
+       "matched": 65
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "1996436",
+   "setting_name": "real"
+  },
+  "sc-2006229-real-eval": {
+   "view": "sc-2006229-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5024118738404453,
+     "macroF1": 0.8976228840140177,
+     "n_true": 337,
+     "n_pred": 202,
+     "true_fates": {
+      "matched": 169,
+      "merged": 55,
+      "other": 4,
+      "predicted_dead": 18,
+      "split": 1,
+      "wrong_team_absorbed": 78,
+      "wrong_team_swapped": 12
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 169,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 14,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 116,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 70,
+       "matched": 39
+      },
+      "6-12 s": {
+       "true": 54,
+       "matched": 33
+      },
+      ">= 12 s": {
+       "true": 97,
+       "matched": 88
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5531062124248496,
+     "macroF1": 0.8988891143187078,
+     "n_true": 297,
+     "n_pred": 202,
+     "true_fates": {
+      "matched": 169,
+      "merged": 36,
+      "other": 3,
+      "predicted_dead": 16,
+      "split": 1,
+      "wrong_team_absorbed": 61,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 169,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 14,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 85,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 64,
+       "matched": 38
+      },
+      "6-12 s": {
+       "true": 51,
+       "matched": 32
+      },
+      ">= 12 s": {
+       "true": 97,
+       "matched": 90
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5961123110151189,
+     "macroF1": 0.9019462235554078,
+     "n_true": 261,
+     "n_pred": 202,
+     "true_fates": {
+      "matched": 169,
+      "merged": 20,
+      "other": 1,
+      "predicted_dead": 16,
+      "split": 1,
+      "wrong_team_absorbed": 46,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 13,
+      "matched": 169,
+      "other": 1,
+      "over_other_team": 14,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 63,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 54,
+       "matched": 36
+      },
+      "6-12 s": {
+       "true": 42,
+       "matched": 31
+      },
+      ">= 12 s": {
+       "true": 102,
+       "matched": 93
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6195899772209568,
+     "macroF1": 0.9033898696758182,
+     "n_true": 237,
+     "n_pred": 202,
+     "true_fates": {
+      "matched": 165,
+      "merged": 12,
+      "other": 1,
+      "predicted_dead": 16,
+      "wrong_team_absorbed": 36,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 14,
+      "matched": 165,
+      "other": 1,
+      "over_other_team": 17,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 47,
+       "matched": 6
+      },
+      "3-6 s": {
+       "true": 51,
+       "matched": 34
+      },
+      "6-12 s": {
+       "true": 38,
+       "matched": 30
+      },
+      ">= 12 s": {
+       "true": 101,
+       "matched": 95
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2006229",
+   "setting_name": "real"
+  },
+  "sc-2006363-real-eval": {
+   "view": "sc-2006363-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4812609457092821,
+     "macroF1": 0.8771446744652082,
+     "n_true": 358,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 175,
+      "merged": 63,
+      "other": 5,
+      "predicted_dead": 20,
+      "wrong_team_absorbed": 84,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 175,
+      "merge_container": 3,
+      "other": 1,
+      "over_other_team": 18,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 118,
+       "matched": 15
+      },
+      "3-6 s": {
+       "true": 68,
+       "matched": 30
+      },
+      "6-12 s": {
+       "true": 74,
+       "matched": 49
+      },
+      ">= 12 s": {
+       "true": 98,
+       "matched": 81
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.519925512104283,
+     "macroF1": 0.8789642524256784,
+     "n_true": 324,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 175,
+      "merged": 50,
+      "other": 5,
+      "predicted_dead": 19,
+      "wrong_team_absorbed": 67,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 175,
+      "merge_container": 3,
+      "other": 1,
+      "over_other_team": 18,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 93,
+       "matched": 15
+      },
+      "3-6 s": {
+       "true": 64,
+       "matched": 29
+      },
+      "6-12 s": {
+       "true": 68,
+       "matched": 46
+      },
+      ">= 12 s": {
+       "true": 99,
+       "matched": 85
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5864476386036961,
+     "macroF1": 0.8824848185696675,
+     "n_true": 274,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 174,
+      "merged": 24,
+      "other": 5,
+      "predicted_dead": 19,
+      "wrong_team_absorbed": 45,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 14,
+      "matched": 174,
+      "merge_container": 2,
+      "other": 1,
+      "over_other_team": 18,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 62,
+       "matched": 14
+      },
+      "3-6 s": {
+       "true": 56,
+       "matched": 27
+      },
+      "6-12 s": {
+       "true": 56,
+       "matched": 43
+      },
+      ">= 12 s": {
+       "true": 100,
+       "matched": 90
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6142548596112312,
+     "macroF1": 0.8860053352731617,
+     "n_true": 250,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 170,
+      "merged": 15,
+      "other": 4,
+      "predicted_dead": 19,
+      "split": 1,
+      "wrong_team_absorbed": 35,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 170,
+      "merge_container": 2,
+      "over_other_team": 20,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 47,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 50,
+       "matched": 26
+      },
+      "6-12 s": {
+       "true": 52,
+       "matched": 38
+      },
+      ">= 12 s": {
+       "true": 101,
+       "matched": 94
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2006363",
+   "setting_name": "real"
+  },
+  "sc-2007448-real-eval": {
+   "view": "sc-2007448-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4753968253968254,
+     "macroF1": 0.8823660877776943,
+     "n_true": 308,
+     "n_pred": 196,
+     "true_fates": {
+      "matched": 153,
+      "merged": 49,
+      "other": 4,
+      "predicted_dead": 24,
+      "split": 4,
+      "wrong_team_absorbed": 65,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 153,
+      "merge_container": 2,
+      "over_other_team": 13,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 100,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 58,
+       "matched": 25
+      },
+      "6-12 s": {
+       "true": 54,
+       "matched": 39
+      },
+      ">= 12 s": {
+       "true": 96,
+       "matched": 77
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5421052631578948,
+     "macroF1": 0.8850350398924135,
+     "n_true": 260,
+     "n_pred": 196,
+     "true_fates": {
+      "matched": 153,
+      "merged": 29,
+      "other": 2,
+      "predicted_dead": 23,
+      "split": 3,
+      "wrong_team_absorbed": 43,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 153,
+      "merge_container": 2,
+      "over_other_team": 13,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 64,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 50,
+       "matched": 22
+      },
+      "6-12 s": {
+       "true": 52,
+       "matched": 39
+      },
+      ">= 12 s": {
+       "true": 94,
+       "matched": 80
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5771689497716894,
+     "macroF1": 0.8868024484302223,
+     "n_true": 242,
+     "n_pred": 196,
+     "true_fates": {
+      "matched": 153,
+      "merged": 20,
+      "other": 2,
+      "predicted_dead": 23,
+      "split": 3,
+      "wrong_team_absorbed": 34,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 153,
+      "merge_container": 2,
+      "over_other_team": 13,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 55,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 46,
+       "matched": 22
+      },
+      "6-12 s": {
+       "true": 48,
+       "matched": 38
+      },
+      ">= 12 s": {
+       "true": 93,
+       "matched": 81
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5807339449541284,
+     "macroF1": 0.8873471558287432,
+     "n_true": 240,
+     "n_pred": 196,
+     "true_fates": {
+      "matched": 153,
+      "merged": 20,
+      "other": 2,
+      "predicted_dead": 23,
+      "split": 3,
+      "wrong_team_absorbed": 33,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 153,
+      "merge_container": 2,
+      "over_other_team": 13,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 54,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 46,
+       "matched": 22
+      },
+      "6-12 s": {
+       "true": 47,
+       "matched": 38
+      },
+      ">= 12 s": {
+       "true": 93,
+       "matched": 81
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2007448",
+   "setting_name": "real"
+  },
+  "sc-2007721-real-eval": {
+   "view": "sc-2007721-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5459357277882797,
+     "macroF1": 0.8909232729744891,
+     "n_true": 330,
+     "n_pred": 199,
+     "true_fates": {
+      "matched": 172,
+      "merged": 49,
+      "other": 3,
+      "predicted_dead": 31,
+      "wrong_team_absorbed": 68,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 8,
+      "matched": 172,
+      "over_other_team": 16,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 99,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 60,
+       "matched": 33
+      },
+      "6-12 s": {
+       "true": 74,
+       "matched": 45
+      },
+      ">= 12 s": {
+       "true": 97,
+       "matched": 85
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.593186372745491,
+     "macroF1": 0.892647291001155,
+     "n_true": 300,
+     "n_pred": 199,
+     "true_fates": {
+      "matched": 172,
+      "merged": 35,
+      "other": 3,
+      "predicted_dead": 31,
+      "wrong_team_absorbed": 53,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 8,
+      "matched": 172,
+      "over_other_team": 16,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 80,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 55,
+       "matched": 31
+      },
+      "6-12 s": {
+       "true": 65,
+       "matched": 42
+      },
+      ">= 12 s": {
+       "true": 100,
+       "matched": 90
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.6318471337579618,
+     "macroF1": 0.8948087579109952,
+     "n_true": 272,
+     "n_pred": 199,
+     "true_fates": {
+      "matched": 170,
+      "merged": 22,
+      "other": 2,
+      "predicted_dead": 31,
+      "wrong_team_absorbed": 41,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 170,
+      "over_other_team": 17,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 62,
+       "matched": 8
+      },
+      "3-6 s": {
+       "true": 49,
+       "matched": 29
+      },
+      "6-12 s": {
+       "true": 60,
+       "matched": 42
+      },
+      ">= 12 s": {
+       "true": 101,
+       "matched": 91
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.658980044345898,
+     "macroF1": 0.8997394229111961,
+     "n_true": 252,
+     "n_pred": 199,
+     "true_fates": {
+      "matched": 168,
+      "merged": 15,
+      "other": 2,
+      "predicted_dead": 31,
+      "wrong_team_absorbed": 30,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 168,
+      "over_other_team": 17,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 50,
+       "matched": 8
+      },
+      "3-6 s": {
+       "true": 48,
+       "matched": 28
+      },
+      "6-12 s": {
+       "true": 54,
+       "matched": 39
+      },
+      ">= 12 s": {
+       "true": 100,
+       "matched": 93
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2007721",
+   "setting_name": "real"
+  },
+  "sc-2010085-real-eval": {
+   "view": "sc-2010085-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.44978540772532183,
+     "macroF1": 0.8554972214006192,
+     "n_true": 296,
+     "n_pred": 170,
+     "true_fates": {
+      "matched": 133,
+      "merged": 48,
+      "other": 8,
+      "predicted_dead": 17,
+      "split": 3,
+      "wrong_team_absorbed": 72,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 133,
+      "other": 2,
+      "over_other_team": 23,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 82,
+       "matched": 7
+      },
+      "3-6 s": {
+       "true": 51,
+       "matched": 19
+      },
+      "6-12 s": {
+       "true": 63,
+       "matched": 29
+      },
+      ">= 12 s": {
+       "true": 100,
+       "matched": 78
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.48416289592760176,
+     "macroF1": 0.8570564085260838,
+     "n_true": 272,
+     "n_pred": 170,
+     "true_fates": {
+      "matched": 133,
+      "merged": 37,
+      "other": 8,
+      "predicted_dead": 17,
+      "split": 3,
+      "wrong_team_absorbed": 59,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 133,
+      "other": 2,
+      "over_other_team": 23,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 68,
+       "matched": 7
+      },
+      "3-6 s": {
+       "true": 49,
+       "matched": 19
+      },
+      "6-12 s": {
+       "true": 57,
+       "matched": 30
+      },
+      ">= 12 s": {
+       "true": 98,
+       "matched": 77
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5589999999999999,
+     "macroF1": 0.8626051507824145,
+     "n_true": 230,
+     "n_pred": 170,
+     "true_fates": {
+      "matched": 133,
+      "merged": 19,
+      "other": 8,
+      "predicted_dead": 16,
+      "split": 2,
+      "wrong_team_absorbed": 38,
+      "wrong_team_swapped": 14
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 133,
+      "other": 2,
+      "over_other_team": 23,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 42,
+       "matched": 6
+      },
+      "3-6 s": {
+       "true": 45,
+       "matched": 18
+      },
+      "6-12 s": {
+       "true": 46,
+       "matched": 28
+      },
+      ">= 12 s": {
+       "true": 97,
+       "matched": 81
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5782383419689119,
+     "macroF1": 0.8639384528198674,
+     "n_true": 216,
+     "n_pred": 170,
+     "true_fates": {
+      "matched": 131,
+      "merged": 13,
+      "other": 6,
+      "predicted_dead": 16,
+      "split": 3,
+      "wrong_team_absorbed": 33,
+      "wrong_team_swapped": 14
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 131,
+      "other": 2,
+      "over_other_team": 23,
+      "over_true_dead": 3
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 34,
+       "matched": 6
+      },
+      "3-6 s": {
+       "true": 45,
+       "matched": 18
+      },
+      "6-12 s": {
+       "true": 39,
+       "matched": 26
+      },
+      ">= 12 s": {
+       "true": 98,
+       "matched": 81
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2010085",
+   "setting_name": "real"
+  },
+  "sc-2011166-real-eval": {
+   "view": "sc-2011166-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.480565371024735,
+     "macroF1": 0.8477211599183975,
+     "n_true": 340,
+     "n_pred": 226,
+     "true_fates": {
+      "matched": 174,
+      "merged": 37,
+      "other": 9,
+      "predicted_dead": 32,
+      "wrong_team_absorbed": 70,
+      "wrong_team_swapped": 18
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 174,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 34,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 111,
+       "matched": 10
+      },
+      "3-6 s": {
+       "true": 81,
+       "matched": 37
+      },
+      "6-12 s": {
+       "true": 76,
+       "matched": 59
+      },
+      ">= 12 s": {
+       "true": 72,
+       "matched": 68
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5150375939849624,
+     "macroF1": 0.8495966934698377,
+     "n_true": 306,
+     "n_pred": 226,
+     "true_fates": {
+      "matched": 171,
+      "merged": 24,
+      "other": 8,
+      "predicted_dead": 31,
+      "split": 1,
+      "wrong_team_absorbed": 53,
+      "wrong_team_swapped": 18
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 171,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 34,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 84,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 78,
+       "matched": 37
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 56
+      },
+      ">= 12 s": {
+       "true": 73,
+       "matched": 69
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5268482490272374,
+     "macroF1": 0.8496229952060377,
+     "n_true": 288,
+     "n_pred": 226,
+     "true_fates": {
+      "matched": 168,
+      "merged": 16,
+      "other": 9,
+      "predicted_dead": 31,
+      "split": 1,
+      "wrong_team_absorbed": 46,
+      "wrong_team_swapped": 17
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 168,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 34,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 72,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 74,
+       "matched": 34
+      },
+      "6-12 s": {
+       "true": 64,
+       "matched": 53
+      },
+      ">= 12 s": {
+       "true": 78,
+       "matched": 72
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5481781376518218,
+     "macroF1": 0.8538818124691111,
+     "n_true": 268,
+     "n_pred": 226,
+     "true_fates": {
+      "matched": 166,
+      "merged": 12,
+      "other": 7,
+      "predicted_dead": 30,
+      "wrong_team_absorbed": 38,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 166,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 34,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 56,
+       "matched": 8
+      },
+      "3-6 s": {
+       "true": 73,
+       "matched": 34
+      },
+      "6-12 s": {
+       "true": 59,
+       "matched": 51
+      },
+      ">= 12 s": {
+       "true": 80,
+       "matched": 73
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2011166",
+   "setting_name": "real"
+  },
+  "sc-2013725-real-eval": {
+   "view": "sc-2013725-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.446656298600311,
+     "macroF1": 0.8410113382948016,
+     "n_true": 397,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 190,
+      "merged": 55,
+      "other": 16,
+      "predicted_dead": 23,
+      "split": 4,
+      "wrong_team_absorbed": 86,
+      "wrong_team_swapped": 23
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 190,
+      "merge_container": 3,
+      "other": 3,
+      "over_other_team": 27,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 143,
+       "matched": 18
+      },
+      "3-6 s": {
+       "true": 81,
+       "matched": 46
+      },
+      "6-12 s": {
+       "true": 83,
+       "matched": 50
+      },
+      ">= 12 s": {
+       "true": 90,
+       "matched": 76
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.46807131280388986,
+     "macroF1": 0.8421398098164675,
+     "n_true": 371,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 191,
+      "merged": 45,
+      "other": 13,
+      "predicted_dead": 22,
+      "split": 4,
+      "wrong_team_absorbed": 76,
+      "wrong_team_swapped": 20
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 191,
+      "merge_container": 2,
+      "other": 3,
+      "over_other_team": 27,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 124,
+       "matched": 18
+      },
+      "3-6 s": {
+       "true": 75,
+       "matched": 45
+      },
+      "6-12 s": {
+       "true": 82,
+       "matched": 50
+      },
+      ">= 12 s": {
+       "true": 90,
+       "matched": 78
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5179755671902269,
+     "macroF1": 0.8459320738929773,
+     "n_true": 327,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 189,
+      "merged": 27,
+      "other": 12,
+      "predicted_dead": 22,
+      "split": 2,
+      "wrong_team_absorbed": 56,
+      "wrong_team_swapped": 19
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 189,
+      "merge_container": 2,
+      "other": 3,
+      "over_other_team": 27,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 92,
+       "matched": 17
+      },
+      "3-6 s": {
+       "true": 68,
+       "matched": 40
+      },
+      "6-12 s": {
+       "true": 77,
+       "matched": 51
+      },
+      ">= 12 s": {
+       "true": 90,
+       "matched": 81
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5287522603978301,
+     "macroF1": 0.8472659266761547,
+     "n_true": 307,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 184,
+      "merged": 20,
+      "other": 12,
+      "predicted_dead": 21,
+      "split": 2,
+      "wrong_team_absorbed": 51,
+      "wrong_team_swapped": 17
+     },
+     "pred_fates": {
+      "fragment_of_true": 20,
+      "matched": 184,
+      "merge_container": 1,
+      "other": 3,
+      "over_other_team": 30,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 78,
+       "matched": 14
+      },
+      "3-6 s": {
+       "true": 65,
+       "matched": 39
+      },
+      "6-12 s": {
+       "true": 73,
+       "matched": 49
+      },
+      ">= 12 s": {
+       "true": 91,
+       "matched": 82
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2013725",
+   "setting_name": "real"
+  },
+  "sc-2015213-real-eval": {
+   "view": "sc-2015213-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.44329563812600964,
+     "macroF1": 0.8398841231813617,
+     "n_true": 371,
+     "n_pred": 248,
+     "true_fates": {
+      "matched": 181,
+      "merged": 53,
+      "other": 10,
+      "predicted_dead": 34,
+      "split": 1,
+      "wrong_team_absorbed": 71,
+      "wrong_team_swapped": 21
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 181,
+      "merge_container": 3,
+      "over_other_team": 38,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 122,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 85,
+       "matched": 42
+      },
+      "6-12 s": {
+       "true": 78,
+       "matched": 51
+      },
+      ">= 12 s": {
+       "true": 86,
+       "matched": 76
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.48820512820512824,
+     "macroF1": 0.8422156583690291,
+     "n_true": 337,
+     "n_pred": 248,
+     "true_fates": {
+      "matched": 182,
+      "merged": 36,
+      "other": 10,
+      "predicted_dead": 32,
+      "split": 1,
+      "wrong_team_absorbed": 55,
+      "wrong_team_swapped": 21
+     },
+     "pred_fates": {
+      "fragment_of_true": 16,
+      "matched": 182,
+      "merge_container": 2,
+      "over_other_team": 38,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 96,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 79,
+       "matched": 40
+      },
+      "6-12 s": {
+       "true": 76,
+       "matched": 52
+      },
+      ">= 12 s": {
+       "true": 86,
+       "matched": 78
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5173524150268336,
+     "macroF1": 0.8429555206167025,
+     "n_true": 311,
+     "n_pred": 248,
+     "true_fates": {
+      "matched": 181,
+      "merged": 27,
+      "other": 8,
+      "predicted_dead": 30,
+      "split": 1,
+      "wrong_team_absorbed": 48,
+      "wrong_team_swapped": 16
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 181,
+      "merge_container": 1,
+      "over_other_team": 39,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 77,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 74,
+       "matched": 40
+      },
+      "6-12 s": {
+       "true": 72,
+       "matched": 50
+      },
+      ">= 12 s": {
+       "true": 88,
+       "matched": 80
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5382624768946396,
+     "macroF1": 0.8469096535881153,
+     "n_true": 293,
+     "n_pred": 248,
+     "true_fates": {
+      "matched": 181,
+      "merged": 18,
+      "other": 8,
+      "predicted_dead": 29,
+      "split": 1,
+      "wrong_team_absorbed": 40,
+      "wrong_team_swapped": 16
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 181,
+      "over_other_team": 40,
+      "over_true_dead": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 66,
+       "matched": 10
+      },
+      "3-6 s": {
+       "true": 70,
+       "matched": 40
+      },
+      "6-12 s": {
+       "true": 66,
+       "matched": 48
+      },
+      ">= 12 s": {
+       "true": 91,
+       "matched": 83
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2015213",
+   "setting_name": "real"
+  },
+  "sc-2016236-real-eval": {
+   "view": "sc-2016236-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5102040816326532,
+     "macroF1": 0.8506735586929803,
+     "n_true": 352,
+     "n_pred": 236,
+     "true_fates": {
+      "matched": 186,
+      "merged": 42,
+      "other": 5,
+      "predicted_dead": 23,
+      "split": 3,
+      "wrong_team_absorbed": 78,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 186,
+      "merge_container": 1,
+      "other": 2,
+      "over_other_team": 26,
+      "over_true_dead": 2
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 104,
+       "matched": 13
+      },
+      "3-6 s": {
+       "true": 82,
+       "matched": 39
+      },
+      "6-12 s": {
+       "true": 80,
+       "matched": 59
+      },
+      ">= 12 s": {
+       "true": 86,
+       "matched": 75
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5385159010600706,
+     "macroF1": 0.8513962495227397,
+     "n_true": 330,
+     "n_pred": 236,
+     "true_fates": {
+      "matched": 186,
+      "merged": 33,
+      "other": 5,
+      "predicted_dead": 22,
+      "split": 3,
+      "wrong_team_absorbed": 66,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 186,
+      "merge_container": 1,
+      "other": 2,
+      "over_other_team": 26,
+      "over_true_dead": 2
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 84,
+       "matched": 12
+      },
+      "3-6 s": {
+       "true": 83,
+       "matched": 39
+      },
+      "6-12 s": {
+       "true": 73,
+       "matched": 55
+      },
+      ">= 12 s": {
+       "true": 90,
+       "matched": 80
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5613382899628252,
+     "macroF1": 0.8533430211029148,
+     "n_true": 302,
+     "n_pred": 236,
+     "true_fates": {
+      "matched": 183,
+      "merged": 21,
+      "other": 5,
+      "predicted_dead": 21,
+      "split": 3,
+      "wrong_team_absorbed": 56,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 21,
+      "matched": 183,
+      "other": 3,
+      "over_other_team": 27,
+      "over_true_dead": 2
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 64,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 78,
+       "matched": 38
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 54
+      },
+      ">= 12 s": {
+       "true": 89,
+       "matched": 80
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5654901960784314,
+     "macroF1": 0.8533016903162016,
+     "n_true": 274,
+     "n_pred": 236,
+     "true_fates": {
+      "matched": 174,
+      "merged": 15,
+      "other": 4,
+      "predicted_dead": 19,
+      "split": 3,
+      "wrong_team_absorbed": 49,
+      "wrong_team_swapped": 10
+     },
+     "pred_fates": {
+      "fragment_of_true": 25,
+      "matched": 174,
+      "other": 2,
+      "over_other_team": 33,
+      "over_true_dead": 2
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 46,
+       "matched": 5
+      },
+      "3-6 s": {
+       "true": 71,
+       "matched": 37
+      },
+      "6-12 s": {
+       "true": 69,
+       "matched": 53
+      },
+      ">= 12 s": {
+       "true": 88,
+       "matched": 79
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2016236",
+   "setting_name": "real"
+  },
+  "sc-2017461-real-eval": {
+   "view": "sc-2017461-real-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4474953617810761,
+     "macroF1": 0.83083948567127,
+     "n_true": 326,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 157,
+      "merged": 48,
+      "other": 8,
+      "predicted_dead": 30,
+      "split": 2,
+      "wrong_team_absorbed": 66,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 157,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 35
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 99,
+       "matched": 13
+      },
+      "3-6 s": {
+       "true": 61,
+       "matched": 25
+      },
+      "6-12 s": {
+       "true": 86,
+       "matched": 57
+      },
+      ">= 12 s": {
+       "true": 80,
+       "matched": 62
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.4678227360308285,
+     "macroF1": 0.8315874206769225,
+     "n_true": 306,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 156,
+      "merged": 38,
+      "other": 9,
+      "predicted_dead": 30,
+      "split": 2,
+      "wrong_team_absorbed": 57,
+      "wrong_team_swapped": 14
+     },
+     "pred_fates": {
+      "fragment_of_true": 20,
+      "matched": 156,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 35
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 88,
+       "matched": 13
+      },
+      "3-6 s": {
+       "true": 56,
+       "matched": 23
+      },
+      "6-12 s": {
+       "true": 80,
+       "matched": 56
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 64
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.4993839835728953,
+     "macroF1": 0.8348332711990324,
+     "n_true": 274,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 155,
+      "merged": 25,
+      "other": 7,
+      "predicted_dead": 29,
+      "split": 2,
+      "wrong_team_absorbed": 45,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 21,
+      "matched": 155,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 35
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 68,
+       "matched": 13
+      },
+      "3-6 s": {
+       "true": 52,
+       "matched": 22
+      },
+      "6-12 s": {
+       "true": 72,
+       "matched": 54
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 66
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.5286652078774617,
+     "macroF1": 0.8364103716793055,
+     "n_true": 244,
+     "n_pred": 213,
+     "true_fates": {
+      "matched": 150,
+      "merged": 14,
+      "other": 9,
+      "predicted_dead": 28,
+      "split": 2,
+      "wrong_team_absorbed": 32,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 22,
+      "matched": 150,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 39
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 49,
+       "matched": 9
+      },
+      "3-6 s": {
+       "true": 47,
+       "matched": 22
+      },
+      "6-12 s": {
+       "true": 66,
+       "matched": 51
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 68
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "2017461",
+   "setting_name": "real"
+  },
+  "dfl-J03WMX-natural-eval": {
+   "view": "dfl-J03WMX-natural-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5990123456790124,
+     "macroF1": 0.9374979438886258,
+     "n_true": 511,
+     "n_pred": 299,
+     "true_fates": {
+      "matched": 278,
+      "merged": 92,
+      "other": 5,
+      "wrong_team_absorbed": 123,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 3,
+      "matched": 278,
+      "over_other_team": 18
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 254,
+       "matched": 67
+      },
+      "3-6 s": {
+       "true": 100,
+       "matched": 67
+      },
+      "6-12 s": {
+       "true": 78,
+       "matched": 68
+      },
+      ">= 12 s": {
+       "true": 79,
+       "matched": 76
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.6822222222222221,
+     "macroF1": 0.939601277059436,
+     "n_true": 421,
+     "n_pred": 299,
+     "true_fates": {
+      "matched": 277,
+      "merged": 49,
+      "other": 5,
+      "wrong_team_absorbed": 83,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 4,
+      "matched": 277,
+      "over_other_team": 18
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 158,
+       "matched": 60
+      },
+      "3-6 s": {
+       "true": 98,
+       "matched": 65
+      },
+      "6-12 s": {
+       "true": 85,
+       "matched": 74
+      },
+      ">= 12 s": {
+       "true": 80,
+       "matched": 78
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.7457943925233644,
+     "macroF1": 0.9443582186640332,
+     "n_true": 343,
+     "n_pred": 299,
+     "true_fates": {
+      "matched": 263,
+      "merged": 21,
+      "other": 3,
+      "wrong_team_absorbed": 51,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 263,
+      "over_other_team": 25
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 101,
+       "matched": 48
+      },
+      "3-6 s": {
+       "true": 78,
+       "matched": 57
+      },
+      "6-12 s": {
+       "true": 76,
+       "matched": 71
+      },
+      ">= 12 s": {
+       "true": 88,
+       "matched": 87
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.729530201342282,
+     "macroF1": 0.9406837288530627,
+     "n_true": 297,
+     "n_pred": 299,
+     "true_fates": {
+      "matched": 241,
+      "merged": 9,
+      "other": 4,
+      "wrong_team_absorbed": 38,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 22,
+      "matched": 241,
+      "over_other_team": 36
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 71,
+       "matched": 34
+      },
+      "3-6 s": {
+       "true": 62,
+       "matched": 49
+      },
+      "6-12 s": {
+       "true": 69,
+       "matched": 64
+      },
+      ">= 12 s": {
+       "true": 95,
+       "matched": 94
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WMX",
+   "setting_name": "clean"
+  },
+  "dfl-J03WN1-natural-eval": {
+   "view": "dfl-J03WN1-natural-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.6088272383354351,
+     "macroF1": 0.9168232698426905,
+     "n_true": 500,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 274,
+      "merged": 88,
+      "other": 8,
+      "predicted_dead": 7,
+      "wrong_team_absorbed": 110,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 2,
+      "matched": 274,
+      "merge_container": 6,
+      "over_other_team": 11
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 238,
+       "matched": 64
+      },
+      "3-6 s": {
+       "true": 122,
+       "matched": 84
+      },
+      "6-12 s": {
+       "true": 88,
+       "matched": 78
+      },
+      ">= 12 s": {
+       "true": 52,
+       "matched": 48
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.6815020862308762,
+     "macroF1": 0.9178941775254205,
+     "n_true": 426,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 277,
+      "merged": 46,
+      "other": 9,
+      "predicted_dead": 7,
+      "wrong_team_absorbed": 76,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 3,
+      "matched": 277,
+      "merge_container": 2,
+      "over_other_team": 11
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 163,
+       "matched": 61
+      },
+      "3-6 s": {
+       "true": 113,
+       "matched": 79
+      },
+      "6-12 s": {
+       "true": 94,
+       "matched": 85
+      },
+      ">= 12 s": {
+       "true": 56,
+       "matched": 52
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.7424196018376723,
+     "macroF1": 0.9224337795079108,
+     "n_true": 360,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 268,
+      "merged": 22,
+      "other": 5,
+      "predicted_dead": 7,
+      "split": 1,
+      "wrong_team_absorbed": 50,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 268,
+      "merge_container": 1,
+      "over_other_team": 15
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 109,
+       "matched": 52
+      },
+      "3-6 s": {
+       "true": 96,
+       "matched": 74
+      },
+      "6-12 s": {
+       "true": 89,
+       "matched": 80
+      },
+      ">= 12 s": {
+       "true": 66,
+       "matched": 62
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.7504078303425775,
+     "macroF1": 0.9243711626845778,
+     "n_true": 320,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 253,
+      "merged": 12,
+      "other": 4,
+      "predicted_dead": 6,
+      "split": 1,
+      "wrong_team_absorbed": 39,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 14,
+      "matched": 253,
+      "merge_container": 1,
+      "over_other_team": 25
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 77,
+       "matched": 39
+      },
+      "3-6 s": {
+       "true": 90,
+       "matched": 71
+      },
+      "6-12 s": {
+       "true": 82,
+       "matched": 76
+      },
+      ">= 12 s": {
+       "true": 71,
+       "matched": 67
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WN1",
+   "setting_name": "clean"
+  },
+  "dfl-J03WOH-natural-eval": {
+   "view": "dfl-J03WOH-natural-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.6940828402366864,
+     "macroF1": 0.9394415627838567,
+     "n_true": 402,
+     "n_pred": 274,
+     "true_fates": {
+      "matched": 261,
+      "merged": 52,
+      "other": 1,
+      "predicted_dead": 5,
+      "wrong_team_absorbed": 75,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 2,
+      "matched": 261,
+      "merge_container": 4,
+      "over_other_team": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 157,
+       "matched": 57
+      },
+      "3-6 s": {
+       "true": 96,
+       "matched": 63
+      },
+      "6-12 s": {
+       "true": 81,
+       "matched": 74
+      },
+      ">= 12 s": {
+       "true": 68,
+       "matched": 67
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.7354231974921631,
+     "macroF1": 0.940061969231004,
+     "n_true": 364,
+     "n_pred": 274,
+     "true_fates": {
+      "matched": 259,
+      "merged": 37,
+      "other": 1,
+      "predicted_dead": 4,
+      "wrong_team_absorbed": 58,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 3,
+      "matched": 259,
+      "merge_container": 4,
+      "over_other_team": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 127,
+       "matched": 55
+      },
+      "3-6 s": {
+       "true": 85,
+       "matched": 60
+      },
+      "6-12 s": {
+       "true": 83,
+       "matched": 76
+      },
+      ">= 12 s": {
+       "true": 69,
+       "matched": 68
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.7301369863013699,
+     "macroF1": 0.9376078104534732,
+     "n_true": 310,
+     "n_pred": 274,
+     "true_fates": {
+      "matched": 238,
+      "merged": 22,
+      "other": 2,
+      "predicted_dead": 4,
+      "wrong_team_absorbed": 42,
+      "wrong_team_swapped": 2
+     },
+     "pred_fates": {
+      "fragment_of_true": 13,
+      "matched": 238,
+      "merge_container": 3,
+      "over_other_team": 20
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 81,
+       "matched": 39
+      },
+      "3-6 s": {
+       "true": 74,
+       "matched": 52
+      },
+      "6-12 s": {
+       "true": 78,
+       "matched": 71
+      },
+      ">= 12 s": {
+       "true": 77,
+       "matched": 76
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.7040590405904059,
+     "macroF1": 0.9352321864529766,
+     "n_true": 268,
+     "n_pred": 274,
+     "true_fates": {
+      "matched": 218,
+      "merged": 8,
+      "other": 2,
+      "predicted_dead": 3,
+      "split": 1,
+      "wrong_team_absorbed": 34,
+      "wrong_team_swapped": 2
+     },
+     "pred_fates": {
+      "fragment_of_true": 24,
+      "matched": 218,
+      "over_other_team": 32
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 52,
+       "matched": 24
+      },
+      "3-6 s": {
+       "true": 62,
+       "matched": 48
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 64
+      },
+      ">= 12 s": {
+       "true": 83,
+       "matched": 82
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WOH",
+   "setting_name": "clean"
+  },
+  "dfl-J03WOY-natural-eval": {
+   "view": "dfl-J03WOY-natural-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.6650666666666667,
+     "macroF1": 0.9334477046042119,
+     "n_true": 456,
+     "n_pred": 294,
+     "true_fates": {
+      "matched": 281,
+      "merged": 67,
+      "other": 4,
+      "predicted_dead": 2,
+      "wrong_team_absorbed": 89,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 2,
+      "matched": 281,
+      "merge_container": 1,
+      "over_other_team": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 197,
+       "matched": 59
+      },
+      "3-6 s": {
+       "true": 124,
+       "matched": 94
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 65
+      },
+      ">= 12 s": {
+       "true": 64,
+       "matched": 63
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.6966480446927374,
+     "macroF1": 0.9335509460814335,
+     "n_true": 422,
+     "n_pred": 294,
+     "true_fates": {
+      "matched": 281,
+      "merged": 49,
+      "other": 5,
+      "predicted_dead": 2,
+      "wrong_team_absorbed": 74,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 2,
+      "matched": 281,
+      "merge_container": 1,
+      "over_other_team": 10
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 164,
+       "matched": 58
+      },
+      "3-6 s": {
+       "true": 118,
+       "matched": 90
+      },
+      "6-12 s": {
+       "true": 76,
+       "matched": 70
+      },
+      ">= 12 s": {
+       "true": 64,
+       "matched": 63
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.7449367088607595,
+     "macroF1": 0.9347302261331262,
+     "n_true": 338,
+     "n_pred": 294,
+     "true_fates": {
+      "matched": 263,
+      "merged": 16,
+      "other": 3,
+      "predicted_dead": 2,
+      "split": 1,
+      "wrong_team_absorbed": 43,
+      "wrong_team_swapped": 10
+     },
+     "pred_fates": {
+      "fragment_of_true": 13,
+      "matched": 263,
+      "over_other_team": 18
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 93,
+       "matched": 45
+      },
+      "3-6 s": {
+       "true": 99,
+       "matched": 81
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 64
+      },
+      ">= 12 s": {
+       "true": 75,
+       "matched": 73
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.7335593220338984,
+     "macroF1": 0.9312655514032908,
+     "n_true": 296,
+     "n_pred": 294,
+     "true_fates": {
+      "matched": 242,
+      "merged": 9,
+      "other": 3,
+      "predicted_dead": 2,
+      "split": 2,
+      "wrong_team_absorbed": 29,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 22,
+      "matched": 242,
+      "over_other_team": 30
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 59,
+       "matched": 26
+      },
+      "3-6 s": {
+       "true": 88,
+       "matched": 75
+      },
+      "6-12 s": {
+       "true": 69,
+       "matched": 64
+      },
+      ">= 12 s": {
+       "true": 80,
+       "matched": 77
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WOY",
+   "setting_name": "clean"
+  },
+  "dfl-J03WPY-natural-eval": {
+   "view": "dfl-J03WPY-natural-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.6905500705218619,
+     "macroF1": 0.9437065720812616,
+     "n_true": 421,
+     "n_pred": 288,
+     "true_fates": {
+      "matched": 270,
+      "merged": 54,
+      "other": 2,
+      "predicted_dead": 2,
+      "wrong_team_absorbed": 85,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 3,
+      "matched": 270,
+      "merge_container": 2,
+      "over_other_team": 13
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 175,
+       "matched": 55
+      },
+      "3-6 s": {
+       "true": 95,
+       "matched": 72
+      },
+      "6-12 s": {
+       "true": 68,
+       "matched": 62
+      },
+      ">= 12 s": {
+       "true": 83,
+       "matched": 81
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.7625192012288787,
+     "macroF1": 0.9450732011390938,
+     "n_true": 363,
+     "n_pred": 288,
+     "true_fates": {
+      "matched": 270,
+      "merged": 29,
+      "other": 1,
+      "predicted_dead": 2,
+      "wrong_team_absorbed": 58,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 4,
+      "matched": 270,
+      "merge_container": 1,
+      "over_other_team": 13
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 115,
+       "matched": 50
+      },
+      "3-6 s": {
+       "true": 91,
+       "matched": 71
+      },
+      "6-12 s": {
+       "true": 75,
+       "matched": 68
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 81
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.7611390284757119,
+     "macroF1": 0.9447446725315872,
+     "n_true": 309,
+     "n_pred": 288,
+     "true_fates": {
+      "matched": 248,
+      "merged": 13,
+      "other": 1,
+      "predicted_dead": 2,
+      "split": 1,
+      "wrong_team_absorbed": 41,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 248,
+      "over_other_team": 25
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 75,
+       "matched": 35
+      },
+      "3-6 s": {
+       "true": 73,
+       "matched": 59
+      },
+      "6-12 s": {
+       "true": 74,
+       "matched": 69
+      },
+      ">= 12 s": {
+       "true": 87,
+       "matched": 85
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.7311072056239016,
+     "macroF1": 0.9404857274178132,
+     "n_true": 281,
+     "n_pred": 288,
+     "true_fates": {
+      "matched": 229,
+      "merged": 7,
+      "other": 3,
+      "predicted_dead": 2,
+      "split": 2,
+      "wrong_team_absorbed": 35,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 23,
+      "matched": 229,
+      "over_other_team": 36
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 54,
+       "matched": 22
+      },
+      "3-6 s": {
+       "true": 65,
+       "matched": 52
+      },
+      "6-12 s": {
+       "true": 73,
+       "matched": 69
+      },
+      ">= 12 s": {
+       "true": 89,
+       "matched": 86
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WPY",
+   "setting_name": "clean"
+  },
+  "dfl-J03WQQ-natural-eval": {
+   "view": "dfl-J03WQQ-natural-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.6974063400576369,
+     "macroF1": 0.9443601073376474,
+     "n_true": 401,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 270,
+      "merged": 47,
+      "other": 2,
+      "predicted_dead": 2,
+      "wrong_team_absorbed": 73,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 5,
+      "matched": 270,
+      "merge_container": 1,
+      "over_other_team": 17
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 155,
+       "matched": 58
+      },
+      "3-6 s": {
+       "true": 76,
+       "matched": 57
+      },
+      "6-12 s": {
+       "true": 83,
+       "matched": 71
+      },
+      ">= 12 s": {
+       "true": 87,
+       "matched": 84
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.729940119760479,
+     "macroF1": 0.9450680809814691,
+     "n_true": 375,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 270,
+      "merged": 34,
+      "other": 2,
+      "predicted_dead": 2,
+      "wrong_team_absorbed": 61,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 5,
+      "matched": 270,
+      "merge_container": 1,
+      "over_other_team": 17
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 131,
+       "matched": 57
+      },
+      "3-6 s": {
+       "true": 72,
+       "matched": 56
+      },
+      "6-12 s": {
+       "true": 82,
+       "matched": 70
+      },
+      ">= 12 s": {
+       "true": 90,
+       "matched": 87
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.7598684210526316,
+     "macroF1": 0.9462700896918707,
+     "n_true": 315,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 254,
+      "merged": 16,
+      "other": 2,
+      "predicted_dead": 2,
+      "wrong_team_absorbed": 38,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 254,
+      "merge_container": 1,
+      "over_other_team": 27
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 85,
+       "matched": 42
+      },
+      "3-6 s": {
+       "true": 58,
+       "matched": 48
+      },
+      "6-12 s": {
+       "true": 80,
+       "matched": 72
+      },
+      ">= 12 s": {
+       "true": 92,
+       "matched": 92
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.7474452554744525,
+     "macroF1": 0.9454993859189837,
+     "n_true": 255,
+     "n_pred": 293,
+     "true_fates": {
+      "matched": 223,
+      "merged": 2,
+      "other": 2,
+      "predicted_dead": 2,
+      "split": 1,
+      "wrong_team_absorbed": 22,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 27,
+      "matched": 223,
+      "over_other_team": 43
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 44,
+       "matched": 23
+      },
+      "3-6 s": {
+       "true": 47,
+       "matched": 40
+      },
+      "6-12 s": {
+       "true": 68,
+       "matched": 65
+      },
+      ">= 12 s": {
+       "true": 96,
+       "matched": 95
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WQQ",
+   "setting_name": "clean"
+  },
+  "dfl-J03WR9-natural-eval": {
+   "view": "dfl-J03WR9-natural-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.6967136150234741,
+     "macroF1": 0.9494507741912117,
+     "n_true": 370,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 254,
+      "merged": 41,
+      "other": 2,
+      "predicted_dead": 5,
+      "wrong_team_absorbed": 59,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 4,
+      "matched": 254,
+      "over_other_team": 11
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 142,
+       "matched": 54
+      },
+      "3-6 s": {
+       "true": 84,
+       "matched": 65
+      },
+      "6-12 s": {
+       "true": 62,
+       "matched": 53
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 82
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.731900826446281,
+     "macroF1": 0.949268235947809,
+     "n_true": 336,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 251,
+      "merged": 26,
+      "other": 3,
+      "predicted_dead": 5,
+      "wrong_team_absorbed": 45,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 5,
+      "matched": 251,
+      "over_other_team": 13
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 113,
+       "matched": 51
+      },
+      "3-6 s": {
+       "true": 77,
+       "matched": 61
+      },
+      "6-12 s": {
+       "true": 61,
+       "matched": 54
+      },
+      ">= 12 s": {
+       "true": 85,
+       "matched": 85
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.7660176991150442,
+     "macroF1": 0.9500883198221605,
+     "n_true": 296,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 243,
+      "merged": 12,
+      "other": 1,
+      "predicted_dead": 4,
+      "wrong_team_absorbed": 32,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 243,
+      "over_other_team": 17
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 80,
+       "matched": 45
+      },
+      "3-6 s": {
+       "true": 67,
+       "matched": 54
+      },
+      "6-12 s": {
+       "true": 62,
+       "matched": 57
+      },
+      ">= 12 s": {
+       "true": 87,
+       "matched": 87
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.7412429378531074,
+     "macroF1": 0.9485365783532628,
+     "n_true": 262,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 223,
+      "merged": 6,
+      "other": 1,
+      "predicted_dead": 3,
+      "wrong_team_absorbed": 26,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 18,
+      "matched": 223,
+      "over_other_team": 28
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 59,
+       "matched": 32
+      },
+      "3-6 s": {
+       "true": 60,
+       "matched": 50
+      },
+      "6-12 s": {
+       "true": 52,
+       "matched": 50
+      },
+      ">= 12 s": {
+       "true": 91,
+       "matched": 91
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WR9",
+   "setting_name": "clean"
+  },
+  "dfl-J03WMX-contested-eval": {
+   "view": "dfl-J03WMX-contested-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.4673521850899743,
+     "macroF1": 0.88877544826993,
+     "n_true": 511,
+     "n_pred": 267,
+     "true_fates": {
+      "matched": 230,
+      "merged": 99,
+      "other": 6,
+      "predicted_dead": 30,
+      "wrong_team_absorbed": 135,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 9,
+      "matched": 230,
+      "merge_container": 3,
+      "over_other_team": 17,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 254,
+       "matched": 38
+      },
+      "3-6 s": {
+       "true": 100,
+       "matched": 54
+      },
+      "6-12 s": {
+       "true": 78,
+       "matched": 62
+      },
+      ">= 12 s": {
+       "true": 79,
+       "matched": 76
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5430232558139535,
+     "macroF1": 0.8911741327335463,
+     "n_true": 421,
+     "n_pred": 267,
+     "true_fates": {
+      "matched": 230,
+      "merged": 65,
+      "other": 4,
+      "predicted_dead": 22,
+      "wrong_team_absorbed": 93,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 10,
+      "matched": 230,
+      "merge_container": 2,
+      "over_other_team": 17,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 158,
+       "matched": 33
+      },
+      "3-6 s": {
+       "true": 98,
+       "matched": 53
+      },
+      "6-12 s": {
+       "true": 85,
+       "matched": 66
+      },
+      ">= 12 s": {
+       "true": 80,
+       "matched": 78
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.6032786885245901,
+     "macroF1": 0.8963391737261804,
+     "n_true": 343,
+     "n_pred": 267,
+     "true_fates": {
+      "matched": 225,
+      "merged": 32,
+      "other": 4,
+      "predicted_dead": 19,
+      "wrong_team_absorbed": 58,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 13,
+      "matched": 225,
+      "merge_container": 1,
+      "over_other_team": 20,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 101,
+       "matched": 26
+      },
+      "3-6 s": {
+       "true": 78,
+       "matched": 49
+      },
+      "6-12 s": {
+       "true": 76,
+       "matched": 63
+      },
+      ">= 12 s": {
+       "true": 88,
+       "matched": 87
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6439716312056738,
+     "macroF1": 0.8992044528146789,
+     "n_true": 297,
+     "n_pred": 267,
+     "true_fates": {
+      "matched": 217,
+      "merged": 15,
+      "other": 3,
+      "predicted_dead": 18,
+      "wrong_team_absorbed": 40,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 217,
+      "merge_container": 1,
+      "over_other_team": 24,
+      "over_true_dead": 8
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 71,
+       "matched": 21
+      },
+      "3-6 s": {
+       "true": 62,
+       "matched": 44
+      },
+      "6-12 s": {
+       "true": 69,
+       "matched": 57
+      },
+      ">= 12 s": {
+       "true": 95,
+       "matched": 95
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WMX",
+   "setting_name": "gaps"
+  },
+  "dfl-J03WN1-contested-eval": {
+   "view": "dfl-J03WN1-contested-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5074027603513175,
+     "macroF1": 0.8550729852391212,
+     "n_true": 500,
+     "n_pred": 297,
+     "true_fates": {
+      "matched": 251,
+      "merged": 75,
+      "other": 13,
+      "predicted_dead": 38,
+      "split": 1,
+      "wrong_team_absorbed": 100,
+      "wrong_team_swapped": 22
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 251,
+      "merge_container": 4,
+      "other": 1,
+      "over_other_team": 25,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 238,
+       "matched": 47
+      },
+      "3-6 s": {
+       "true": 122,
+       "matched": 77
+      },
+      "6-12 s": {
+       "true": 88,
+       "matched": 78
+      },
+      ">= 12 s": {
+       "true": 52,
+       "matched": 49
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5582295988934993,
+     "macroF1": 0.8551821656800288,
+     "n_true": 426,
+     "n_pred": 297,
+     "true_fates": {
+      "matched": 251,
+      "merged": 46,
+      "other": 8,
+      "predicted_dead": 31,
+      "split": 1,
+      "wrong_team_absorbed": 73,
+      "wrong_team_swapped": 16
+     },
+     "pred_fates": {
+      "fragment_of_true": 13,
+      "matched": 251,
+      "merge_container": 3,
+      "over_other_team": 25,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 163,
+       "matched": 45
+      },
+      "3-6 s": {
+       "true": 113,
+       "matched": 71
+      },
+      "6-12 s": {
+       "true": 94,
+       "matched": 82
+      },
+      ">= 12 s": {
+       "true": 56,
+       "matched": 53
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.602130898021309,
+     "macroF1": 0.8585451317722977,
+     "n_true": 360,
+     "n_pred": 297,
+     "true_fates": {
+      "matched": 242,
+      "merged": 24,
+      "other": 5,
+      "predicted_dead": 29,
+      "split": 2,
+      "wrong_team_absorbed": 50,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 18,
+      "matched": 242,
+      "merge_container": 2,
+      "over_other_team": 30,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 109,
+       "matched": 37
+      },
+      "3-6 s": {
+       "true": 96,
+       "matched": 65
+      },
+      "6-12 s": {
+       "true": 89,
+       "matched": 77
+      },
+      ">= 12 s": {
+       "true": 66,
+       "matched": 63
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6262560777957861,
+     "macroF1": 0.8650963388363081,
+     "n_true": 320,
+     "n_pred": 297,
+     "true_fates": {
+      "matched": 235,
+      "merged": 9,
+      "other": 5,
+      "predicted_dead": 28,
+      "split": 2,
+      "wrong_team_absorbed": 34,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 22,
+      "matched": 235,
+      "merge_container": 1,
+      "over_other_team": 35,
+      "over_true_dead": 4
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 77,
+       "matched": 31
+      },
+      "3-6 s": {
+       "true": 90,
+       "matched": 61
+      },
+      "6-12 s": {
+       "true": 82,
+       "matched": 75
+      },
+      ">= 12 s": {
+       "true": 71,
+       "matched": 68
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WN1",
+   "setting_name": "gaps"
+  },
+  "dfl-J03WOH-contested-eval": {
+   "view": "dfl-J03WOH-contested-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5582952815829528,
+     "macroF1": 0.8829846630386702,
+     "n_true": 402,
+     "n_pred": 255,
+     "true_fates": {
+      "matched": 221,
+      "merged": 57,
+      "other": 4,
+      "predicted_dead": 27,
+      "split": 1,
+      "wrong_team_absorbed": 84,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 8,
+      "matched": 221,
+      "merge_container": 3,
+      "other": 2,
+      "over_other_team": 14,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 157,
+       "matched": 39
+      },
+      "3-6 s": {
+       "true": 96,
+       "matched": 49
+      },
+      "6-12 s": {
+       "true": 81,
+       "matched": 69
+      },
+      ">= 12 s": {
+       "true": 68,
+       "matched": 64
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.6016155088852988,
+     "macroF1": 0.883998860026827,
+     "n_true": 364,
+     "n_pred": 255,
+     "true_fates": {
+      "matched": 222,
+      "merged": 41,
+      "other": 3,
+      "predicted_dead": 26,
+      "split": 1,
+      "wrong_team_absorbed": 65,
+      "wrong_team_swapped": 6
+     },
+     "pred_fates": {
+      "fragment_of_true": 8,
+      "matched": 222,
+      "merge_container": 2,
+      "other": 2,
+      "over_other_team": 14,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 127,
+       "matched": 38
+      },
+      "3-6 s": {
+       "true": 85,
+       "matched": 49
+      },
+      "6-12 s": {
+       "true": 83,
+       "matched": 70
+      },
+      ">= 12 s": {
+       "true": 69,
+       "matched": 65
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.663362831858407,
+     "macroF1": 0.888333797822635,
+     "n_true": 310,
+     "n_pred": 255,
+     "true_fates": {
+      "matched": 219,
+      "merged": 21,
+      "other": 3,
+      "predicted_dead": 22,
+      "split": 1,
+      "wrong_team_absorbed": 40,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 10,
+      "matched": 219,
+      "merge_container": 1,
+      "other": 2,
+      "over_other_team": 16,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 81,
+       "matched": 33
+      },
+      "3-6 s": {
+       "true": 74,
+       "matched": 48
+      },
+      "6-12 s": {
+       "true": 78,
+       "matched": 65
+      },
+      ">= 12 s": {
+       "true": 77,
+       "matched": 73
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6623326959847036,
+     "macroF1": 0.888362203475114,
+     "n_true": 268,
+     "n_pred": 255,
+     "true_fates": {
+      "matched": 204,
+      "merged": 9,
+      "other": 3,
+      "predicted_dead": 17,
+      "split": 1,
+      "wrong_team_absorbed": 30,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 17,
+      "matched": 204,
+      "other": 2,
+      "over_other_team": 25,
+      "over_true_dead": 7
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 52,
+       "matched": 22
+      },
+      "3-6 s": {
+       "true": 62,
+       "matched": 43
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 59
+      },
+      ">= 12 s": {
+       "true": 83,
+       "matched": 80
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WOH",
+   "setting_name": "gaps"
+  },
+  "dfl-J03WOY-contested-eval": {
+   "view": "dfl-J03WOY-contested-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5418826739427012,
+     "macroF1": 0.8750889392786402,
+     "n_true": 456,
+     "n_pred": 277,
+     "true_fates": {
+      "matched": 241,
+      "merged": 68,
+      "other": 6,
+      "predicted_dead": 25,
+      "wrong_team_absorbed": 100,
+      "wrong_team_swapped": 16
+     },
+     "pred_fates": {
+      "fragment_of_true": 8,
+      "matched": 241,
+      "merge_container": 3,
+      "other": 1,
+      "over_other_team": 12,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 197,
+       "matched": 47
+      },
+      "3-6 s": {
+       "true": 124,
+       "matched": 69
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 62
+      },
+      ">= 12 s": {
+       "true": 64,
+       "matched": 63
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.573390557939914,
+     "macroF1": 0.876409816146293,
+     "n_true": 422,
+     "n_pred": 277,
+     "true_fates": {
+      "matched": 241,
+      "merged": 55,
+      "other": 5,
+      "predicted_dead": 25,
+      "wrong_team_absorbed": 82,
+      "wrong_team_swapped": 14
+     },
+     "pred_fates": {
+      "fragment_of_true": 8,
+      "matched": 241,
+      "merge_container": 3,
+      "other": 1,
+      "over_other_team": 12,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 164,
+       "matched": 47
+      },
+      "3-6 s": {
+       "true": 118,
+       "matched": 64
+      },
+      "6-12 s": {
+       "true": 76,
+       "matched": 67
+      },
+      ">= 12 s": {
+       "true": 64,
+       "matched": 63
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.5983739837398374,
+     "macroF1": 0.8767675223201606,
+     "n_true": 338,
+     "n_pred": 277,
+     "true_fates": {
+      "matched": 221,
+      "merged": 26,
+      "other": 4,
+      "predicted_dead": 21,
+      "wrong_team_absorbed": 51,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 221,
+      "merge_container": 2,
+      "other": 1,
+      "over_other_team": 22,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 93,
+       "matched": 32
+      },
+      "3-6 s": {
+       "true": 99,
+       "matched": 57
+      },
+      "6-12 s": {
+       "true": 71,
+       "matched": 60
+      },
+      ">= 12 s": {
+       "true": 75,
+       "matched": 72
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6191972076788831,
+     "macroF1": 0.8779347558789846,
+     "n_true": 296,
+     "n_pred": 277,
+     "true_fates": {
+      "matched": 210,
+      "merged": 18,
+      "other": 3,
+      "predicted_dead": 16,
+      "wrong_team_absorbed": 36,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 23,
+      "matched": 210,
+      "merge_container": 2,
+      "over_other_team": 30,
+      "over_true_dead": 12
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 59,
+       "matched": 22
+      },
+      "3-6 s": {
+       "true": 88,
+       "matched": 53
+      },
+      "6-12 s": {
+       "true": 69,
+       "matched": 57
+      },
+      ">= 12 s": {
+       "true": 80,
+       "matched": 78
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WOY",
+   "setting_name": "gaps"
+  },
+  "dfl-J03WPY-contested-eval": {
+   "view": "dfl-J03WPY-contested-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5936231884057971,
+     "macroF1": 0.9032200648358008,
+     "n_true": 421,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 242,
+      "merged": 56,
+      "other": 6,
+      "predicted_dead": 20,
+      "wrong_team_absorbed": 88,
+      "wrong_team_swapped": 9
+     },
+     "pred_fates": {
+      "fragment_of_true": 2,
+      "matched": 242,
+      "merge_container": 5,
+      "other": 1,
+      "over_other_team": 14,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 175,
+       "matched": 43
+      },
+      "3-6 s": {
+       "true": 95,
+       "matched": 60
+      },
+      "6-12 s": {
+       "true": 68,
+       "matched": 58
+      },
+      ">= 12 s": {
+       "true": 83,
+       "matched": 81
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.6506329113924051,
+     "macroF1": 0.9044632300199197,
+     "n_true": 363,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 242,
+      "merged": 29,
+      "other": 5,
+      "predicted_dead": 19,
+      "wrong_team_absorbed": 64,
+      "wrong_team_swapped": 4
+     },
+     "pred_fates": {
+      "fragment_of_true": 5,
+      "matched": 242,
+      "merge_container": 2,
+      "other": 1,
+      "over_other_team": 14,
+      "over_true_dead": 5
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 115,
+       "matched": 38
+      },
+      "3-6 s": {
+       "true": 91,
+       "matched": 59
+      },
+      "6-12 s": {
+       "true": 75,
+       "matched": 65
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 80
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.6664359861591695,
+     "macroF1": 0.9051716991401865,
+     "n_true": 309,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 224,
+      "merged": 14,
+      "other": 3,
+      "predicted_dead": 19,
+      "wrong_team_absorbed": 46,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 224,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 25,
+      "over_true_dead": 6
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 75,
+       "matched": 23
+      },
+      "3-6 s": {
+       "true": 73,
+       "matched": 49
+      },
+      "6-12 s": {
+       "true": 74,
+       "matched": 67
+      },
+      ">= 12 s": {
+       "true": 87,
+       "matched": 85
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6632727272727272,
+     "macroF1": 0.9053506505029886,
+     "n_true": 281,
+     "n_pred": 269,
+     "true_fates": {
+      "matched": 210,
+      "merged": 8,
+      "other": 3,
+      "predicted_dead": 18,
+      "wrong_team_absorbed": 39,
+      "wrong_team_swapped": 3
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 210,
+      "merge_container": 1,
+      "other": 1,
+      "over_other_team": 32,
+      "over_true_dead": 6
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 54,
+       "matched": 14
+      },
+      "3-6 s": {
+       "true": 65,
+       "matched": 43
+      },
+      "6-12 s": {
+       "true": 73,
+       "matched": 66
+      },
+      ">= 12 s": {
+       "true": 89,
+       "matched": 87
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WPY",
+   "setting_name": "gaps"
+  },
+  "dfl-J03WQQ-contested-eval": {
+   "view": "dfl-J03WQQ-contested-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5942528735632184,
+     "macroF1": 0.8895676649657206,
+     "n_true": 401,
+     "n_pred": 295,
+     "true_fates": {
+      "matched": 245,
+      "merged": 43,
+      "other": 6,
+      "predicted_dead": 20,
+      "split": 3,
+      "wrong_team_absorbed": 74,
+      "wrong_team_swapped": 10
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 245,
+      "other": 1,
+      "over_other_team": 28,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 155,
+       "matched": 41
+      },
+      "3-6 s": {
+       "true": 76,
+       "matched": 51
+      },
+      "6-12 s": {
+       "true": 83,
+       "matched": 70
+      },
+      ">= 12 s": {
+       "true": 87,
+       "matched": 83
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.617910447761194,
+     "macroF1": 0.8901224164518137,
+     "n_true": 375,
+     "n_pred": 295,
+     "true_fates": {
+      "matched": 245,
+      "merged": 33,
+      "other": 6,
+      "predicted_dead": 18,
+      "split": 3,
+      "wrong_team_absorbed": 62,
+      "wrong_team_swapped": 8
+     },
+     "pred_fates": {
+      "fragment_of_true": 12,
+      "matched": 245,
+      "other": 1,
+      "over_other_team": 28,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 131,
+       "matched": 40
+      },
+      "3-6 s": {
+       "true": 72,
+       "matched": 50
+      },
+      "6-12 s": {
+       "true": 82,
+       "matched": 70
+      },
+      ">= 12 s": {
+       "true": 90,
+       "matched": 85
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.639344262295082,
+     "macroF1": 0.8909925917519473,
+     "n_true": 315,
+     "n_pred": 295,
+     "true_fates": {
+      "matched": 231,
+      "merged": 15,
+      "other": 5,
+      "predicted_dead": 13,
+      "split": 4,
+      "wrong_team_absorbed": 40,
+      "wrong_team_swapped": 7
+     },
+     "pred_fates": {
+      "fragment_of_true": 20,
+      "matched": 231,
+      "other": 1,
+      "over_other_team": 34,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 85,
+       "matched": 29
+      },
+      "3-6 s": {
+       "true": 58,
+       "matched": 42
+      },
+      "6-12 s": {
+       "true": 80,
+       "matched": 71
+      },
+      ">= 12 s": {
+       "true": 92,
+       "matched": 89
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6218181818181818,
+     "macroF1": 0.8915625546256027,
+     "n_true": 255,
+     "n_pred": 295,
+     "true_fates": {
+      "matched": 203,
+      "merged": 6,
+      "other": 3,
+      "predicted_dead": 13,
+      "split": 2,
+      "wrong_team_absorbed": 23,
+      "wrong_team_swapped": 5
+     },
+     "pred_fates": {
+      "fragment_of_true": 35,
+      "matched": 203,
+      "over_other_team": 48,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 44,
+       "matched": 11
+      },
+      "3-6 s": {
+       "true": 47,
+       "matched": 35
+      },
+      "6-12 s": {
+       "true": 68,
+       "matched": 63
+      },
+      ">= 12 s": {
+       "true": 96,
+       "matched": 94
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WQQ",
+   "setting_name": "gaps"
+  },
+  "dfl-J03WR9-contested-eval": {
+   "view": "dfl-J03WR9-contested-eval",
+   "setting": [
+    1.0,
+    0.0
+   ],
+   "conventions": {
+    "raw": {
+     "spellF1": 0.5538961038961039,
+     "macroF1": 0.8959017215439812,
+     "n_true": 370,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 207,
+      "merged": 53,
+      "other": 3,
+      "predicted_dead": 22,
+      "wrong_team_absorbed": 70,
+      "wrong_team_swapped": 15
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 207,
+      "merge_container": 2,
+      "over_other_team": 17,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 142,
+       "matched": 34
+      },
+      "3-6 s": {
+       "true": 84,
+       "matched": 47
+      },
+      "6-12 s": {
+       "true": 62,
+       "matched": 47
+      },
+      ">= 12 s": {
+       "true": 82,
+       "matched": 79
+      }
+     }
+    },
+    "controlled1": {
+     "spellF1": 0.5951890034364261,
+     "macroF1": 0.8967016730282561,
+     "n_true": 336,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 206,
+      "merged": 37,
+      "other": 4,
+      "predicted_dead": 20,
+      "wrong_team_absorbed": 56,
+      "wrong_team_swapped": 13
+     },
+     "pred_fates": {
+      "fragment_of_true": 11,
+      "matched": 206,
+      "merge_container": 2,
+      "other": 1,
+      "over_other_team": 17,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 113,
+       "matched": 34
+      },
+      "3-6 s": {
+       "true": 77,
+       "matched": 44
+      },
+      "6-12 s": {
+       "true": 61,
+       "matched": 47
+      },
+      ">= 12 s": {
+       "true": 85,
+       "matched": 81
+      }
+     }
+    },
+    "controlled2": {
+     "spellF1": 0.6118081180811809,
+     "macroF1": 0.8965448855280281,
+     "n_true": 296,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 199,
+      "merged": 22,
+      "other": 4,
+      "predicted_dead": 17,
+      "wrong_team_absorbed": 43,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 15,
+      "matched": 199,
+      "over_other_team": 23,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 80,
+       "matched": 28
+      },
+      "3-6 s": {
+       "true": 67,
+       "matched": 39
+      },
+      "6-12 s": {
+       "true": 62,
+       "matched": 48
+      },
+      ">= 12 s": {
+       "true": 87,
+       "matched": 84
+      }
+     }
+    },
+    "controlled3": {
+     "spellF1": 0.6220472440944882,
+     "macroF1": 0.897707602101558,
+     "n_true": 262,
+     "n_pred": 246,
+     "true_fates": {
+      "matched": 188,
+      "merged": 10,
+      "other": 5,
+      "predicted_dead": 16,
+      "wrong_team_absorbed": 32,
+      "wrong_team_swapped": 11
+     },
+     "pred_fates": {
+      "fragment_of_true": 19,
+      "matched": 188,
+      "over_other_team": 30,
+      "over_true_dead": 9
+     },
+     "lengths": {
+      "< 3 s": {
+       "true": 59,
+       "matched": 21
+      },
+      "3-6 s": {
+       "true": 60,
+       "matched": 38
+      },
+      "6-12 s": {
+       "true": 52,
+       "matched": 41
+      },
+      ">= 12 s": {
+       "true": 91,
+       "matched": 88
+      }
+     }
+    }
+   },
+   "setting_index": 10,
+   "match": "J03WR9",
+   "setting_name": "gaps"
+  }
+ },
+ "grid_full_oof": {
+  "[0.25, 0.0]": 0.5479194755094642,
+  "[0.25, 1.0]": 0.5361527691193073,
+  "[0.25, 2.0]": 0.5243451003349113,
+  "[0.25, 3.0]": 0.5117557859773376,
+  "[0.25, 4.0]": 0.49651705180749584,
+  "[0.5, 0.0]": 0.5626960733903436,
+  "[0.5, 1.0]": 0.554852142631207,
+  "[0.5, 2.0]": 0.5437362016536278,
+  "[0.5, 3.0]": 0.5331397119604951,
+  "[0.5, 4.0]": 0.5211518475040824,
+  "[1.0, 0.0]": 0.5690066787345331,
+  "[1.0, 1.0]": 0.5664134112892651,
+  "[1.0, 2.0]": 0.5599350015740638,
+  "[1.0, 3.0]": 0.5501625695199777,
+  "[1.0, 4.0]": 0.5383450201288331
+ }
+}

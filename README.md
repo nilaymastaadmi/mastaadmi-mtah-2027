@@ -13,16 +13,20 @@ data/broadcast/BAR-ATH_broadcast_atd.xml
 
 ## Regenerate the submission
 
-Requires Python 3.13. The model was frozen with numpy 2.5.4, pandas 3.1.0 and scikit-learn 1.9.1, which are pinned in `requirements.txt`.
+Requires Python 3.13 (frozen with 3.13.16) and two virtual environments. `.venv` holds the packages pinned in `requirements.txt` (numpy 2.5.4, pandas 3.1.0, scikit-learn 1.9.1). `.venv-video` holds `requirements-v10.txt` (torch 2.15.0, numpy 2.5.4) for the neural network stage; the folder name is historical. On Linux, install the CPU build of torch with `--index-url https://download.pytorch.org/whl/cpu`.
 
 ```sh
 python3.13 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6 v8.test_v8
-OMP_NUM_THREADS=1 .venv/bin/python -m v8.infer --data-dir data --out Mastaadmi.csv
+python3.13 -m venv .venv-video
+.venv-video/bin/python -m pip install -r requirements-v10.txt
+OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6 v8.test_v8 exp18.test_exp18 exp18.test_arm_b
+bash v10/run.sh data
 ```
 
-`v8.infer` checks the pre-registered gate, the frozen v6 model, its settings, every bound source file and the package versions against the freeze. It aligns the broadcast feed, fills missing ball positions, decodes, writes the CSV, validates it with the organisers' validator, and prints its SHA-256. It never reads ground truth. The expected digest is in the technical note.
+`v10/run.sh` runs three stages twice and compares the two CSVs: `v10.inputs` aligns the broadcast feed, fills missing ball positions and builds the model input; `v10.predict` runs the frozen network and decoder; `v10.write` writes the CSV and validates it with the organisers' validator. The prediction stage checks the pre-registered gate, the frozen model, its settings and every bound source file against the freeze before it runs. Nothing reads ground truth. The files appear in `work/v10-evaluation/` (`v10_<stamp>_run1.csv`); copy one to `Mastaadmi.csv`. The expected SHA-256 is in the technical note. The earlier v8 pipeline still runs with `OMP_NUM_THREADS=1 .venv/bin/python -m v8.infer --data-dir data --out v8.csv`.
+
+The labels are identical on macOS arm64 and Linux x86 on 2.45 million public frames, but the network's probabilities are not bit-identical across machines (see the technical note, Section 6). The digest in the note is for macOS arm64.
 
 ## Verify the model from public data (optional)
 
@@ -43,8 +47,10 @@ The full pre-registered experiment is in `work/EXPERIMENT-04.md` and `v2/experim
 
 | Path | Contents |
 |---|---|
-| `v8/` | Submitted pipeline: alignment of the broadcast tracking feed and ball fusion, then the frozen v6 model; also the simulated-view experiments, stability checks, tests |
-| `v6/` | Frozen model inside v8 (adds ball-control features); first fallback |
+| `v10/` | Submitted pipeline: three stages (inputs, network and decoder, CSV writer), the frozen network `final.pt`, the run script and a cross-platform check |
+| `exp18/` | Code v10 imports (geometry features, network, decoder) and the dropped possession-change detector, with tests |
+| `v8/` | Broadcast tracking alignment and ball fusion (used by v10 for its input), the simulated-view experiments, stability checks, tests; previous submission |
+| `v6/` | Per-frame model with ball-control features, used by v8; first fallback |
 | `v4/` | Earlier method and fallback: team-shape and context features, frozen model, verified inference, stability checks |
 | `v2/` | Earlier method and fallback: loader, degradation, comparators, experiment runner, verified inference, reproducibility checks, tests |
 | `possession.py`, `learned_possession.py` | Shared feature extraction and decoder, from version 1; frozen |

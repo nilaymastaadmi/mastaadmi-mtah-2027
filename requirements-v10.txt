@@ -1,0 +1,4 @@
+# v10 stage 2 (torch, CPU). Stages 1 and 3 use requirements.txt.
+# Mac reference build: torch 2.15.0 with Accelerate BLAS, USE_MKLDNN=OFF (verified 10 Nov).
+torch==2.15.0
+numpy==2.5.4
