@@ -57,7 +57,7 @@ The v12 network was trained on SkillCorner 20, DFL 7 and Metrica games 1 to 3. P
 
 **Metrica labels.** Our rule: D from a ball-out, foul or offside stoppage until the restart. Otherwise the label is the team of the last controlled action (pass, carry, recovery, shot or set piece). Duels and touches without control do not change possession. Checks before training: team agreement with the nearest-team call is 0.79 to 0.82 over the 3 games, the D share is 0.32 to 0.41, and the tracking ball is missing on 93% to 99% of D frames and on 0.3% to 1.2% of live frames.
 
-**Training recipe for the network.** Every training match also enters mirrored (pitch flipped, teams swapped, H and A exchanged). Possessions shorter than 3 s get 2 times the weight and those of 3 to 6 s get 1.5 times. SkillCorner frames get weight 0.25. DFL and Metrica matches were also used as degraded copies, so the model sees input as bad as the competition's: ball removed in long runs (41% of frames; median gap 10.7 s, p90 34 s, maximum 221 s), plus position jitter, false ball positions and player dropout. These settings were calibrated only to aggregate ball-visibility statistics of the provided tracking (the 41% figure is also published by the organisers). SkillCorner frames were used only where the ball is visible, because in broadcast video a missing ball mostly signals a stoppage. We trained 12 models (the registered recipe and one ablation, each with 5 folds and a final) on 12 November with fixed seeds and deterministic settings.
+**Training recipe for the network.** Every training match also enters mirrored (pitch flipped, teams swapped, H and A exchanged). Possessions shorter than 3 s get 2 times the weight and those of 3 to 6 s get 1.5 times. SkillCorner frames get weight 0.25. DFL and Metrica matches were also used as degraded copies, so the model sees input as bad as the competition's: ball removed in long runs (41% of frames; median gap 10.7 s, p90 34 s, maximum 221 s), plus position jitter, false ball positions and player dropout. Four aggregate, label-free statistics of the provided automatic tracking set this simulation: the missing-ball share (41%, also published by the organisers) and the missing-run median, 90th percentile and maximum. They are listed in `v2/degrade.py`. No label, video or per-frame value of the provided match was used, and nothing was fitted to it. SkillCorner frames were used only where the ball is visible, because in broadcast video a missing ball mostly signals a stoppage. We trained 12 models (the registered recipe and one ablation, each with 5 folds and a final) on 12 November with fixed seeds and deterministic settings.
 
 The fusion step has no learned parameters. Its constants (1.2 m acceptance, shot length limits, search window) were fixed on simulated DFL second views before any result was seen.
 
@@ -94,7 +94,7 @@ Metrica out-of-fold gains are diagnostic only (Game 1 was used for v1, Games 2 a
 
 ### 4.3 Real-match sanity vetoes
 
-We fixed these checks before any v12 score. They use only the provided tracking and the Smart Tagging file, no labels, and none of them tuned anything. They can only veto a candidate: the quiet-stretch check vetoed one (EXPERIMENT-21), and the tag check counted against v10. They are automatic checks of the kind the organisers' 4 November clarification allows.
+We fixed these checks before any v12 score. They use only the provided tracking and the Smart Tagging file, no labels, and none of them tuned anything. They can only veto a candidate: the quiet-stretch check vetoed one (EXPERIMENT-21), and the tag check counted against v10. Their thresholds come from v8's own output on the provided tracking (0.763 is v8's tag agreement minus 0.02; 27 is 1.5 times v8's 18 quiet-stretch starts), with no ground truth or video. They are automatic checks of the kind the organisers' 4 November clarification allows.
 
 | Check | Rule | v12 | v8 |
 |---|---|---:|---:|
@@ -108,7 +108,7 @@ We fixed these checks before any v12 score. They use only the provided tracking 
 
 Inside the v12 pipeline, v8's decoder on v8's recomputed probabilities reproduces the v8 submission on all 199,319 frames (0 differ). The candidate from the decoder study (EXPERIMENT-21) had 30 starts inside quiet stretches and failed. The withdrawn v10 would have failed the same check with 36.
 
-**Public five-minute window (bug check only).** After v12 was fixed, a pre-registered bug check scored it once on the public five-minute labels: spellF1 0.5677 and macroF1 0.7623, with 14 predicted against 17 true possessions (mean 18.6 s against 14.2 s). v8's single check on 12 November gave 0.5500 and 0.7147. Both were run once, after the model was fixed, and never used to select or tune anything. One possession moves this five-minute score by about 0.06, so the difference between the two is within one possession.
+**Public five-minute window (bug check only).** After v12 was fixed, a pre-registered bug check scored it once on the public five-minute labels: spellF1 0.5677 and macroF1 0.7623, with 14 predicted against 17 true possessions (mean 18.6 s against 14.2 s). v8's single check on 12 November gave 0.5500 and 0.7147. Both were run once, after the model was fixed, and never used to select or tune anything. v12 had already been adopted on the external evidence above when its check ran; the only rule, written in our decision log beforehand, was that a score below 0.45 would mean a pipeline bug and block it. The check could not choose between versions. One possession moves this five-minute score by about 0.06, so the difference between the two is within one possession.
 
 ## 5. Possession rules as implemented
 
@@ -140,11 +140,15 @@ bash v12/run.sh data
 
 `v12/run.sh` checks the freeze (`work/v12-evaluation/freeze.json`: model hash, bound source hashes, package versions). It then runs the inputs (v8 fusion path and v6 probabilities), the frozen network, the blend, the decoder and the CSV writer twice, compares the two CSV digests and prints the SHA-256. Files: `v12/run.sh`, `inputs.py`, `predict.py`, `freeze.py`, `freezecheck.py` (freeze checks), `env.py` (version checks), `portability.py` and the frozen weights `v12/final.pt`. The network and training code are in `exp22/` (`net.py`, `views.py`, `metrica.py`).
 
-A Linux cross-platform check runs from `.github/workflows/v12-portability.yml`. Linux result (GitHub Actions run 43799963735; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on 17 public views (7 DFL clean, 7 DFL with gaps, 3 SkillCorner; 2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the blended probabilities by at most 6.6e-7, which changes no label (`work/v12-evaluation/portability-compare.json`).
+A Linux cross-platform check ran in our development repository (the workflow is not in this repository because it needs external datasets we do not redistribute). It used public external matches only, because the competition data may not go to a cloud runner, so the exact SHA-256 below has been produced on macOS arm64 only. Linux result (GitHub Actions run 43799963735; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on 17 public views (7 DFL clean, 7 DFL with gaps, 3 SkillCorner; 2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the blended probabilities by at most 6.6e-7, which changes no label (`work/v12-evaluation/portability-compare.json`).
 
 **Final file SHA-256 (v12):** `d0c865dc5fde468ebbb57c48a9ad3adfc7dc239aac00db9655fa58f1748ec8e1`. Generated twice on macOS arm64 with Python 3.13.16, byte-identical both times; the official validator passed.
 
 **Base and fallback (v8):** `v8.infer` still regenerates the previous submission, `bb0ba6f55369f862a6ea2151882b82691a7331d6d98733bf6fe6225d08c4034e`, using the commands in `README.md`. Earlier fallbacks: v6 (`v6.infer`), v4 (`v4.infer`), v2 (`v2.verified_inference`). v10 (`v10/run.sh`) still runs; it is withdrawn.
+
+## Use of AI tools
+
+AI coding assistants were used to write code, run experiments and review documents. No provided video, tracking, Smart Tagging or ground truth, nor any extract of them, was sent to a hosted language model; scripts that read the match ran locally and only aggregate numbers and file hashes were shown to the assistants. No language model is part of the pipeline.
 
 ## Credits
 

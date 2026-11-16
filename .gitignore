@@ -1,6 +1,10 @@
 data/
 external/
 .venv/
+.venv-video/
 __pycache__/
 *.csv
+*.npy
+*.npz
+work/*/runs/
 work/candidates/

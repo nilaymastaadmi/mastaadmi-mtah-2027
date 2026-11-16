@@ -25,7 +25,7 @@ bash v12/run.sh data
 
 `v12/run.sh` checks the freeze (`work/v12-evaluation/freeze.json`: model hash, bound source hashes, package versions), then runs the inputs (v8 fusion path and v6 probabilities), the frozen network, the blend, the decoder and the CSV writer twice, compares the two CSV digests and prints the SHA-256 and the path of the CSV (`work/v12-evaluation/runs/`). It never reads ground truth. Regeneration needs only the frozen weights `v12/final.pt` and the match data. The method and its evidence are in the technical note.
 
-Linux result (GitHub Actions run 43799963735; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on 17 public views (7 DFL clean, 7 DFL with gaps, 3 SkillCorner; 2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the blended probabilities by at most 6.6e-7, which changes no label (`work/v12-evaluation/portability-compare.json`).
+The exact SHA-256 has been produced on macOS arm64 (Apple M5, macOS, Python 3.13.16). A Linux check ran in our development repository on public external matches only, because the competition data may not go to a cloud runner. Linux result (GitHub Actions run 43799963735; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on 17 public views (7 DFL clean, 7 DFL with gaps, 3 SkillCorner; 2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the blended probabilities by at most 6.6e-7, which changes no label (`work/v12-evaluation/portability-compare.json`).
 
 ### v8 (base and fallback)
 
