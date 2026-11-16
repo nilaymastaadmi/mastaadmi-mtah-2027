@@ -13,7 +13,7 @@ data/broadcast/BAR-ATH_broadcast_atd.xml
 
 ## Regenerate the submission
 
-Requires Python 3.13 (frozen with 3.13.16). The submitted file is v12 (sha256 `d0c865dc5fde468ebbb57c48a9ad3adfc7dc239aac00db9655fa58f1748ec8e1`). It needs two environments: `.venv` from `requirements.txt` (numpy 2.5.4, pandas 3.1.0, scikit-learn 1.9.1) and `.venv-video` from `requirements-v12.txt` (torch 2.15.0, numpy 2.5.4; on Linux use `--index-url https://download.pytorch.org/whl/cpu`).
+Requires Python 3.13 (frozen with 3.13.16). The submitted file is v12 (sha256 `0cdc7351e1bcfeb345f4a4a3549c0b2b5d1abe62a2aaa381c10b9a9a93879d7a`). It needs two environments: `.venv` from `requirements.txt` (numpy 2.5.4, pandas 3.1.0, scikit-learn 1.9.1) and `.venv-video` from `requirements-v12.txt` (torch 2.15.0, numpy 2.5.4; on Linux use `--index-url https://download.pytorch.org/whl/cpu`).
 
 ```sh
 python3.13 -m venv .venv
@@ -32,7 +32,7 @@ The exact SHA-256 has been produced on macOS arm64 (Apple M5, macOS, Python 3.13
 v8 is the base pipeline (tactical tracking, broadcast-ball fusion, v6 gradient-boosted model, Viterbi decoder) and the previous submission (sha256 `bb0ba6f55369f862a6ea2151882b82691a7331d6d98733bf6fe6225d08c4034e`). It still regenerates in `.venv`:
 
 ```sh
-OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6 v8.test_v8 exp18.test_exp18 exp18.test_arm_b exp22.test_exp22
+OMP_NUM_THREADS=2 .venv/bin/python -m unittest test_possession test_first_assessment v2.test_v2 v3.test_v3 v4.test_v4 v6.test_v6 v8.test_v8 exp18.test_exp18 exp18.test_arm_b exp22.test_exp22 v12.test_kickoff
 OMP_NUM_THREADS=1 .venv/bin/python -m v8.infer --data-dir data --out v8.csv
 ```
 
@@ -61,7 +61,7 @@ The full pre-registered experiment is in `work/EXPERIMENT-04.md` and `v2/experim
 
 | Path | Contents |
 |---|---|
-| `v12/` | Submitted pipeline: inputs (v8 fusion path and v6 probabilities), frozen network `final.pt`, blend, decoder and CSV writer, freeze and version checks, portability check, run script |
+| `v12/` | Submitted pipeline: inputs (v8 fusion path and v6 probabilities), frozen network `final.pt`, blend, decoder, second-half pre-kickoff step and CSV writer, freeze and version checks, portability check, run script |
 | `exp22/` | v12's network (`net.py`), training views (`views.py`), Metrica labels (`metrica.py`) and tests; its scoring scripts need private caches and are not included |
 | `v8/` | Base pipeline and fallback: broadcast tracking alignment and ball fusion, verified inference, the simulated-view experiments, stability checks, tests |
 | `v10/` | Tested, withdrawn: three stages (inputs, network and decoder, CSV writer), the frozen network `final.pt`, the run script and a cross-platform check |

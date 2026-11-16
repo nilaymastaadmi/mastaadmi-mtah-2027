@@ -8,6 +8,7 @@ FOLDER = ROOT / 'work/v12-evaluation'
 MODEL = ROOT / 'v12/final.pt'
 # Every repo file on the v12 inference path, plus the evidence it rests on.
 BOUND = ['v12/env.py', 'v12/freezecheck.py', 'v12/inputs.py', 'v12/predict.py', 'v12/freeze.py', 'v12/run.sh',
+         'v12/kickoff.py', 'starter-repo/starter/load_smart_tagging.py',
          'requirements.txt', 'requirements-v12.txt', 'exp22/net.py', 'exp22/views.py', 'exp22/candidate.py',
          'exp18/arm_a.py', 'exp18/targets.py', 'exp18/decode.py', 'exp18/geometry.py', 'v10/write.py',
          'possession.py', 'learned_possession.py', 'starter-repo/games.py',

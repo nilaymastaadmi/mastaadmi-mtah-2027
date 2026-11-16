@@ -4,7 +4,8 @@
 
 Binds: the model hash and its stored scaler digest, every bound source (v12/freezecheck.py BOUND), the package pins of
 both requirement files, the blend weight and decoder, the digest of v8's labels on the match (base-path check) and
-the expected CSV sha256 (the adopted Mastaadmi.csv).
+the expected CSV sha256. Re-frozen 16 Nov after v12/kickoff.py (second-half pre-kickoff frames set to D, organiser
+FAQ): the previous freeze, expecting d0c865dc, is kept as work/v12-evaluation/freeze-d0c865dc.json.
 """
 import argparse
 import hashlib
@@ -19,8 +20,9 @@ sys.path.insert(0, str(ROOT))
 from exp22.candidate import V8_SETTING, W_CONV  # noqa: E402
 from v12 import env, freezecheck as fc  # noqa: E402
 from v12.inputs import v8_labels_sha  # noqa: E402
+from v12.kickoff import window  # noqa: E402
 
-EXPECTED_CSV = 'd0c865dc5fde468ebbb57c48a9ad3adfc7dc239aac00db9655fa58f1748ec8e1'
+EXPECTED_CSV = '0cdc7351e1bcfeb345f4a4a3549c0b2b5d1abe62a2aaa381c10b9a9a93879d7a'
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
@@ -39,6 +41,7 @@ if __name__ == '__main__':
               'model_sha256': fc.sha(fc.MODEL), 'scaler_sha256': scaler, 'c_in': int(blob['c_in']),
               'blend_weight_conv': W_CONV, 'decoder': list(V8_SETTING),
               'v8_labels_sha256': v8_labels_sha(d['q_v8'].astype(float), d['periods']),
+              'kickoff_fix_d_frames_half_open': list(window()),
               'expected_csv_sha256': EXPECTED_CSV, 'pins': {'main': env.pins('main'), 'torch': env.pins('torch')},
               'training': {'torch_seed': 22, 'chunk_rng': [22, 5, 'epoch'], 'threads': 3, 'epochs': 12,
                            'data': 'SkillCorner 20 + DFL 7 + Metrica sample games 1-3, team-swapped'},

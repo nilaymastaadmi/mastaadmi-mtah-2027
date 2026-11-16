@@ -26,7 +26,7 @@ Steps 0, 1, 2a and 3 are v8 and are unchanged in v12. Step 2b is new.
 
 **Step 2b: temporal network evidence (v12).** The 90 columns are averaged into 5 fps blocks. A dilated temporal convolutional network reads them: a 1x1 convolution to 64 channels, then 7 residual blocks with dilations 1, 2, 4, 8, 16, 32 and 64. The receptive field is 127 blocks each side, which is 25.4 s each side. Its H, A and D probabilities are expanded back to 25 fps and averaged 50/50 with Step 2a's. Section 3 lists the training data and recipe.
 
-**Step 3: decoding (v8).** A three-state Viterbi decoder runs per half on -log P / 25 with a uniform switch penalty of 0.5 and returns the single most coherent H/A/D sequence. Frames outside the two halves are X.
+**Step 3: decoding (v8).** A three-state Viterbi decoder runs per half on -log P / 25 with a uniform switch penalty of 0.5 and returns the single most coherent H/A/D sequence. Frames outside the two halves are X. The organisers' FAQ states that the 2,934 graded second-half frames before the kickoff (video frames 110,808 to 113,741) are all D, so `v12/kickoff.py` sets them to D, taking both frame numbers from the vendored organiser code (`games.py` and `starter/load_smart_tagging.py`). This changed 1,565 frames and nothing else; the real-match figures in Sections 4.3 and 6 describe the labels before it.
 
 **Why this design.** The ranking metric (spellF1) rewards whole possessions, so the decoder suppresses flicker. An oracle test on other matches showed that giving the model the true team during live play lifted spellF1 from 0.32 to 0.70, far more than perfect dead-ball timing did (0.45). That is why we added team shape, ball control, more ball positions and longer context. The network alone is not enough: on PFF it loses to v8 (-0.031), and the blend carries the gain.
 
@@ -115,7 +115,7 @@ Inside the v12 pipeline, v8's decoder on v8's recomputed probabilities reproduce
 - **Who has the ball:** learned from ball proximity, explicit control (ball moving with a player), temporal context and team shape, with up to 25 s of context in the network. A switch needs sustained evidence (penalty 0.5), so touches, deflections and short aerial contests usually do not flip the label. This approximates "controlled possession".
 - **Loose balls and missing ball:** the decoder keeps the current team unless the evidence pays for a switch. A missing ball alone is never read as dead.
 - **Dead ball:** learned from the providers' ball-status labels and, for the network, our Metrica stoppage rule.
-- **Restarts:** handled implicitly as D-to-team transitions. No rule is tied to specific frames or events of the provided match.
+- **Restarts:** handled implicitly as D-to-team transitions. The only frame rule is the organisers' published second-half kickoff (Section 1, Step 3); nothing else is tied to specific frames or events of the provided match.
 - **Abstention:** X only outside the two graded halves.
 
 ## 6. Limitations
@@ -138,11 +138,11 @@ python3.13 -m venv .venv-video && .venv-video/bin/python -m pip install -r requi
 bash v12/run.sh data
 ```
 
-`v12/run.sh` checks the freeze (`work/v12-evaluation/freeze.json`: model hash, bound source hashes, package versions). It then runs the inputs (v8 fusion path and v6 probabilities), the frozen network, the blend, the decoder and the CSV writer twice, compares the two CSV digests and prints the SHA-256. Files: `v12/run.sh`, `inputs.py`, `predict.py`, `freeze.py`, `freezecheck.py` (freeze checks), `env.py` (version checks), `portability.py` and the frozen weights `v12/final.pt`. The network and training code are in `exp22/` (`net.py`, `views.py`, `metrica.py`).
+`v12/run.sh` checks the freeze (`work/v12-evaluation/freeze.json`: model hash, bound source hashes, package versions). It then runs the inputs (v8 fusion path and v6 probabilities), the frozen network, the blend, the decoder, the pre-kickoff step and the CSV writer twice, compares the two CSV digests and prints the SHA-256. Files: `v12/run.sh`, `inputs.py`, `predict.py`, `freeze.py`, `freezecheck.py` (freeze checks), `kickoff.py` (second-half pre-kickoff frames), `env.py` (version checks), `portability.py` and the frozen weights `v12/final.pt`. The network and training code are in `exp22/` (`net.py`, `views.py`, `metrica.py`).
 
 A Linux cross-platform check ran in our development repository (the workflow is not in this repository because it needs external datasets we do not redistribute). It used public external matches only, because the competition data may not go to a cloud runner, so the exact SHA-256 below has been produced on macOS arm64 only. Linux result (GitHub Actions run 43799963735; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on 17 public views (7 DFL clean, 7 DFL with gaps, 3 SkillCorner; 2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the blended probabilities by at most 6.6e-7, which changes no label (`work/v12-evaluation/portability-compare.json`).
 
-**Final file SHA-256 (v12):** `d0c865dc5fde468ebbb57c48a9ad3adfc7dc239aac00db9655fa58f1748ec8e1`. Generated twice on macOS arm64 with Python 3.13.16, byte-identical both times; the official validator passed.
+**Final file SHA-256 (v12):** `0cdc7351e1bcfeb345f4a4a3549c0b2b5d1abe62a2aaa381c10b9a9a93879d7a`. Generated twice on macOS arm64 with Python 3.13.16, byte-identical both times; the official validator passed.
 
 **Base and fallback (v8):** `v8.infer` still regenerates the previous submission, `bb0ba6f55369f862a6ea2151882b82691a7331d6d98733bf6fe6225d08c4034e`, using the commands in `README.md`. Earlier fallbacks: v6 (`v6.infer`), v4 (`v4.infer`), v2 (`v2.verified_inference`). v10 (`v10/run.sh`) still runs; it is withdrawn.
 

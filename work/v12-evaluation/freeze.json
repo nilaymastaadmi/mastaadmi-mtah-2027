@@ -13,7 +13,11 @@
   0.0
  ],
  "v8_labels_sha256": "e8c9cb67b5dd995a761f21172b893fd37e172db34b9dcc3d5e4cad261108fb84",
- "expected_csv_sha256": "d0c865dc5fde468ebbb57c48a9ad3adfc7dc239aac00db9655fa58f1748ec8e1",
+ "kickoff_fix_d_frames_half_open": [
+  110808,
+  113742
+ ],
+ "expected_csv_sha256": "0cdc7351e1bcfeb345f4a4a3549c0b2b5d1abe62a2aaa381c10b9a9a93879d7a",
  "pins": {
   "main": {
    "cloudpickle": "3.1.2",
@@ -46,11 +50,13 @@
  },
  "source_hashes": {
   "v12/env.py": "8fb501eb94f0716aff994a6f3d3e0f40a9d695ba4ad0a0aaea191d0a9434aa04",
-  "v12/freezecheck.py": "b53cb21de5779ff0300552ebdf2c3b3b712b2d4ae3bf75f5fe488f552272be7f",
+  "v12/freezecheck.py": "de92584e4ddfb0f1531f7ae1e6fafb23c87573e2ca8eb3dacfee448ca8a547f8",
   "v12/inputs.py": "925b368d61a3b250d6148800cc3140b75e97a832495fc2f6058d8e2c83501c0d",
-  "v12/predict.py": "b3b2009a17d50b08f19a57fe6baf33ecf6dfb352d3320fb64ca34c1b38a58172",
-  "v12/freeze.py": "a6f1dc2bed6c1173ae439de717926269614bae6ed48e67ab9f588ed3103e499a",
+  "v12/predict.py": "61a8130870875ff7b3827b5acd796c6d7d925a09b8c81aaaf7dfaec1cbf2add5",
+  "v12/freeze.py": "329d3c5b00b6274d562a268ded943cadd77ca304bf2765662ea2b3e3d738fc7c",
   "v12/run.sh": "c842ec6d31001b6b0b97fbeaa3b8c5f7abf726798d79c803031c06dc3160f73b",
+  "v12/kickoff.py": "f6f44c8159fd84680bbb414b20c9624d2b6006cc9fcc7987538e7169ff8de035",
+  "starter-repo/starter/load_smart_tagging.py": "cacfe90acf1deb37b3aa3e4666d6a9d5595c1766d59fe24c9150e1a1d51d0c64",
   "requirements.txt": "06ff612ef93260fb13ad5bd3d770b34a8f09061fe3aa3c73cbe423fabe0d6d09",
   "requirements-v12.txt": "2057d06649635847f198a2c8ca2730a142dac19885b6a8619cd9e59cd881b6c5",
   "exp22/net.py": "5250eadb13cf86d4bf5a91d59dc64f45c2d1eaac789391e4ef89a7533c9026de",

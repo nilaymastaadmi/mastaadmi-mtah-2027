@@ -1,4 +1,5 @@
 """v12 stage 2 (.venv-video, torch CPU): frozen network, 50/50 blend with v8's evidence, v8's decoder. LOCAL ONLY.
+After decoding, the second-half frames before the organisers' kickoff are set to D (v12/kickoff.py, FAQ).
 
     OMP_NUM_THREADS=3 .venv-video/bin/python -m v12.predict --inputs <inputs.npz> --out <labels.npy>
 
@@ -17,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from exp22.candidate import V8_SETTING, W_CONV  # noqa: E402
 from v12 import env, freezecheck  # noqa: E402
+from v12.kickoff import kickoff_fix  # noqa: E402
 
 
 def run(inputs):
@@ -26,7 +28,7 @@ def run(inputs):
     model, scaler = net.load_model(freezecheck.MODEL)
     q_conv, c = net.predict(model, scaler, d['x'], d['periods'])
     q = W_CONV * q_conv.astype(float) + (1 - W_CONV) * d['q_v8'].astype(float)
-    return de.decode(q, None, d['periods'], *V8_SETTING), q, c, d['periods']
+    return kickoff_fix(de.decode(q, None, d['periods'], *V8_SETTING)), q, c, d['periods']
 
 
 if __name__ == '__main__':
