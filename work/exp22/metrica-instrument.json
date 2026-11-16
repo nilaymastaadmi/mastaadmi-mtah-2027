@@ -1,0 +1,38 @@
+{
+ "1": {
+  "frames": 145006,
+  "graded_minutes": 96.1,
+  "mapping": 0.8093965496671359,
+  "d_share": 0.41481198834466493,
+  "x_share": 0.005972166668965422,
+  "possessions": 355,
+  "possessions_per_min": 3.694324961842653,
+  "ball_share": 0.6086024026592003,
+  "h_share": 0.303850423199667,
+  "ok": true
+ },
+ "2": {
+  "frames": 141156,
+  "graded_minutes": 94.0,
+  "mapping": 0.8206206425820292,
+  "d_share": 0.4111912999092559,
+  "x_share": 0.0007084360565615348,
+  "possessions": 318,
+  "possessions_per_min": 3.381635662431942,
+  "ball_share": 0.5899288730199213,
+  "h_share": 0.3064031306715064,
+  "ok": true
+ },
+ "3": {
+  "frames": 143761,
+  "graded_minutes": 95.3,
+  "mapping": 0.7886414208010549,
+  "d_share": 0.3187944576948095,
+  "x_share": 0.0054813196903193495,
+  "possessions": 382,
+  "possessions_per_min": 4.00774971498115,
+  "ball_share": 0.6777637885100967,
+  "h_share": 0.3495834877914012,
+  "ok": true
+ }
+}

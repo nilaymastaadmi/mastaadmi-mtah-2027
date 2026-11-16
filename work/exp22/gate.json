@@ -1,0 +1,28 @@
+{
+ "verdict": "PASS",
+ "checks": {
+  "1_pff_delta_mean4>=+0.015": [
+   0.0296476890910869,
+   true
+  ],
+  "2_pff_wins>=39/64": [
+   62,
+   true
+  ],
+  "3_pff_controlled3>=0": [
+   0.023625790361171732,
+   true
+  ],
+  "4_sc_oof_delta>=+0.010": [
+   0.01533357523267338,
+   true
+  ],
+  "5_dfl_gaps_delta>=-0.010": [
+   0.1182158964635247,
+   true
+  ]
+ },
+ "void_median_frames_changed": 7051.0,
+ "metrica_excluded": [],
+ "registration_sha256": "721e7f1c6752db3e4fb3f67ff396d4ad3ffd2dacdca4da6c9c6b0bfd06128eb5"
+}

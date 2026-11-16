@@ -1,0 +1,81 @@
+{
+ "version": "v12",
+ "experiment": "EXPERIMENT-22 recipe M",
+ "gate_verdict": "PASS",
+ "registration_sha256": "721e7f1c6752db3e4fb3f67ff396d4ad3ffd2dacdca4da6c9c6b0bfd06128eb5",
+ "model": "v12/final.pt",
+ "model_sha256": "e68c5767a8b7fc080cdc71df7451f6abf8f5e15b730ff71944c318d086650acf",
+ "scaler_sha256": "f333c9d86c9845a772743ff7739cf6d39ca79e7d53fa5cd86143465d1a14e339",
+ "c_in": 147,
+ "blend_weight_conv": 0.5,
+ "decoder": [
+  0.5,
+  0.0
+ ],
+ "v8_labels_sha256": "e8c9cb67b5dd995a761f21172b893fd37e172db34b9dcc3d5e4cad261108fb84",
+ "expected_csv_sha256": "d0c865dc5fde468ebbb57c48a9ad3adfc7dc239aac00db9655fa58f1748ec8e1",
+ "pins": {
+  "main": {
+   "cloudpickle": "3.1.2",
+   "joblib": "1.6.0",
+   "narwhals": "2.28.0",
+   "numpy": "2.5.4",
+   "pandas": "3.1.0",
+   "python-dateutil": "3.0.0",
+   "scikit-learn": "1.9.1",
+   "scipy": "1.18.1",
+   "six": "1.17.0",
+   "threadpoolctl": "3.7.0",
+   "tzdata": "2026.6"
+  },
+  "torch": {
+   "torch": "2.15.0",
+   "numpy": "2.5.4"
+  }
+ },
+ "training": {
+  "torch_seed": 22,
+  "chunk_rng": [
+   22,
+   5,
+   "epoch"
+  ],
+  "threads": 3,
+  "epochs": 12,
+  "data": "SkillCorner 20 + DFL 7 + Metrica sample games 1-3, team-swapped"
+ },
+ "source_hashes": {
+  "v12/env.py": "8fb501eb94f0716aff994a6f3d3e0f40a9d695ba4ad0a0aaea191d0a9434aa04",
+  "v12/freezecheck.py": "b53cb21de5779ff0300552ebdf2c3b3b712b2d4ae3bf75f5fe488f552272be7f",
+  "v12/inputs.py": "925b368d61a3b250d6148800cc3140b75e97a832495fc2f6058d8e2c83501c0d",
+  "v12/predict.py": "b3b2009a17d50b08f19a57fe6baf33ecf6dfb352d3320fb64ca34c1b38a58172",
+  "v12/freeze.py": "a6f1dc2bed6c1173ae439de717926269614bae6ed48e67ab9f588ed3103e499a",
+  "v12/run.sh": "c842ec6d31001b6b0b97fbeaa3b8c5f7abf726798d79c803031c06dc3160f73b",
+  "requirements.txt": "06ff612ef93260fb13ad5bd3d770b34a8f09061fe3aa3c73cbe423fabe0d6d09",
+  "requirements-v12.txt": "2057d06649635847f198a2c8ca2730a142dac19885b6a8619cd9e59cd881b6c5",
+  "exp22/net.py": "5250eadb13cf86d4bf5a91d59dc64f45c2d1eaac789391e4ef89a7533c9026de",
+  "exp22/views.py": "779c11b1b0cf468b8e1d689b8859f7f9577dc72f786fe42ad1be3395c686c5b9",
+  "exp22/candidate.py": "c7808f275ebea653fc6ca250d19d25e8bfdad797d347b553cfd449b78dc9e004",
+  "exp18/arm_a.py": "193ad02e15e60a608b245724db14e71330481fa16e26dcfcb7126754e0d4dd43",
+  "exp18/targets.py": "ab67958997c8026f33898e67cb1fe58386b331a73b68bc413cc5b0f85e6fe6e2",
+  "exp18/decode.py": "5712f6f906944c5fe94681777dcb26d06f97c2b5eea39fb678cc2b03d080b82c",
+  "exp18/geometry.py": "0ac7878e064d725ed1ab155d0c103ca0e3d19394c3814b5b7aa529b32ccbe7f0",
+  "v10/write.py": "2270546961db1f3689969ca3ad41972e4df33f83ef907f2da05b9bf5ecdefadf",
+  "possession.py": "83c9c26e8ba35c7788094fb84febb3666f785d169a5715b7dd53abd2fb2306b8",
+  "learned_possession.py": "3c9343e18202a2350a332f20ae3b7445d64c8556aa43102030adf9cd2246a4ae",
+  "starter-repo/games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+  "starter-repo/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+  "starter-repo/evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+  "v2/methods.py": "88c09b511274e1b679d76706079fcec812dfdbf43b6422eca8979fb1e3b1e274",
+  "v3/features.py": "3b7fdad6f068480db8e7c12bfdad517eccccdedd15eb936d8cf9ce7847427971",
+  "v4/develop.py": "145c74eed71d0a0148b84b4acb0f60176647d1aa8c04a133c19495dd98f5226f",
+  "v4/shape.py": "42a18a69b83e6272f340707d79d167577a717c25272eb05acb236b1e964024af",
+  "v6/control.py": "afa381e5b0e720d86fe44c44e6034a2e08e79354bb05517c692eea5ea59e9db5",
+  "v6/infer.py": "7c3f0c6fe03f9a4c9c1d5103564493945543388f0f5838294c744f8565f20a51",
+  "v8/align.py": "fa29111d36f7f8b3a57530167537210b1c0ee68aeb48d6de7f28c8ac04bf3a54",
+  "v8/broadcast_audit.py": "5a6929e34d237ddc8b8e2413fde815adc11b857b7ace210148a52212321ac960",
+  "v8/infer.py": "15df7caf66640657c80dd0cd09ccc1695a2ebb98fff2ba667eb83a4441cf6920",
+  "work/EXPERIMENT-22.md": "721e7f1c6752db3e4fb3f67ff396d4ad3ffd2dacdca4da6c9c6b0bfd06128eb5",
+  "work/exp22/gate.json": "893af5146d95ab0f26687d55e8575ae096520c79d574c14e849231fa94d8dda2"
+ }
+}

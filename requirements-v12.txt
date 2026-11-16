@@ -1,0 +1,4 @@
+# v12 stage 2 (torch, CPU): the frozen EXPERIMENT-22 network. Stages 1 and 3 use requirements.txt.
+# Mac reference build: torch 2.15.0 from PyPI (Accelerate BLAS, USE_MKLDNN=OFF). Linux: CPU wheel index.
+torch==2.15.0
+numpy==2.5.4
