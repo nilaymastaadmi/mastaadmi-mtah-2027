@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.13.16",
+  "torch": "2.15.0",
+  "numpy": "2.5.4",
+  "versions": {
+   "torch": "2.15.0",
+   "numpy": "2.5.4",
+   "python": "3.13.16"
+  },
+  "config": [
+   "- LAPACK is enabled (usually provided by MKL)",
+   "- Build settings: BLAS_INFO=accelerate, BUILD_TYPE=Release, COMMIT_SHA=d0f2af8b66b20da4baa50644c0cd3f887a2eae2e, CUDA_FLAGS= -DLIBCUDACXX_ENABLE_SIMPLIFIED_COMPLEX_OPERATIONS -Xfatbin -compress-all  -Wno-deprecated-gpu-targets --expt-extended-lambda -DCUB_WRAPPED_NAMESPACE=at_cuda_detail -DDISABLE_CUSPARSE_DEPRECATED -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -DC10_NODEPRECATED, CXX_COMPILER=/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DUSE_PYTORCH_QNNPACK -DAT_BUILD_ARM_VEC256_WITH_SLEEF -DUSE_PYTORCH_METAL_EXPORT -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DUSE_COREML_DELEGATE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=braced-scalar-init -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wvla-extension -Wsuggest-override -Wnewline-eof -Winconsistent-missing-override -Winconsistent-missing-destructor-override -Wno-pass-failed -Wno-error=old-style-cast -Wconstant-conversion -Qunused-arguments -faligned-new -fno-math-errno -fno-trapping-math -Werror=format -fclang-abi-compat=17 -DUSE_MPS -Wno-missing-braces, LAPACK_INFO=accelerate, TORCH_VERSION=2.15.0, USE_CUDA=OFF, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EIGEN_FOR_BLAS=ON, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_HIPSPARSELT=OFF, USE_MKL=OFF, USE_MKLDNN=OFF, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF,"
+  ],
+  "model_sha256": "f4b1d53222e7b28ee632c3cfc9b14025a761174779a1240e2efba2eaca4d3832",
+  "v6_model_sha256": "2e669ecd0aca8d3ac186133d24aa06b8265ecbdc4f6485d75a4d845b6d425add"
+ },
+ "views": {
+  "dfl-J03WMX-natural-eval": {
+   "frames": 145968,
+   "x_sha256": "24b2c1ff9bf4b55a62e7dc180b73e5777df588f16960b91dd9e2ae0149c684cd",
+   "q_round6_sha256": "755f01518c4c0df5f907201e23f5e1102b640727c38d4944af7d90825564b950",
+   "labels_sha256": "c946310f0418a362a1dd3055db24a6134d683913f1b102d13781906a5a227e3a"
+  },
+  "dfl-J03WN1-natural-eval": {
+   "frames": 141562,
+   "x_sha256": "71fd5ac04e9cb47ece102a52a997083d187d76d33572cca9c0ce037fbfb4fc44",
+   "q_round6_sha256": "25da4d98b9c885073039228239177bbfab82df84ceeb328215f360878d67f181",
+   "labels_sha256": "50872bc9472a1e59e98fa55e8e003bd593aef26c63197e8da0b6299aaed2e3fe"
+  },
+  "dfl-J03WOH-natural-eval": {
+   "frames": 137215,
+   "x_sha256": "b32b405b0223d93623ae28e08dd1304f63ae0e2760cbf05e5c08ab445080a4cf",
+   "q_round6_sha256": "4d9a27f43e3f986d457011ef74caaf5ed7d8bd21321aaf0c04e0ea97545ecc25",
+   "labels_sha256": "a277be5c12f23808342c69a6ce880a5669612173377f6d72d4582964b6edba9b"
+  },
+  "dfl-J03WOY-natural-eval": {
+   "frames": 142537,
+   "x_sha256": "ace67a1f403201a30a8d37b86934b529edb4772f2307ab535b2bf01b482cd2b5",
+   "q_round6_sha256": "5b80b0212438f2ae71278607528d12ce326ee40c74af572a631b17a6edbd2e04",
+   "labels_sha256": "a7070f231e19347976ef9e0f3f27249821c5741cf31be19de83fecfa143ab506"
+  },
+  "dfl-J03WPY-natural-eval": {
+   "frames": 146212,
+   "x_sha256": "2bcde18ec360d2a5e8874175c5c7f5e4c4d12e82178f8908c389a61aaa0df486",
+   "q_round6_sha256": "f2e2d5c5af5abdefe1fa9a430168c5c822f26f63c942dd083d22709f595130d4",
+   "labels_sha256": "95d6d08b48ad1c9a378dcd827587cb81555573eb6eabbfb94e39df0c26b2e86f"
+  },
+  "dfl-J03WQQ-natural-eval": {
+   "frames": 142346,
+   "x_sha256": "f6d143ae330973fb709b8c18ef14bf303ef55e4bd2e0b15dcdcb8aa27343ce5a",
+   "q_round6_sha256": "4f581e0755f33f0cf76fe45afe79992486ca1e4737b01db34437d328c9a046fc",
+   "labels_sha256": "4df501df10dc93aab257e87e9b5fe43c02c50f5c2df59d606dc2932aa52e020a"
+  },
+  "dfl-J03WR9-natural-eval": {
+   "frames": 146811,
+   "x_sha256": "db905ea48f5ad74ffd006cdba6c7001824eb197fd304e8e7f4c6cfccc0fd08cd",
+   "q_round6_sha256": "bb3de62440b304a18fdf3447e64449bbad93c57a4eb76fefc81fbaad51eaf830",
+   "labels_sha256": "1827e5a936715465f064d063caf633be1bf394edf77e368b3459bb8eca8ff86c"
+  },
+  "dfl-J03WMX-contested-eval": {
+   "frames": 145968,
+   "x_sha256": "3e8e1f4c453473d9a4ee50eacab83d881183e58eede79038b524814b5858b5d7",
+   "q_round6_sha256": "4a3a34e90584664ddec590e074fb4682358341c6e657c86afc9c6b04e4bb3a5d",
+   "labels_sha256": "1280b450cd969d1d81706cf89840a4e5cdd3e0ae3eb15fb38427232db22f9782"
+  },
+  "dfl-J03WN1-contested-eval": {
+   "frames": 141562,
+   "x_sha256": "ebae49e6c218776a119e4828bfbc3ee3500e299ed31ee3dda9d245a59420a37a",
+   "q_round6_sha256": "175b28ab811c99a0a3aa9d4c964dbeb79a89b1d32e337f3a2b7cf8c5d4199c4c",
+   "labels_sha256": "bc4917ba20a83872a36f437b5fef2ef693c79732ac04e658140afdc66b2cc651"
+  },
+  "dfl-J03WOH-contested-eval": {
+   "frames": 137215,
+   "x_sha256": "b2ac8acf1129d00957cad55bbe91871643e70e7aa1124bb5bbcaa444b29c7efe",
+   "q_round6_sha256": "00bd3787f5ccd635311c5d4f1392c44a4dbeeb9d7978cd89b490b98ee86ece8a",
+   "labels_sha256": "b31064222eb64d3e90004c0fd494aa97b52d138f0a8ee00b9b95c6f1d953c383"
+  },
+  "dfl-J03WOY-contested-eval": {
+   "frames": 142537,
+   "x_sha256": "7c355edc1ad58802f456976d58a32ba88c718ffb23a741a771dfa80517fb6e45",
+   "q_round6_sha256": "9525d4ac67a5aaf73304141f4efb7997000e2b4bee036adb8e61badc3c32b5b7",
+   "labels_sha256": "2ed80cfa4382c146723ca59f4ee4b410259cd285684520b26c431c7fb3a9bb56"
+  },
+  "dfl-J03WPY-contested-eval": {
+   "frames": 146212,
+   "x_sha256": "cce904ac60e979bfb6eee181c700500d59415cfe8c7ccee0d43f6625de63a5fc",
+   "q_round6_sha256": "ded58ff97c09f6fe1d16a97d40c092c0b4b9ecca9ba75849c34ea72abc464110",
+   "labels_sha256": "db348ec75311dba3433aef0f6e6ce410e1041a95be78e3abde91ae0594d0920a"
+  },
+  "dfl-J03WQQ-contested-eval": {
+   "frames": 142346,
+   "x_sha256": "f841ff566746eb1d067e8c82371357049cce4fe10a2da346d7b006f98aaff105",
+   "q_round6_sha256": "c2934adaa3ec53c14563ecd4d0ceeb9f595cc2f971300c1dc57663c69b36cc49",
+   "labels_sha256": "b325578be72f44f6583862548bd331ddd0fa746919aa1b719c737f6b887ba01b"
+  },
+  "dfl-J03WR9-contested-eval": {
+   "frames": 146811,
+   "x_sha256": "993144bcd1aacde88544c3a28b25b7f316ba1269e9e3c0d37eb8569284784e23",
+   "q_round6_sha256": "66e0115ccab98eb6f9364e1a3a2964d5035cb20818cc08c416ed6d08ab18b268",
+   "labels_sha256": "94835e06165ff109bfd8dea0cec344f0727f5ac9d29e1368549bf9a3b78ab5bc"
+  },
+  "sc-1874553-real-eval": {
+   "frames": 150703,
+   "x_sha256": "1de7d666ef7b4d72ce2369f2c7baba34fccc21cb83e8d4db4a30c174f0c00ea7",
+   "q_round6_sha256": "23c21c08f0581047918b9e28c20fc08eb62bc68bba3f594e051d47435284b022",
+   "labels_sha256": "eb2a259d389b5321c3d83a484b5a8c329ced59a76b3a702e2302f51f210b3d8d"
+  },
+  "sc-1886347-real-eval": {
+   "frames": 147603,
+   "x_sha256": "9f2635959e023ee957464909f814e27fcb1613fa93c48a904f4928094147b7bd",
+   "q_round6_sha256": "f77e09357cd716ed6ea6adb6706c3b7543c208ffbf6c7a83dd91585af29228e4",
+   "labels_sha256": "587c38a497c85017ceedb312f5aa1b8830d0240cbdc84a372d4f5cd1051f4277"
+  },
+  "sc-1899585-real-eval": {
+   "frames": 151278,
+   "x_sha256": "246f198ec2b6d169a1af591625e0e278bd10b9225abf637bddae9308924b0153",
+   "q_round6_sha256": "35d8e737883383ca2efaa1428820a3d7f3773476f11da4d1bcf2acac55f92cf7",
+   "labels_sha256": "c48dd0723042a9bae7a66df1b323d372339468f18ba208ec69b439e9c32e7a46"
+  }
+ }
+}

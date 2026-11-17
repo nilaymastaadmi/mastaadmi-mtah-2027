@@ -1,0 +1,13 @@
+{
+ "reported_file_sha256": {
+  "v12/final.pt": "e68c5767a8b7fc080cdc71df7451f6abf8f5e15b730ff71944c318d086650acf",
+  "H1.pt": "a53b8c4caa5e37771f99372127041011f1135ff1f4f493f402bb7932868c093f"
+ },
+ "H1_state_keys_equal": true,
+ "H1_state_tensors_equal": true,
+ "H1_scaler_equal": true,
+ "H1_c_in_equal": true,
+ "H1_zip_records_equal_after_stem_prefix": true,
+ "n_tensors": 50,
+ "ok": true
+}

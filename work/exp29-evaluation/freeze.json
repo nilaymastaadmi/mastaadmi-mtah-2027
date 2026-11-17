@@ -1,0 +1,118 @@
+{
+ "final_verdict": "PASS",
+ "candidate": "B",
+ "guards": [
+  {
+   "guard": "two byte-identical full runs",
+   "value": "ace6e2f7 / ace6e2f7",
+   "needed": "equal",
+   "pass": true
+  },
+  {
+   "guard": "official validator (both runs)",
+   "value": "passed",
+   "needed": "passed",
+   "pass": true
+  },
+  {
+   "guard": "possession starts inside quiet stretches",
+   "value": 25,
+   "needed": "< 27",
+   "pass": true
+  },
+  {
+   "guard": "Smart Tagging phase agreement",
+   "value": 0.7982,
+   "needed": ">= 0.763",
+   "pass": true
+  },
+  {
+   "guard": "predicted D share",
+   "value": 0.482,
+   "needed": "0.283 to 0.542",
+   "pass": true
+  },
+  {
+   "guard": "median possession length (s)",
+   "value": 10.02,
+   "needed": "3.0 to 10.12",
+   "pass": true
+  },
+  {
+   "guard": "possession starts",
+   "value": 201,
+   "needed": "190 to 270",
+   "pass": true
+  }
+ ],
+ "guards_all_pass": true,
+ "csv_labels_equal_predicted": true,
+ "provenance": {
+  "predict_logs_name_this_model": true,
+  "guards_json_from_run1_labels": true,
+  "tag_audit_on_run1_csv": true,
+  "inputs_logs_warmup_true": true,
+  "inputs_run1_warmup_window_zeroed": true,
+  "inputs_run2_warmup_window_zeroed": true
+ },
+ "csv_sha256": "ace6e2f701aed67ca0715d79f7ccc4f571ee599983e112a6d8d01aca4336cd30",
+ "csv": "work/exp29-evaluation/exp29_20261117-162101_run1.csv",
+ "model": "external/exp29/models/final-B.pt",
+ "model_sha256": "f4b1d53222e7b28ee632c3cfc9b14025a761174779a1240e2efba2eaca4d3832",
+ "v13_comparison": {
+  "v13": {
+   "possessions_per_minute": 2.1151098157462376,
+   "starts": 224,
+   "starts_in_quiet": 22,
+   "share_in_quiet": 0.09821428571428571,
+   "d_share": 0.4854365876228306,
+   "median_possession_s": 8.84
+  },
+  "frames_changed_vs_v13": 6931,
+  "graded_frames_changed_vs_v13": 6931
+ },
+ "tag_agreement_v6_reference": 0.7765,
+ "build": "v13 exactly (v12 tracking path, 4 views, frozen v6 boosted half, mean over views, 50/50, v12 decoder, warm-up and pre-kickoff steps) with the conv model replaced by final-B (recipe M on SkillCorner 20 + DFL 7 + Metrica 3 + PFF 64, PFF weight 1.0); two full runs",
+ "registration_sha256": "4b4a8ddae195f9bf314b3e0b1f2cc1ef4031541f7a222b126cbd2c67aa6394bc",
+ "gate": "PASS pending check 4 (build guards) and check 5 (PFF terms)",
+ "check_5_pff_terms": "not checked here (the parent records it before adoption)",
+ "source_hashes": {
+  "exp29/train.py": "11bd04738f31577960131bc404d7c90cf24b7570ac5f05c53c3b4e0965c7d857",
+  "exp29/match.py": "8d60b025273687ecb1c1baeb1c6c16929ff05bddef5f4ce103245cc04c0c8d8e",
+  "exp29/freeze.py": "fe30ade4e8bb96ba913bd9d93c5d2c7ba06f928597b1e8b8df19de848ebf09dd",
+  "exp29/evaluate.py": "70e3645e0014eeeb98692c5afc577f506742f4266506badefadaf4c3d1c7be7a",
+  "exp29/conv.py": "8462ac0d748cf91fc6c4e5e3c31c77b28cfb677aa823ec0b48455e59260d4459",
+  "exp29/harness.py": "2ba4e251d2122d9ee9624a6dadb54c95fb2670ab28babf9f36f8f52cf8371874",
+  "exp27/views.py": "2e9e8dd48eecfd98264860051fff2fbcbc9a4363a3daa31d14119d89afcd7d73",
+  "exp27/match.py": "2776556ac638f1d0a6209f4896dd0b3d8c9a48b41d3e35038e2d52eeee0d07ea",
+  "exp22/net.py": "5250eadb13cf86d4bf5a91d59dc64f45c2d1eaac789391e4ef89a7533c9026de",
+  "exp22/views.py": "779c11b1b0cf468b8e1d689b8859f7f9577dc72f786fe42ad1be3395c686c5b9",
+  "exp22/candidate.py": "c7808f275ebea653fc6ca250d19d25e8bfdad797d347b553cfd449b78dc9e004",
+  "exp18/arm_a.py": "193ad02e15e60a608b245724db14e71330481fa16e26dcfcb7126754e0d4dd43",
+  "exp18/decode.py": "5712f6f906944c5fe94681777dcb26d06f97c2b5eea39fb678cc2b03d080b82c",
+  "exp18/geometry.py": "0ac7878e064d725ed1ab155d0c103ca0e3d19394c3814b5b7aa529b32ccbe7f0",
+  "v6/infer.py": "7c3f0c6fe03f9a4c9c1d5103564493945543388f0f5838294c744f8565f20a51",
+  "v6/control.py": "afa381e5b0e720d86fe44c44e6034a2e08e79354bb05517c692eea5ea59e9db5",
+  "v3/features.py": "3b7fdad6f068480db8e7c12bfdad517eccccdedd15eb936d8cf9ce7847427971",
+  "v4/shape.py": "42a18a69b83e6272f340707d79d167577a717c25272eb05acb236b1e964024af",
+  "v4/develop.py": "145c74eed71d0a0148b84b4acb0f60176647d1aa8c04a133c19495dd98f5226f",
+  "v2/methods.py": "88c09b511274e1b679d76706079fcec812dfdbf43b6422eca8979fb1e3b1e274",
+  "v8/align.py": "fa29111d36f7f8b3a57530167537210b1c0ee68aeb48d6de7f28c8ac04bf3a54",
+  "v8/infer.py": "15df7caf66640657c80dd0cd09ccc1695a2ebb98fff2ba667eb83a4441cf6920",
+  "v8/broadcast_audit.py": "5a6929e34d237ddc8b8e2413fde815adc11b857b7ace210148a52212321ac960",
+  "v12/kickoff.py": "f6f44c8159fd84680bbb414b20c9624d2b6006cc9fcc7987538e7169ff8de035",
+  "v12/inputs.py": "925b368d61a3b250d6148800cc3140b75e97a832495fc2f6058d8e2c83501c0d",
+  "possession.py": "83c9c26e8ba35c7788094fb84febb3666f785d169a5715b7dd53abd2fb2306b8",
+  "v10/write.py": "2270546961db1f3689969ca3ad41972e4df33f83ef907f2da05b9bf5ecdefadf",
+  "starter-repo/evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+  "work/EXPERIMENT-29.md": "4b4a8ddae195f9bf314b3e0b1f2cc1ef4031541f7a222b126cbd2c67aa6394bc",
+  "work/exp29/gate.json": "f04e25de7c09573668fb5aa81331c2334a6dc95e42f2a551846994af0335d754",
+  "work/v6-evaluation/model.pkl": "2e669ecd0aca8d3ac186133d24aa06b8265ecbdc4f6485d75a4d845b6d425add"
+ },
+ "runtime": {
+  "python": "3.13.16",
+  "numpy": "2.5.4",
+  "sklearn": "1.9.1",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+ }
+}

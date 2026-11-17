@@ -1,0 +1,22 @@
+{
+ "matches": 64,
+ "v0_x_all_equal": true,
+ "v0_periods_all_equal": true,
+ "v2_periods_all_equal": true,
+ "loader_unswapped_all_equal": true,
+ "loader_swapped_all_equal": true,
+ "mismatches": {
+  "v0_x": [],
+  "v0_periods": [],
+  "v2_periods": [],
+  "loader_unswapped": [],
+  "loader_swapped": []
+ },
+ "training_views_with_pff": 228,
+ "pff_views_in_training": 128,
+ "counts_228_and_128": true,
+ "order_original_then_pff_by_match_unswapped_first": true,
+ "original_views_unchanged": true,
+ "arms_hold_out_provider_and_differ_only_by_pff": true,
+ "ok": true
+}

@@ -1,0 +1,96 @@
+{
+ "verdict": "PASS pending check 4 (build guards) and check 5 (PFF terms)",
+ "selected": "B",
+ "passers_in_order": [
+  "B",
+  "A"
+ ],
+ "candidates": {
+  "A": {
+   "checks": {
+    "1a_sc_mean4>=+0.005": [
+     0.029211543282903853,
+     true
+    ],
+    "1b_sc_bootstrap95_lower>0": [
+     0.02197269541788804,
+     true
+    ],
+    "1c_sc_wins>=12/20": [
+     19,
+     true
+    ],
+    "1d_sc_raw>=0": [
+     0.022118964055329444,
+     true
+    ],
+    "1e_sc_controlled3>=0": [
+     0.03593320750671865,
+     true
+    ],
+    "2a_dfl_gaps_mean4>=0": [
+     0.02900702604392112,
+     true
+    ],
+    "2b_dfl_gaps_wins>=4/7": [
+     7,
+     true
+    ],
+    "2c_dfl_gaps_raw>=-0.005": [
+     0.030499019280147373,
+     true
+    ],
+    "3_pooled27_mean4>=+0.005": [
+     0.02915852029501944,
+     true
+    ]
+   },
+   "passes_1_to_3": true,
+   "pooled27_mean4": 0.02915852029501944
+  },
+  "B": {
+   "checks": {
+    "1a_sc_mean4>=+0.005": [
+     0.03458719477980758,
+     true
+    ],
+    "1b_sc_bootstrap95_lower>0": [
+     0.026163458044376364,
+     true
+    ],
+    "1c_sc_wins>=12/20": [
+     19,
+     true
+    ],
+    "1d_sc_raw>=0": [
+     0.02651372999843573,
+     true
+    ],
+    "1e_sc_controlled3>=0": [
+     0.04250393484600862,
+     true
+    ],
+    "2a_dfl_gaps_mean4>=0": [
+     0.02028916800487771,
+     true
+    ],
+    "2b_dfl_gaps_wins>=4/7": [
+     7,
+     true
+    ],
+    "2c_dfl_gaps_raw>=-0.005": [
+     0.023885233728642572,
+     true
+    ],
+    "3_pooled27_mean4>=+0.005": [
+     0.030880298949270208,
+     true
+    ]
+   },
+   "passes_1_to_3": true,
+   "pooled27_mean4": 0.030880298949270208
+  }
+ },
+ "harness_ok": true,
+ "registration_sha256": "4b4a8ddae195f9bf314b3e0b1f2cc1ef4031541f7a222b126cbd2c67aa6394bc"
+}
