@@ -1,0 +1,15 @@
+{
+ "oof": {
+  "views": 40,
+  "conv_V0_equal": 40,
+  "gbt_V0_equal": 40,
+  "rows_max_abs_diff": 0.0
+ },
+ "pff": {
+  "views": 64,
+  "conv_V0_equal": 64,
+  "gbt_V0_equal": 64,
+  "rows_max_abs_diff": 0.0
+ },
+ "ok": true
+}

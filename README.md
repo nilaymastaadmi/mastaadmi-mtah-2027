@@ -13,19 +13,19 @@ data/broadcast/BAR-ATH_broadcast_atd.xml
 
 ## Regenerate the submission
 
-Requires Python 3.13 (frozen with 3.13.16). The submitted file is v12 (sha256 `0cdc7351e1bcfeb345f4a4a3549c0b2b5d1abe62a2aaa381c10b9a9a93879d7a`). It needs two environments: `.venv` from `requirements.txt` (numpy 2.5.4, pandas 3.1.0, scikit-learn 1.9.1) and `.venv-video` from `requirements-v12.txt` (torch 2.15.0, numpy 2.5.4; on Linux use `--index-url https://download.pytorch.org/whl/cpu`).
+Requires Python 3.13 (frozen with 3.13.16). The submitted file is v13 (sha256 `045ed8a5e189ece711f6996c7286024006f8a558440fc6e21919bc1dd008dac6`). It needs two environments: `.venv` from `requirements.txt` (numpy 2.5.4, pandas 3.1.0, scikit-learn 1.9.1) and `.venv-video` from `requirements-v12.txt` (torch 2.15.0, numpy 2.5.4; on Linux use `--index-url https://download.pytorch.org/whl/cpu`).
 
 ```sh
 python3.13 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 python3.13 -m venv .venv-video
 .venv-video/bin/python -m pip install -r requirements-v12.txt
-bash v12/run.sh data
+bash v13/run.sh data
 ```
 
-`v12/run.sh` checks the freeze (`work/v12-evaluation/freeze.json`: model hash, bound source hashes, package versions), then runs the inputs (v8 fusion path and v6 probabilities), the frozen network, the blend, the decoder and the CSV writer twice, compares the two CSV digests and prints the SHA-256 and the path of the CSV (`work/v12-evaluation/runs/`). It never reads ground truth. Regeneration needs only the frozen weights `v12/final.pt` and the match data. The method and its evidence are in the technical note.
+`v13/run.sh` checks the freeze (`work/v13-evaluation/freeze.json`: hashes of the network and the gradient-boosted model, bound source hashes, package versions), then runs the inputs (v8 fusion path, second half from the organiser kickoff, four mirrored copies with their features and v6 probabilities), the frozen network on each copy, the four-copy averages, the blend, the decoder, the second-half pre-kickoff step and the CSV writer twice, compares the two CSV digests and prints the SHA-256 and the path of the CSV (`work/v13-evaluation/runs/`). It never reads ground truth. Regeneration needs only the frozen weights (`v12/final.pt` and the v6 model) and the match data. The method and its evidence are in the technical note. `bash v12/run.sh data` still regenerates the previous submission, v12 (`0cdc7351e1bcfeb345f4a4a3549c0b2b5d1abe62a2aaa381c10b9a9a93879d7a`).
 
-The exact SHA-256 has been produced on macOS arm64 (Apple M5, macOS, Python 3.13.16). A Linux check ran in our development repository on public external matches only, because the competition data may not go to a cloud runner. Linux result (GitHub Actions run 43799963735; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on 17 public views (7 DFL clean, 7 DFL with gaps, 3 SkillCorner; 2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the blended probabilities by at most 6.6e-7, which changes no label (`work/v12-evaluation/portability-compare.json`).
+The exact SHA-256 has been produced on macOS arm64 (Apple M5, macOS, Python 3.13.16). A Linux check ran in our development repository on public external matches only, because the competition data may not go to a cloud runner. v13 result (GitHub Actions run 43966502242; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on the same 17 public views (2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the four-copy averaged probabilities by at most 8.8e-7, which changes no label (`work/v13-evaluation/portability-compare.json`). v12 result (GitHub Actions run 43799963735; Ubuntu x86_64, Python 3.13.16, torch 2.15.0+cpu, numpy 2.5.4) on 17 public views (7 DFL clean, 7 DFL with gaps, 3 SkillCorner; 2,454,886 frames): the labels match the Mac reference on every frame. The rebuilt inputs differ in the last float bits on all 17 views and the blended probabilities by at most 6.6e-7, which changes no label (`work/v12-evaluation/portability-compare.json`).
 
 ### v8 (base and fallback)
 
@@ -61,7 +61,9 @@ The full pre-registered experiment is in `work/EXPERIMENT-04.md` and `v2/experim
 
 | Path | Contents |
 |---|---|
-| `v12/` | Submitted pipeline: inputs (v8 fusion path and v6 probabilities), frozen network `final.pt`, blend, decoder, second-half pre-kickoff step and CSV writer, freeze and version checks, portability check, run script |
+| `v13/` | Submitted pipeline: inputs (v8 fusion path, second half from the organiser kickoff, four mirrored copies), frozen network and v6 model on each copy, four-copy averages, blend, decoder, pre-kickoff step and CSV writer, freeze checks, portability check, run script |
+| `exp27/` | v13's mirrored copies (`views.py`) and match path (`match.py`) |
+| `v12/` | Previous submission: inputs (v8 fusion path and v6 probabilities), frozen network `final.pt` (also used by v13), blend, decoder, second-half pre-kickoff step and CSV writer, freeze and version checks, portability check, run script |
 | `exp22/` | v12's network (`net.py`), training views (`views.py`), Metrica labels (`metrica.py`) and tests; its scoring scripts need private caches and are not included |
 | `v8/` | Base pipeline and fallback: broadcast tracking alignment and ball fusion, verified inference, the simulated-view experiments, stability checks, tests |
 | `v10/` | Tested, withdrawn: three stages (inputs, network and decoder, CSV writer), the frozen network `final.pt`, the run script and a cross-platform check |

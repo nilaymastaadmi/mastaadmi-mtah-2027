@@ -1,0 +1,91 @@
+{
+ "version": "v13",
+ "experiment": "EXPERIMENT-27 candidate T2 (four-view averaging of v12)",
+ "gate_verdict": "PASS",
+ "registration_sha256": "9a6cad62e3ca8eb80ad059cfe8108ab205d6b6c1d3b4707402d9d81d600eb768",
+ "model": "v12/final.pt",
+ "model_sha256": "e68c5767a8b7fc080cdc71df7451f6abf8f5e15b730ff71944c318d086650acf",
+ "scaler_sha256": "f333c9d86c9845a772743ff7739cf6d39ca79e7d53fa5cd86143465d1a14e339",
+ "c_in": 147,
+ "v6_model": "work/v6-evaluation/model.pkl",
+ "v6_model_sha256": "2e669ecd0aca8d3ac186133d24aa06b8265ecbdc4f6485d75a4d845b6d425add",
+ "views": [
+  "identity",
+  "touchline mirror (y -> 1 - y)",
+  "full swap (x, y mirrored, teams swapped)",
+  "goal-line mirror with teams swapped (x -> 1 - x)"
+ ],
+ "average": "mean over the four views of each half (H/A mapped back), then 0.5 conv + 0.5 boosted",
+ "decoder": [
+  0.5,
+  0.0
+ ],
+ "warmup_periods_zeroed_half_open": [
+  110808,
+  113742
+ ],
+ "kickoff_fix_d_frames_half_open": [
+  110808,
+  113742
+ ],
+ "expected_csv_sha256": "045ed8a5e189ece711f6996c7286024006f8a558440fc6e21919bc1dd008dac6",
+ "pins": {
+  "main": {
+   "cloudpickle": "3.1.2",
+   "joblib": "1.6.0",
+   "narwhals": "2.28.0",
+   "numpy": "2.5.4",
+   "pandas": "3.1.0",
+   "python-dateutil": "3.0.0",
+   "scikit-learn": "1.9.1",
+   "scipy": "1.18.1",
+   "six": "1.17.0",
+   "threadpoolctl": "3.7.0",
+   "tzdata": "2026.6"
+  },
+  "torch": {
+   "torch": "2.15.0",
+   "numpy": "2.5.4"
+  }
+ },
+ "source_hashes": {
+  "v13/freezecheck.py": "f359018a90c65cb33e18ccfc709c803ce72af763fc0c9b3b6c2fb4d403bf576b",
+  "v13/inputs.py": "1a448a894b28c1bb94b1960fd654b8427b2f86b65a2a23eda3f29ec70adf117a",
+  "v13/predict.py": "e8597b999ac04413942ff05e6a03f90d33ba144e1790e2d7da130886ae03294e",
+  "v13/freeze.py": "b280cb153e63eb4acf1e8513d34a362a8d1b7c713d9b2188e6480f242a3ab6a1",
+  "v13/run.sh": "f75bed1bee0fb39d03d2850c53a5c999cc5705831c01776a372f29a176251466",
+  "exp27/views.py": "2e9e8dd48eecfd98264860051fff2fbcbc9a4363a3daa31d14119d89afcd7d73",
+  "exp27/match.py": "2776556ac638f1d0a6209f4896dd0b3d8c9a48b41d3e35038e2d52eeee0d07ea",
+  "v12/env.py": "8fb501eb94f0716aff994a6f3d3e0f40a9d695ba4ad0a0aaea191d0a9434aa04",
+  "v12/freezecheck.py": "de92584e4ddfb0f1531f7ae1e6fafb23c87573e2ca8eb3dacfee448ca8a547f8",
+  "v12/inputs.py": "925b368d61a3b250d6148800cc3140b75e97a832495fc2f6058d8e2c83501c0d",
+  "v12/kickoff.py": "f6f44c8159fd84680bbb414b20c9624d2b6006cc9fcc7987538e7169ff8de035",
+  "starter-repo/starter/load_smart_tagging.py": "cacfe90acf1deb37b3aa3e4666d6a9d5595c1766d59fe24c9150e1a1d51d0c64",
+  "requirements.txt": "06ff612ef93260fb13ad5bd3d770b34a8f09061fe3aa3c73cbe423fabe0d6d09",
+  "requirements-v12.txt": "2057d06649635847f198a2c8ca2730a142dac19885b6a8619cd9e59cd881b6c5",
+  "exp22/net.py": "5250eadb13cf86d4bf5a91d59dc64f45c2d1eaac789391e4ef89a7533c9026de",
+  "exp22/views.py": "779c11b1b0cf468b8e1d689b8859f7f9577dc72f786fe42ad1be3395c686c5b9",
+  "exp22/candidate.py": "c7808f275ebea653fc6ca250d19d25e8bfdad797d347b553cfd449b78dc9e004",
+  "exp18/arm_a.py": "193ad02e15e60a608b245724db14e71330481fa16e26dcfcb7126754e0d4dd43",
+  "exp18/targets.py": "ab67958997c8026f33898e67cb1fe58386b331a73b68bc413cc5b0f85e6fe6e2",
+  "exp18/decode.py": "5712f6f906944c5fe94681777dcb26d06f97c2b5eea39fb678cc2b03d080b82c",
+  "exp18/geometry.py": "0ac7878e064d725ed1ab155d0c103ca0e3d19394c3814b5b7aa529b32ccbe7f0",
+  "v10/write.py": "2270546961db1f3689969ca3ad41972e4df33f83ef907f2da05b9bf5ecdefadf",
+  "possession.py": "83c9c26e8ba35c7788094fb84febb3666f785d169a5715b7dd53abd2fb2306b8",
+  "learned_possession.py": "3c9343e18202a2350a332f20ae3b7445d64c8556aa43102030adf9cd2246a4ae",
+  "starter-repo/games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+  "starter-repo/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+  "starter-repo/evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+  "v2/methods.py": "88c09b511274e1b679d76706079fcec812dfdbf43b6422eca8979fb1e3b1e274",
+  "v3/features.py": "3b7fdad6f068480db8e7c12bfdad517eccccdedd15eb936d8cf9ce7847427971",
+  "v4/develop.py": "145c74eed71d0a0148b84b4acb0f60176647d1aa8c04a133c19495dd98f5226f",
+  "v4/shape.py": "42a18a69b83e6272f340707d79d167577a717c25272eb05acb236b1e964024af",
+  "v6/control.py": "afa381e5b0e720d86fe44c44e6034a2e08e79354bb05517c692eea5ea59e9db5",
+  "v6/infer.py": "7c3f0c6fe03f9a4c9c1d5103564493945543388f0f5838294c744f8565f20a51",
+  "v8/align.py": "fa29111d36f7f8b3a57530167537210b1c0ee68aeb48d6de7f28c8ac04bf3a54",
+  "v8/broadcast_audit.py": "5a6929e34d237ddc8b8e2413fde815adc11b857b7ace210148a52212321ac960",
+  "v8/infer.py": "15df7caf66640657c80dd0cd09ccc1695a2ebb98fff2ba667eb83a4441cf6920",
+  "work/EXPERIMENT-27.md": "9a6cad62e3ca8eb80ad059cfe8108ab205d6b6c1d3b4707402d9d81d600eb768",
+  "work/exp27/gate.json": "d759a0d34080921f3c9bdcd906dcde79f6bf4683da9bae5e7eace15e5906c342"
+ }
+}

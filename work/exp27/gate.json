@@ -1,0 +1,77 @@
+{
+ "verdict": "PASS pending real-match guards",
+ "selected": "T2",
+ "passers_in_order": [
+  "T2"
+ ],
+ "candidates": {
+  "T1": {
+   "checks": {
+    "1_pff_mean4>=+0.003": [
+     0.0009046592680778806,
+     false
+    ],
+    "2_pff_wins>=36/64": [
+     37,
+     true
+    ],
+    "3_pff_controlled3>=0": [
+     0.0011875812243051847,
+     true
+    ],
+    "4_pff_raw>=0": [
+     0.0007127082431905825,
+     true
+    ],
+    "5_sc_oof_mean4>=0": [
+     0.001697904669716302,
+     true
+    ],
+    "6_dfl_gaps_mean4>=-0.005": [
+     -0.0008369233343058026,
+     true
+    ],
+    "7_dfl_gaps_raw>=-0.005": [
+     -5.6585962401830715e-05,
+     true
+    ]
+   },
+   "passes_1_to_7": false
+  },
+  "T2": {
+   "checks": {
+    "1_pff_mean4>=+0.003": [
+     0.0035230143735913216,
+     true
+    ],
+    "2_pff_wins>=36/64": [
+     43,
+     true
+    ],
+    "3_pff_controlled3>=0": [
+     0.0040741717187451915,
+     true
+    ],
+    "4_pff_raw>=0": [
+     0.0031988663807391996,
+     true
+    ],
+    "5_sc_oof_mean4>=0": [
+     0.0009172667279431918,
+     true
+    ],
+    "6_dfl_gaps_mean4>=-0.005": [
+     0.0031731056321882,
+     true
+    ],
+    "7_dfl_gaps_raw>=-0.005": [
+     0.004937301632880372,
+     true
+    ]
+   },
+   "passes_1_to_7": true
+  }
+ },
+ "harness_ok": true,
+ "registration_sha256": "9a6cad62e3ca8eb80ad059cfe8108ab205d6b6c1d3b4707402d9d81d600eb768"
+}
